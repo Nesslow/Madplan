@@ -128,3 +128,44 @@ header {
 #modal-recipe-content p {
     line-height: 1.6;
 }
+/* Add this to the end of style.css */
+.category-filters-container {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line */
+    justify-content: center;
+    gap: 10px;
+}
+
+.category-filters-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 20px; /* Makes them pill-shaped */
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.category-filters-container button:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.card-ingredients {
+    font-size: 13px;
+    text-align: left;
+    padding: 0 15px 15px;
+    max-height: 100px; /* Limit the height */
+    overflow-y: auto;  /* Make it scrollable if ingredients overflow */
+    border-top: 1px solid #eee;
+    margin: 10px 15px 0;
+    list-style-type: none; /* Removes bullet points */
+}
+
+.card-ingredients li {
+    padding: 2px 0;
+}

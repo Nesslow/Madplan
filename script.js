@@ -11,8 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalContainer = document.getElementById('modal-container');
     const modalCloseBtn = document.getElementById('modal-close-btn');
     const modalContent = document.getElementById('modal-recipe-content');
+    const categoryFiltersContainer = document.getElementById('category-filters');
 
-    // --- All functions are now declared first using the 'function' keyword ---
+
+    // --- Functions ---
 
     async function findSingleRecipe(ingredient) {
         recipeListContainer.innerHTML = `<p>Søger efter opskrifter med ${ingredient}...</p>`;
@@ -20,11 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
         const fullUrl = proxyUrl + encodeURIComponent(searchApiUrl);
         
         try {
-            const response = await fetch(fullUrl);
+            let response = await fetch(fullUrl);
             if (!response.ok) throw new Error('Search failed.');
-            const recipes = JSON.parse(await response.text());
+            let recipes = JSON.parse(await response.text());
+
             if (recipes && recipes.length > 0) {
-                displayRecipes(recipes);
+                // --- NEW: Limit results to the first 5 ---
+                const limitedRecipes = recipes.slice(0, 5);
+
+                recipeListContainer.innerHTML = `<p>Henter detaljer for ${limitedRecipes.length} opskrifter... Dette kan tage et øjeblik.</p>`;
+                
+                const detailPromises = limitedRecipes.map(recipe => {
+                    const recipeId = recipe[0];
+                    const detailsApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipe/0/${recipeId}/4`;
+                    const detailFullUrl = proxyUrl + encodeURIComponent(detailsApiUrl);
+                    return fetch(detailFullUrl).then(res => res.text()).then(text => JSON.parse(text));
+                });
+
+                const detailedRecipes = await Promise.all(detailPromises);
+                displayRecipes(detailedRecipes);
             } else {
                 recipeListContainer.innerHTML = `<p>Ingen opskrifter fundet for '${ingredient}'.</p>`;
             }
@@ -40,11 +56,25 @@ document.addEventListener('DOMContentLoaded', () => {
         const fullUrl = proxyUrl + encodeURIComponent(apiUrl);
         
         try {
-            const response = await fetch(fullUrl);
+            let response = await fetch(fullUrl);
             if (!response.ok) throw new Error(`Could not fetch ${title}.`);
-            const recipes = JSON.parse(await response.text());
+            let recipes = JSON.parse(await response.text());
+
             if (recipes && recipes.length > 0) {
-                displayRecipes(recipes);
+                // --- NEW: Limit results to the first 5 ---
+                const limitedRecipes = recipes.slice(0, 5);
+
+                recipeListContainer.innerHTML = `<p>Henter detaljer for ${limitedRecipes.length} opskrifter... Dette kan tage et øjeblik.</p>`;
+
+                const detailPromises = limitedRecipes.map(recipe => {
+                    const recipeId = recipe[0];
+                    const detailsApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipe/0/${recipeId}/4`;
+                    const detailFullUrl = proxyUrl + encodeURIComponent(detailsApiUrl);
+                    return fetch(detailFullUrl).then(res => res.text()).then(text => JSON.parse(text));
+                });
+                
+                const detailedRecipes = await Promise.all(detailPromises);
+                displayRecipes(detailedRecipes);
             } else {
                 recipeListContainer.innerHTML = `<p>Kunne ikke finde nogen ${title.toLowerCase()}.</p>`;
             }
@@ -54,13 +84,91 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // THIS IS THE UPDATED FUNCTION
-    function displayRecipes(recipes) {
+    async function getRecipesByCategory(categoryId, categoryName) {
+        recipeListContainer.innerHTML = `<p>Henter opskrifter i kategorien '${categoryName}'...</p>`;
+        const apiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipesByMealCatId/0/${categoryId}/true`;
+        const fullUrl = proxyUrl + encodeURIComponent(apiUrl);
+
+        try {
+            let response = await fetch(fullUrl);
+            if (!response.ok) throw new Error(`Could not fetch recipes for ${categoryName}.`);
+            let recipes = JSON.parse(await response.text());
+
+            if (recipes && recipes.length > 0) {
+                // --- NEW: Limit results to the first 5 ---
+                const limitedRecipes = recipes.slice(0, 5);
+
+                recipeListContainer.innerHTML = `<p>Henter detaljer for ${limitedRecipes.length} opskrifter... Dette kan tage et øjeblik.</p>`;
+
+                const detailPromises = limitedRecipes.map(recipe => {
+                    const recipeId = recipe[0];
+                    const detailsApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipe/0/${recipeId}/4`;
+                    const detailFullUrl = proxyUrl + encodeURIComponent(detailsApiUrl);
+                    return fetch(detailFullUrl).then(res => res.text()).then(text => JSON.parse(text));
+                });
+                
+                const detailedRecipes = await Promise.all(detailPromises);
+                displayRecipes(detailedRecipes);
+            } else {
+                recipeListContainer.innerHTML = `<p>Kunne ikke finde nogen opskrifter i kategorien '${categoryName}'.</p>`;
+            }
+        } catch (error) {
+            console.error(`Error fetching recipes for category ${categoryId}:`, error);
+            recipeListContainer.innerHTML = `<p style="color: red;">Der opstod en fejl.</p>`;
+        }
+    }
+    
+    function displayCategories(data) {
+        const mainCategories = data[3];
+
+        if (!mainCategories) {
+            console.error("Could not find main categories in the expected format.");
+            return;
+        }
+
+        mainCategories.forEach(category => {
+            const categoryId = category[0];
+            const categoryName = category[1];
+
+            const button = document.createElement('button');
+            button.textContent = categoryName;
+            button.dataset.categoryId = categoryId; 
+
+            button.addEventListener('click', () => {
+                getRecipesByCategory(categoryId, categoryName);
+            });
+            
+            categoryFiltersContainer.appendChild(button);
+        });
+    }
+
+    async function getCategories() {
+        const apiUrl = 'http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetCategories/0/0';
+        const fullUrl = proxyUrl + encodeURIComponent(apiUrl);
+        try {
+            const response = await fetch(fullUrl);
+            if (!response.ok) throw new Error('Could not fetch categories.');
+            const categories = JSON.parse(await response.text());
+            if (categories && categories.length > 0) {
+                displayCategories(categories);
+            }
+        } catch (error) {
+            console.error('Error fetching categories:', error);
+        }
+    }
+    
+    function displayRecipes(detailedRecipes) {
         recipeListContainer.innerHTML = '';
-        recipes.forEach(recipeData => {
+        detailedRecipes.forEach(recipeData => {
             const recipeId = recipeData[0];
             const title = recipeData[1];
-            const imageUrl = recipeData[2].replace('http://', 'https://');
+            const imageUrl = recipeData[9].replace('http://', 'https://');
+            const ingredientsListString = recipeData[12];
+            
+            const ingredients = ingredientsListString
+                .split(/\r\n/g)
+                .map(line => `<li>${line.trim()}</li>`)
+                .join('');
 
             const recipeCard = document.createElement('div');
             recipeCard.classList.add('recipe-card');
@@ -70,52 +178,42 @@ document.addEventListener('DOMContentLoaded', () => {
             recipeCard.innerHTML = `
                 <img src="${imageUrl}" alt="${title}">
                 <h3>${title}</h3>
+                <ul class="card-ingredients">${ingredients}</ul>
             `;
             
-            recipeCard.addEventListener('click', () => getRecipeDetails(recipeId));
+            recipeCard.addEventListener('click', () => {
+                displayRecipeDetails(recipeData);
+            });
             recipeListContainer.appendChild(recipeCard);
         });
     }
     
-    async function getRecipeDetails(recipeId) {
-        modalContent.innerHTML = '<h2>Henter opskrift...</h2>';
+    function displayRecipeDetails(data) {
+        modalContent.innerHTML = '';
         modalContainer.classList.add('show');
-        const detailsApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipe/0/${recipeId}/4`;
-        const fullUrl = proxyUrl + encodeURIComponent(detailsApiUrl);
 
-        try {
-            const response = await fetch(fullUrl);
-            if (!response.ok) throw new Error('Recipe details not found.');
-            
-            const data = JSON.parse(await response.text());
-            
-            const title = data[1];
-            const description = data[4];
-            const instructions = data[3].replace(/\r\n\r\n/g, '<p>').replace(/\r\n/g, '<br>');
-            const imageUrl = data[9].replace('http://', 'https://');
+        const title = data[1];
+        const description = data[4];
+        const instructions = data[3].replace(/\r\n\r\n/g, '<p>').replace(/\r\n/g, '<br>');
+        const imageUrl = data[9].replace('http://', 'https://');
+        const ingredientsListString = data[12];
+        const ingredients = ingredientsListString
+            .split(/\r\n/g)
+            .map(line => `<li>${line.trim()}</li>`)
+            .join('');
 
-            const ingredientsListString = data[12];
-            const ingredients = ingredientsListString
-                .split(/\r\n/g)
-                .map(line => `<li>${line.trim()}</li>`)
-                .join('');
-
-            modalContent.innerHTML = `
-                <h2>${title}</h2>
-                <img src="${imageUrl}" alt="${title}">
-                <p>${description || 'Ingen beskrivelse tilgængelig.'}</p>
-                <h3>Ingredienser</h3>
-                <ul>${ingredients}</ul>
-                <h3>Fremgangsmåde</h3>
-                <p>${instructions || 'Ingen fremgangsmåde tilgængelig.'}</p>
-            `;
-        } catch (error) {
-            modalContent.innerHTML = `<h2>Fejl</h2><p>Kunne ikke hente opskriftens detaljer. Prøv venligst igen senere.</p>`;
-            console.error("Error fetching details:", error);
-        }
+        modalContent.innerHTML = `
+            <h2>${title}</h2>
+            <img src="${imageUrl}" alt="${title}">
+            <p>${description || 'Ingen beskrivelse tilgængelig.'}</p>
+            <h3>Ingredienser</h3>
+            <ul>${ingredients}</ul>
+            <h3>Fremgangsmåde</h3>
+            <p>${instructions || 'Ingen fremgangsmåde tilgængelig.'}</p>
+        `;
     }
 
-    // --- Event Listeners ---
+    // --- Event Listeners and Initial Load ---
     if (searchForm) {
         searchForm.addEventListener('submit', (event) => {
             event.preventDefault();
@@ -125,11 +223,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
     if (popularBtn) popularBtn.addEventListener('click', () => getRecipeList('GetPopularRecipes', 'Populære Opskrifter'));
     if (topBtn) topBtn.addEventListener('click', () => getRecipeList('GetTopRecipes', 'Top Opskrifter'));
     if (newBtn) newBtn.addEventListener('click', () => getRecipeList('GetNewRecipes', 'Nyeste Opskrifter'));
-    
     if (modalCloseBtn) modalCloseBtn.addEventListener('click', () => modalContainer.classList.remove('show'));
     if (modalContainer) {
         modalContainer.addEventListener('click', (event) => {
@@ -139,6 +235,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Fetch popular recipes on page load
     getRecipeList('GetPopularRecipes', 'Populære Opskrifter');
+    // getCategories(); 
 });
