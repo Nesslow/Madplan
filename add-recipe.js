@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURATION ---
-    const API_BASE_URL = 'https://danish-recipe-api.onrender.com'; 
+    const API_BASE_URL = 'https://smart-recipe-api.onrender.com'; 
 
     // --- ELEMENT REFERENCES ---
     const ingredientsContainer = document.getElementById('ingredients-container');
@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }));
 
             console.log(`Loaded ${masterIngredientList.length} master ingredients.`);
+            console.log(`Item: ${masterIngredientList}.`);
             // Initialize the form with the first fields now that we have the data
             addIngredientField();
             addInstructionField();
