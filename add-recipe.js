@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch('./ingredients.json');
             const ingredientsData = await response.json();
             
-            // Transform the data into the format Tom Select expects: {value: '...', text: '...'}
+            // --- THIS IS THE FIX ---
+            // We are changing "ingredient.name" to "ingredient.FødevareNavn" to match your JSON file.
             masterIngredientList = ingredientsData.map(ingredient => ({
-                value: ingredient.name,
-                text: ingredient.name
+                value: ingredient.FødevareNavn,
+                text: ingredient.FødevareNavn
             }));
 
             console.log(`Loaded ${masterIngredientList.length} master ingredients.`);
-            console.log(`Item: ${masterIngredientList}.`);
             // Initialize the form with the first fields now that we have the data
             addIngredientField();
             addInstructionField();
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         ingredientsContainer.appendChild(row);
         
-        // --- NEW: Initialize Tom Select on the input field we just created ---
+        // Initialize Tom Select on the input field we just created
         const selectInput = row.querySelector('.ingredient-name-select');
         new TomSelect(selectInput, {
             options: masterIngredientList,
@@ -89,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
         formStatus.textContent = 'Gemmer opskrift...';
         formStatus.style.color = 'black';
         
-        // The gathering logic now uses the '.ingredient-name-select' class
         const ingredients = [];
         document.querySelectorAll('.ingredient-row').forEach(row => {
             const name = row.querySelector('.ingredient-name-select').value.trim();
