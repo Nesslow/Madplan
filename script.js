@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- All functions are now declared first using the 'function' keyword ---
 
-    // Fetches recipes based on a single ingredient search
     async function findSingleRecipe(ingredient) {
         recipeListContainer.innerHTML = `<p>Søger efter opskrifter med ${ingredient}...</p>`;
         const searchApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipesByFreeText/0/${ingredient}`;
@@ -35,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // Fetches predefined lists like 'popular' or 'top' recipes
     async function getRecipeList(endpoint, title) {
         recipeListContainer.innerHTML = `<p>Henter ${title.toLowerCase()}...</p>`;
         const apiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/${endpoint}/0`;
@@ -56,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Renders the recipe cards to the page
     function displayRecipes(recipes) {
         recipeListContainer.innerHTML = '';
         recipes.forEach(recipeData => {
@@ -81,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Fetches and displays the details for a single recipe in the modal
+    // THIS IS THE UPDATED FUNCTION
     async function getRecipeDetails(recipeId) {
         modalContent.innerHTML = '<h2>Henter opskrift...</h2>';
         modalContainer.classList.add('show');
@@ -91,32 +88,37 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(fullUrl);
             if (!response.ok) throw new Error('Recipe details not found.');
+            
             const data = JSON.parse(await response.text());
             
-            const generalInfo = data[0];
-            const title = generalInfo[1];
-            const description = generalInfo[2];
-            const imageUrl = generalInfo[3].replace('http://', 'https://');
-            const instructions = data[data.length - 1][1].replace(/\n/g, '<br>');
-            const ingredients = data.slice(1, -1).map(ing => `<li>${ing[0]} ${ing[1]} <strong>${ing[2]}</strong></li>`).join('');
+            // Parsing logic based on the actual API response
+            const title = data[1];
+            const description = data[4];
+            const instructions = data[3].replace(/\r\n\r\n/g, '<p>').replace(/\r\n/g, '<br>');
+            const imageUrl = data[9].replace('http://', 'https://'); // The large image URL
+
+            const ingredientsListString = data[12];
+            const ingredients = ingredientsListString
+                .split(/\r\n/g) // Split the string into an array at each line break
+                .map(line => `<li>${line.trim()}</li>`) // Wrap each line in an <li> tag
+                .join(''); // Join them back into a single HTML string
 
             modalContent.innerHTML = `
                 <h2>${title}</h2>
                 <img src="${imageUrl}" alt="${title}">
-                <p>${description}</p>
+                <p>${description || 'Ingen beskrivelse tilgængelig.'}</p>
                 <h3>Ingredienser</h3>
                 <ul>${ingredients}</ul>
                 <h3>Fremgangsmåde</h3>
-                <p>${instructions}</p>
+                <p>${instructions || 'Ingen fremgangsmåde tilgængelig.'}</p>
             `;
         } catch (error) {
-            modalContent.innerHTML = `<h2>Fejl</h2><p>Kunne ikke hente opskriftens detaljer.</p>`;
+            modalContent.innerHTML = `<h2>Fejl</h2><p>Kunne ikke hente opskriftens detaljer. Prøv venligst igen senere.</p>`;
             console.error("Error fetching details:", error);
         }
     }
 
-    // --- Event Listeners are now added *after* functions are declared ---
-    // This is safer and prevents crashes if an element is missing.
+    // --- Event Listeners ---
     if (searchForm) {
         searchForm.addEventListener('submit', (event) => {
             event.preventDefault();
