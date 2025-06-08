@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchForm = document.getElementById('search-form');
     const searchInput = document.getElementById('search-input');
     const recipeListContainer = document.getElementById('recipe-list');
-    
     const proxyUrl = 'https://api.allorigins.win/raw?url=';
     
     const popularBtn = document.getElementById('popular-btn');
@@ -13,28 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCloseBtn = document.getElementById('modal-close-btn');
     const modalContent = document.getElementById('modal-recipe-content');
 
-    // --- Event Listeners ---
-    searchForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const searchTerm = searchInput.value.trim();
-        if (searchTerm) {
-            findSingleRecipe(searchTerm);
-        }
-    });
+    // --- All functions are now declared first using the 'function' keyword ---
 
-    popularBtn.addEventListener('click', () => getRecipeList('GetPopularRecipes', 'Populære Opskrifter'));
-    topBtn.addEventListener('click', () => getRecipeList('GetTopRecipes', 'Top Opskrifter'));
-    newBtn.addEventListener('click', () => getRecipeList('GetNewRecipes', 'Nyeste Opskrifter'));
-    
-    modalCloseBtn.addEventListener('click', () => modalContainer.classList.remove('show'));
-    modalContainer.addEventListener('click', (event) => {
-        if (event.target === modalContainer) {
-            modalContainer.classList.remove('show');
-        }
-    });
-
-    // --- Functions ---
-    const findSingleRecipe = async (ingredient) => {
+    // Fetches recipes based on a single ingredient search
+    async function findSingleRecipe(ingredient) {
         recipeListContainer.innerHTML = `<p>Søger efter opskrifter med ${ingredient}...</p>`;
         const searchApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipesByFreeText/0/${ingredient}`;
         const fullUrl = proxyUrl + encodeURIComponent(searchApiUrl);
@@ -42,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(fullUrl);
             if (!response.ok) throw new Error('Search failed.');
-            // --- FIX APPLIED HERE ---
             const recipes = JSON.parse(await response.text());
             if (recipes && recipes.length > 0) {
                 displayRecipes(recipes);
@@ -53,9 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error in findSingleRecipe:', error);
             recipeListContainer.innerHTML = `<p style="color: red;">Der opstod en fejl under søgningen.</p>`;
         }
-    };
+    }
     
-    const getRecipeList = async (endpoint, title) => {
+    // Fetches predefined lists like 'popular' or 'top' recipes
+    async function getRecipeList(endpoint, title) {
         recipeListContainer.innerHTML = `<p>Henter ${title.toLowerCase()}...</p>`;
         const apiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/${endpoint}/0`;
         const fullUrl = proxyUrl + encodeURIComponent(apiUrl);
@@ -63,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(fullUrl);
             if (!response.ok) throw new Error(`Could not fetch ${title}.`);
-            // --- FIX APPLIED HERE ---
             const recipes = JSON.parse(await response.text());
             if (recipes && recipes.length > 0) {
                 displayRecipes(recipes);
@@ -74,9 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error(`Error fetching ${endpoint}:`, error);
             recipeListContainer.innerHTML = `<p style="color: red;">Der opstod en fejl.</p>`;
         }
-    };
+    }
 
-    const displayRecipes = (recipes) => {
+    // Renders the recipe cards to the page
+    function displayRecipes(recipes) {
         recipeListContainer.innerHTML = '';
         recipes.forEach(recipeData => {
             const recipeId = recipeData[0];
@@ -98,9 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
             recipeCard.addEventListener('click', () => getRecipeDetails(recipeId));
             recipeListContainer.appendChild(recipeCard);
         });
-    };
+    }
     
-    const getRecipeDetails = async (recipeId) => {
+    // Fetches and displays the details for a single recipe in the modal
+    async function getRecipeDetails(recipeId) {
         modalContent.innerHTML = '<h2>Henter opskrift...</h2>';
         modalContainer.classList.add('show');
         const detailsApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipe/0/${recipeId}/4`;
@@ -109,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(fullUrl);
             if (!response.ok) throw new Error('Recipe details not found.');
-            // --- FIX APPLIED HERE ---
             const data = JSON.parse(await response.text());
             
             const generalInfo = data[0];
@@ -132,7 +113,32 @@ document.addEventListener('DOMContentLoaded', () => {
             modalContent.innerHTML = `<h2>Fejl</h2><p>Kunne ikke hente opskriftens detaljer.</p>`;
             console.error("Error fetching details:", error);
         }
-    };
+    }
+
+    // --- Event Listeners are now added *after* functions are declared ---
+    // This is safer and prevents crashes if an element is missing.
+    if (searchForm) {
+        searchForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const searchTerm = searchInput.value.trim();
+            if (searchTerm) {
+                findSingleRecipe(searchTerm);
+            }
+        });
+    }
+
+    if (popularBtn) popularBtn.addEventListener('click', () => getRecipeList('GetPopularRecipes', 'Populære Opskrifter'));
+    if (topBtn) topBtn.addEventListener('click', () => getRecipeList('GetTopRecipes', 'Top Opskrifter'));
+    if (newBtn) newBtn.addEventListener('click', () => getRecipeList('GetNewRecipes', 'Nyeste Opskrifter'));
+    
+    if (modalCloseBtn) modalCloseBtn.addEventListener('click', () => modalContainer.classList.remove('show'));
+    if (modalContainer) {
+        modalContainer.addEventListener('click', (event) => {
+            if (event.target === modalContainer) {
+                modalContainer.classList.remove('show');
+            }
+        });
+    }
 
     // Fetch popular recipes on page load
     getRecipeList('GetPopularRecipes', 'Populære Opskrifter');
