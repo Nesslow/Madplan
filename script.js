@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchForm = document.getElementById('search-form');
     const searchInput = document.getElementById('search-input');
     const recipeListContainer = document.getElementById('recipe-list');
-    const proxyUrl = 'https://corsproxy.io/?';
+    
+    const proxyUrl = 'https://api.allorigins.win/raw?url=';
+    
     const popularBtn = document.getElementById('popular-btn');
     const topBtn = document.getElementById('top-btn');
     const newBtn = document.getElementById('new-btn');
@@ -32,16 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Functions ---
-
-    // Renamed for clarity - handles single ingredient search
     const findSingleRecipe = async (ingredient) => {
         recipeListContainer.innerHTML = `<p>Søger efter opskrifter med ${ingredient}...</p>`;
         const searchApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipesByFreeText/0/${ingredient}`;
-        const fullUrl = proxyUrl + searchApiUrl;
+        const fullUrl = proxyUrl + encodeURIComponent(searchApiUrl);
+        
         try {
             const response = await fetch(fullUrl);
             if (!response.ok) throw new Error('Search failed.');
-            const recipes = await response.json();
+            // --- FIX APPLIED HERE ---
+            const recipes = JSON.parse(await response.text());
             if (recipes && recipes.length > 0) {
                 displayRecipes(recipes);
             } else {
@@ -56,11 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const getRecipeList = async (endpoint, title) => {
         recipeListContainer.innerHTML = `<p>Henter ${title.toLowerCase()}...</p>`;
         const apiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/${endpoint}/0`;
-        const fullUrl = proxyUrl + apiUrl;
+        const fullUrl = proxyUrl + encodeURIComponent(apiUrl);
+        
         try {
             const response = await fetch(fullUrl);
             if (!response.ok) throw new Error(`Could not fetch ${title}.`);
-            const recipes = await response.json();
+            // --- FIX APPLIED HERE ---
+            const recipes = JSON.parse(await response.text());
             if (recipes && recipes.length > 0) {
                 displayRecipes(recipes);
             } else {
@@ -77,8 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         recipes.forEach(recipeData => {
             const recipeId = recipeData[0];
             const title = recipeData[1];
-            // --- FIX IS HERE ---
-            // Force the image URL to use HTTPS
             const imageUrl = recipeData[2].replace('http://', 'https://');
             const price = recipeData[3];
 
@@ -102,16 +104,17 @@ document.addEventListener('DOMContentLoaded', () => {
         modalContent.innerHTML = '<h2>Henter opskrift...</h2>';
         modalContainer.classList.add('show');
         const detailsApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipe/0/${recipeId}/4`;
-        const fullUrl = proxyUrl + detailsApiUrl;
+        const fullUrl = proxyUrl + encodeURIComponent(detailsApiUrl);
+
         try {
             const response = await fetch(fullUrl);
             if (!response.ok) throw new Error('Recipe details not found.');
-            const data = await response.json();
+            // --- FIX APPLIED HERE ---
+            const data = JSON.parse(await response.text());
+            
             const generalInfo = data[0];
             const title = generalInfo[1];
             const description = generalInfo[2];
-            // --- AND FIX IS HERE ---
-            // Also force the modal's image URL to use HTTPS
             const imageUrl = generalInfo[3].replace('http://', 'https://');
             const instructions = data[data.length - 1][1].replace(/\n/g, '<br>');
             const ingredients = data.slice(1, -1).map(ing => `<li>${ing[0]} ${ing[1]} <strong>${ing[2]}</strong></li>`).join('');
