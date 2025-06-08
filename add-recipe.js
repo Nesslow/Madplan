@@ -12,12 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const recipeForm = document.getElementById('add-recipe-form');
     const formStatus = document.getElementById('form-status');
 
+    // --- BUTTON EVENT LISTENERS ---
+    // This was the missing piece. It tells the browser to call our functions when the buttons are clicked.
+    addIngredientBtn.addEventListener('click', addIngredientField);
+    addInstructionBtn.addEventListener('click', addInstructionField);
+
+
     // --- FUNCTIONS TO DYNAMICALLY ADD/REMOVE FIELDS ---
     const addIngredientField = () => {
         const row = document.createElement('div');
         row.className = 'ingredient-row';
         row.innerHTML = `
-            <input type="number" placeholder="Mængde" class="ingredient-amount">
+            <input type="number" placeholder="Mængde" class="ingredient-amount" step="any">
             <input type="text" placeholder="Enhed (f.eks. g, dl, stk)" class="ingredient-unit">
             <input type="text" placeholder="Ingrediens" class="ingredient-name" required>
             <button type="button" class="remove-btn">－</button>
@@ -47,25 +53,33 @@ document.addEventListener('DOMContentLoaded', () => {
         // 1. Gather all data from the form into a single object
         const ingredients = [];
         document.querySelectorAll('.ingredient-row').forEach(row => {
-            ingredients.push({
-                amount: parseFloat(row.querySelector('.ingredient-amount').value) || null,
-                unit: row.querySelector('.ingredient-unit').value.trim(),
-                name: row.querySelector('.ingredient-name').value.trim()
-            });
+            const name = row.querySelector('.ingredient-name').value.trim();
+            // Only add ingredient if name is not empty
+            if (name) {
+                ingredients.push({
+                    amount: parseFloat(row.querySelector('.ingredient-amount').value) || null,
+                    unit: row.querySelector('.ingredient-unit').value.trim(),
+                    name: name
+                });
+            }
         });
 
         const instructions = [];
         document.querySelectorAll('.instruction-step').forEach(textarea => {
-            instructions.push(textarea.value.trim());
+            const step = textarea.value.trim();
+            // Only add instruction if it's not empty
+            if (step) {
+                instructions.push(step);
+            }
         });
 
         const recipeData = {
             title: document.getElementById('title').value.trim(),
             description: document.getElementById('description').value.trim(),
             imageUrl: document.getElementById('imageUrl').value.trim(),
-            prepTimeMinutes: parseInt(document.getElementById('prepTimeMinutes').value),
-            cookTimeMinutes: parseInt(document.getElementById('cookTimeMinutes').value),
-            servings: parseInt(document.getElementById('servings').value),
+            prepTimeMinutes: parseInt(document.getElementById('prepTimeMinutes').value) || 0,
+            cookTimeMinutes: parseInt(document.getElementById('cookTimeMinutes').value) || 0,
+            servings: parseInt(document.getElementById('servings').value) || 0,
             category: "Aftensmad", // Default category for now
             ingredients: ingredients,
             instructions: instructions
@@ -82,7 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (!response.ok) {
-                // If server responds with an error, throw it to the catch block
                 const errorData = await response.json();
                 throw new Error(errorData.message || 'Server-fejl');
             }
