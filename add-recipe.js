@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         row.className = 'ingredient-row';
         const units = ['g', 'kg', 'dl', 'l', 'tsk', 'spsk', 'stk', 'knsp', 'fed', 'bundt'];
         const unitOptions = units.map(unit => `<option value="${unit}">${unit}</option>`).join('');
-        const unitSelectHTML = `<select class="ingredient-unit"><option value="">Enhed</option>${unitOptions}</select>`;
+        const unitSelectHTML = `<select class="ingredient-unit"><option value="">Vælg...</option>${unitOptions}</select>`;
 
         // We use a standard input, but give it a specific class for Tom Select to find
         row.innerHTML = `
