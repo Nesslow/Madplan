@@ -51,14 +51,6 @@ header {
     flex-grow: 1; /* Allows the title to take up available space */
 }
 
-/* NEW STYLE FOR THE PRICE */
-.recipe-card p {
-    padding: 0 15px 15px;
-    margin: 0;
-    font-size: 1em;
-    font-weight: bold;
-    color: #333;
-}
 /* STYLES FOR THE MODAL */
 
 .modal-container {
