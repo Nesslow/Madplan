@@ -1,0 +1,72 @@
+/* add-recipe.css */
+.recipe-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.recipe-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.recipe-form input, .recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+.form-row > div {
+    flex: 1;
+}
+.ingredient-row, .instruction-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.ingredient-row input { margin-bottom: 0; }
+.instruction-row textarea { flex-grow: 1; margin-bottom: 0; }
+.add-btn {
+    background-color: #e7e7e7;
+    border: 1px solid #ccc;
+}
+.remove-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+}
+#form-status {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
