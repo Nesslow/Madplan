@@ -1,7 +1,6 @@
 // add-recipe.js
 document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURATION ---
-    // PASTE YOUR RENDER URL HERE
     const API_BASE_URL = 'https://danish-recipe-api.onrender.com'; 
 
     // --- ELEMENT REFERENCES ---
@@ -12,14 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const recipeForm = document.getElementById('add-recipe-form');
     const formStatus = document.getElementById('form-status');
 
-    // --- BUTTON EVENT LISTENERS ---
-    // This was the missing piece. It tells the browser to call our functions when the buttons are clicked.
-    addIngredientBtn.addEventListener('click', addIngredientField);
-    addInstructionBtn.addEventListener('click', addInstructionField);
+    // --- FUNCTIONS ---
+    // We are now declaring these with the 'function' keyword so they are "hoisted"
+    // and available to the entire script from the start.
 
-
-    // --- FUNCTIONS TO DYNAMICALLY ADD/REMOVE FIELDS ---
-    const addIngredientField = () => {
+    function addIngredientField() {
         const row = document.createElement('div');
         row.className = 'ingredient-row';
         row.innerHTML = `
@@ -29,11 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <button type="button" class="remove-btn">－</button>
         `;
         ingredientsContainer.appendChild(row);
-        // Add event listener to the new remove button
         row.querySelector('.remove-btn').addEventListener('click', () => row.remove());
-    };
+    }
 
-    const addInstructionField = () => {
+    function addInstructionField() {
         const row = document.createElement('div');
         row.className = 'instruction-row';
         row.innerHTML = `
@@ -42,19 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         instructionsContainer.appendChild(row);
         row.querySelector('.remove-btn').addEventListener('click', () => row.remove());
-    };
+    }
 
-    // --- FORM SUBMISSION HANDLER ---
+    // --- EVENT LISTENERS ---
+    // Now these lines can correctly find the functions defined above.
+    addIngredientBtn.addEventListener('click', addIngredientField);
+    addInstructionBtn.addEventListener('click', addInstructionField);
+
     recipeForm.addEventListener('submit', async (event) => {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault();
         formStatus.textContent = 'Gemmer opskrift...';
         formStatus.style.color = 'black';
 
-        // 1. Gather all data from the form into a single object
         const ingredients = [];
         document.querySelectorAll('.ingredient-row').forEach(row => {
             const name = row.querySelector('.ingredient-name').value.trim();
-            // Only add ingredient if name is not empty
             if (name) {
                 ingredients.push({
                     amount: parseFloat(row.querySelector('.ingredient-amount').value) || null,
@@ -67,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const instructions = [];
         document.querySelectorAll('.instruction-step').forEach(textarea => {
             const step = textarea.value.trim();
-            // Only add instruction if it's not empty
             if (step) {
                 instructions.push(step);
             }
@@ -80,12 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
             prepTimeMinutes: parseInt(document.getElementById('prepTimeMinutes').value) || 0,
             cookTimeMinutes: parseInt(document.getElementById('cookTimeMinutes').value) || 0,
             servings: parseInt(document.getElementById('servings').value) || 0,
-            category: "Aftensmad", // Default category for now
+            category: "Aftensmad",
             ingredients: ingredients,
             instructions: instructions
         };
 
-        // 2. Send the data to our back-end API
         try {
             const response = await fetch(`${API_BASE_URL}/recipes`, {
                 method: 'POST',
@@ -103,11 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const result = await response.json();
             formStatus.textContent = `Success! ${result.message}`;
             formStatus.style.color = 'green';
-            recipeForm.reset(); // Clear the form
-            // Clear dynamic fields
+            recipeForm.reset();
             ingredientsContainer.innerHTML = ''; 
             instructionsContainer.innerHTML = '';
-            addIngredientField(); // Add one blank field back
+            addIngredientField();
             addInstructionField();
 
         } catch (error) {
@@ -118,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- INITIALIZE FORM ---
-    // Add one blank field for ingredients and instructions when the page loads
+    // This will now work because the functions are correctly declared.
     addIngredientField();
     addInstructionField();
 });
