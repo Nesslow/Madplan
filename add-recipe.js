@@ -1,7 +1,7 @@
 // add-recipe.js
 document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURATION ---
-    const API_BASE_URL = 'https://danish-recipe-api.onrender.com'; 
+    const API_BASE_URL = 'https://smart-recipe-api.onrender.com'; 
 
     // --- ELEMENT REFERENCES ---
     const ingredientsContainer = document.getElementById('ingredients-container');
