@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#get-recipes-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    display: flex; /* Helps align content vertically */
+    flex-direction: column; /* Stacks items top-to-bottom */
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px; /* Gives images a uniform height */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.recipe-card h3 {
+    padding: 15px;
+    margin: 0;
+    flex-grow: 1; /* Allows the title to take up available space */
+}
+
+/* NEW STYLE FOR THE PRICE */
+.recipe-card p {
+    padding: 0 15px 15px;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+/* STYLES FOR THE MODAL */
+
+.modal-container {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place even when scrolling */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+    z-index: 1000; /* Sit on top of everything else */
+    overflow-y: auto; /* Allow scrolling if content is long */
+    padding: 20px;
+}
+
+/* Add a class to show the modal */
+.modal-container.show {
+    display: block;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 700px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-close-btn:hover {
+    color: #000;
+}
+
+#modal-recipe-content h2 {
+    margin-top: 0;
+}
+
+#modal-recipe-content img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#modal-recipe-content h3 {
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-top: 25px;
+}
+
+#modal-recipe-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#modal-recipe-content ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#modal-recipe-content p {
+    line-height: 1.6;
+}
