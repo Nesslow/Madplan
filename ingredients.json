@@ -1,0 +1,8054 @@
+[
+ {
+   "FødevareNavn": "Jordbær",
+   "kj": 162,
+   "kcal": 38,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Æble",
+   "kj": 233,
+   "kcal": 55,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Banan",
+   "kj": 396,
+   "kcal": 93,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Kartoffel",
+   "kj": 326,
+   "kcal": 77,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Sødmælk, konventionel (ikke-økologisk)",
+   "kj": 264,
+   "kcal": 63,
+   "protein": "3,4"
+ },
+ {
+   "FødevareNavn": "Persille",
+   "kj": 201,
+   "kcal": 48,
+   "protein": "3,7"
+ },
+ {
+   "FødevareNavn": "Pære",
+   "kj": 207,
+   "kcal": 49,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Rabarber",
+   "kj": 108,
+   "kcal": 26,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Solbær",
+   "kj": 314,
+   "kcal": 75,
+   "protein": "1,5"
+ },
+ {
+   "FødevareNavn": "Yoghurt naturel, sødmælk",
+   "kj": 260,
+   "kcal": 62,
+   "protein": "3,8"
+ },
+ {
+   "FødevareNavn": "Bladselleri",
+   "kj": 98,
+   "kcal": 23,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Blomkål, uspecificeret",
+   "kj": 116,
+   "kcal": 28,
+   "protein": "2,4"
+ },
+ {
+   "FødevareNavn": "Broccoli",
+   "kj": 148,
+   "kcal": 35,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Voksbønner",
+   "kj": 148,
+   "kcal": 35,
+   "protein": "2,1"
+ },
+ {
+   "FødevareNavn": "Citron",
+   "kj": 187,
+   "kcal": 44,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Dild",
+   "kj": 201,
+   "kcal": 48,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Grønkål",
+   "kj": 252,
+   "kcal": 60,
+   "protein": "4,7"
+ },
+ {
+   "FødevareNavn": "Gulerod",
+   "kj": 152,
+   "kcal": 36,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Hornfisk",
+   "kj": 450,
+   "kcal": 107,
+   "protein": "19,5"
+ },
+ {
+   "FødevareNavn": "Hvidkål",
+   "kj": 133,
+   "kcal": 32,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Hyben",
+   "kj": 332,
+   "kcal": 79,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Hyldebær",
+   "kj": 281,
+   "kcal": 67,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Laks, atlantisk, vild",
+   "kj": 666,
+   "kcal": 159,
+   "protein": "18,4"
+ },
+ {
+   "FødevareNavn": "Majskolbe",
+   "kj": 381,
+   "kcal": 91,
+   "protein": "3,7"
+ },
+ {
+   "FødevareNavn": "Kærnemælk",
+   "kj": 153,
+   "kcal": 36,
+   "protein": "3,4"
+ },
+ {
+   "FødevareNavn": "Letmælk, konventionel (ikke-økologisk)",
+   "kj": 200,
+   "kcal": 48,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Makrel",
+   "kj": 780,
+   "kcal": 187,
+   "protein": "17,8"
+ },
+ {
+   "FødevareNavn": "Mandel",
+   "kj": 2507,
+   "kcal": 606,
+   "protein": "21,2"
+ },
+ {
+   "FødevareNavn": "Vandmelon",
+   "kj": 140,
+   "kcal": 33,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Peberfrugt, grøn",
+   "kj": 91,
+   "kcal": 22,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Peberfrugt, rød",
+   "kj": 133,
+   "kcal": 31,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Radise",
+   "kj": 48,
+   "kcal": 12,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Ribs",
+   "kj": 265,
+   "kcal": 63,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Rosenkål",
+   "kj": 223,
+   "kcal": 53,
+   "protein": "4,5"
+ },
+ {
+   "FødevareNavn": "Rødbede",
+   "kj": 220,
+   "kcal": 52,
+   "protein": "1,7"
+ },
+ {
+   "FødevareNavn": "Rødkål",
+   "kj": 133,
+   "kcal": 32,
+   "protein": "1,5"
+ },
+ {
+   "FødevareNavn": "Rødspætte",
+   "kj": 361,
+   "kcal": 85,
+   "protein": "17,3"
+ },
+ {
+   "FødevareNavn": "Selleri, rod",
+   "kj": 143,
+   "kcal": 34,
+   "protein": "1,8"
+ },
+ {
+   "FødevareNavn": "Sild, marineret",
+   "kj": 1134,
+   "kcal": 272,
+   "protein": "11,9"
+ },
+ {
+   "FødevareNavn": "Sild",
+   "kj": 789,
+   "kcal": 190,
+   "protein": "16,2"
+ },
+ {
+   "FødevareNavn": "Spidskål",
+   "kj": 112,
+   "kcal": 27,
+   "protein": "2,1"
+ },
+ {
+   "FødevareNavn": "Spinat",
+   "kj": 102,
+   "kcal": 24,
+   "protein": "2,6"
+ },
+ {
+   "FødevareNavn": "Stikkelsbær",
+   "kj": 185,
+   "kcal": 44,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Tomat",
+   "kj": 87,
+   "kcal": 21,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Vindrue",
+   "kj": 285,
+   "kcal": 67,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Grønne ærter",
+   "kj": 294,
+   "kcal": 70,
+   "protein": "5,9"
+ },
+ {
+   "FødevareNavn": "Squash",
+   "kj": 62,
+   "kcal": 15,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Artiskok",
+   "kj": 218,
+   "kcal": 52,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Mungbønner, tørrede",
+   "kj": 1370,
+   "kcal": 324,
+   "protein": "23,9"
+ },
+ {
+   "FødevareNavn": "Havregryn",
+   "kj": 1544,
+   "kcal": 366,
+   "protein": "12,9"
+ },
+ {
+   "FødevareNavn": "Rugmel, groft, fuldkornsrugmel",
+   "kj": 1403,
+   "kcal": 333,
+   "protein": "8,7"
+ },
+ {
+   "FødevareNavn": "Grahamsmel, fuldkornshvedemel",
+   "kj": 1398,
+   "kcal": 331,
+   "protein": "10,6"
+ },
+ {
+   "FødevareNavn": "Ingefær, rod",
+   "kj": 352,
+   "kcal": 83,
+   "protein": "1,8"
+ },
+ {
+   "FødevareNavn": "Okra",
+   "kj": 121,
+   "kcal": 29,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Asparges, grønne",
+   "kj": 109,
+   "kcal": 26,
+   "protein": "1,8"
+ },
+ {
+   "FødevareNavn": "Fennikel, knold",
+   "kj": 95,
+   "kcal": 23,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Mørksej",
+   "kj": 333,
+   "kcal": 79,
+   "protein": "18,1"
+ },
+ {
+   "FødevareNavn": "Boghvede, hel",
+   "kj": 1442,
+   "kcal": 341,
+   "protein": "13,1"
+ },
+ {
+   "FødevareNavn": "Aubergine",
+   "kj": 72,
+   "kcal": 17,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Appelsin",
+   "kj": 205,
+   "kcal": 49,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Lammekød, kølle",
+   "kj": 749,
+   "kcal": 180,
+   "protein": "17,9"
+ },
+ {
+   "FødevareNavn": "Torsk, filet",
+   "kj": 319,
+   "kcal": 75,
+   "protein": "17,5"
+ },
+ {
+   "FødevareNavn": "Feta, 40+",
+   "kj": 1071,
+   "kcal": 258,
+   "protein": "17,4"
+ },
+ {
+   "FødevareNavn": "Grisekød, nakkekam med svær",
+   "kj": 1139,
+   "kcal": 275,
+   "protein": "16,1"
+ },
+ {
+   "FødevareNavn": "Risengryn, grødris, brune",
+   "kj": 1536,
+   "kcal": 362,
+   "protein": "6,9"
+ },
+ {
+   "FødevareNavn": "Sukker, stødt melis (sakkarose)",
+   "kj": 1698,
+   "kcal": 400,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Grisefedt, afsmeltet, Raffinol",
+   "kj": 3663,
+   "kcal": 891,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Grisefedt, afsmeltet",
+   "kj": 3663,
+   "kcal": 891,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Mineralvand, dansk vand o.lign.",
+   "kj": 0,
+   "kcal": 0,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Fiskeolie, hydrogeneret",
+   "kj": 3696,
+   "kcal": 899,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Gås, kød og skind",
+   "kj": 1512,
+   "kcal": 366,
+   "protein": "15,8"
+ },
+ {
+   "FødevareNavn": "Kokosnød",
+   "kj": 1584,
+   "kcal": 385,
+   "protein": "4,0"
+ },
+ {
+   "FødevareNavn": "Snacks, ekspanderet, kartoffelbasis",
+   "kj": 2050,
+   "kcal": 490,
+   "protein": "4,6"
+ },
+ {
+   "FødevareNavn": "Salat, mayonnaise-, makrel-",
+   "kj": 1643,
+   "kcal": 398,
+   "protein": "8,9"
+ },
+ {
+   "FødevareNavn": "Soja sauce",
+   "kj": 237,
+   "kcal": 56,
+   "protein": "6,9"
+ },
+ {
+   "FødevareNavn": "Ost, fast, 40+, alle typer",
+   "kj": 1297,
+   "kcal": 312,
+   "protein": "25,7"
+ },
+ {
+   "FødevareNavn": "Ylette naturel",
+   "kj": 245,
+   "kcal": 58,
+   "protein": "6,3"
+ },
+ {
+   "FødevareNavn": "Mozzarella, 45+",
+   "kj": 1355,
+   "kcal": 326,
+   "protein": "24,1"
+ },
+ {
+   "FødevareNavn": "Smelteost, 45+",
+   "kj": 1275,
+   "kcal": 307,
+   "protein": "22,4"
+ },
+ {
+   "FødevareNavn": "And, kød og skind",
+   "kj": 1650,
+   "kcal": 400,
+   "protein": "11,5"
+ },
+ {
+   "FødevareNavn": "Sigtemel",
+   "kj": 1485,
+   "kcal": 350,
+   "protein": "9,6"
+ },
+ {
+   "FødevareNavn": "Buddingpulver",
+   "kj": 1478,
+   "kcal": 348,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Havarti, 30+",
+   "kj": 1215,
+   "kcal": 291,
+   "protein": "30,1"
+ },
+ {
+   "FødevareNavn": "Danbo, 45+",
+   "kj": 1352,
+   "kcal": 325,
+   "protein": "23,7"
+ },
+ {
+   "FødevareNavn": "Rullepølse, lammekød, pålæg",
+   "kj": 1498,
+   "kcal": 362,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Løg, ristede",
+   "kj": 2374,
+   "kcal": 574,
+   "protein": "6,0"
+ },
+ {
+   "FødevareNavn": "Te, drikkeklar",
+   "kj": 0,
+   "kcal": 0,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Kastanje, ægte",
+   "kj": 797,
+   "kcal": 189,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Kaffe, instant, drikkeklar",
+   "kj": 14,
+   "kcal": 3,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Esrom, 45+",
+   "kj": 1377,
+   "kcal": 331,
+   "protein": "24,2"
+ },
+ {
+   "FødevareNavn": "Elbo, 40+",
+   "kj": 1335,
+   "kcal": 321,
+   "protein": "26,6"
+ },
+ {
+   "FødevareNavn": "Kartoffelchips, grove",
+   "kj": 2081,
+   "kcal": 498,
+   "protein": "6,1"
+ },
+ {
+   "FødevareNavn": "Roquefort, 50+",
+   "kj": 1421,
+   "kcal": 343,
+   "protein": "19,4"
+ },
+ {
+   "FødevareNavn": "Kaffe, instant, decaffeinated, drikkeklar",
+   "kj": 15,
+   "kcal": 4,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Danablu 50+",
+   "kj": 1450,
+   "kcal": 350,
+   "protein": "20,5"
+ },
+ {
+   "FødevareNavn": "Brie, 60+",
+   "kj": 1414,
+   "kcal": 342,
+   "protein": "18,1"
+ },
+ {
+   "FødevareNavn": "Bacon, kogestykke",
+   "kj": 1569,
+   "kcal": 379,
+   "protein": "15,0"
+ },
+ {
+   "FødevareNavn": "Kaffe, drikkeklar",
+   "kj": 5,
+   "kcal": 1,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Rugkerner, hele/knækkede",
+   "kj": 1401,
+   "kcal": 332,
+   "protein": "9,0"
+ },
+ {
+   "FødevareNavn": "Leverpølse, pålæg",
+   "kj": 1624,
+   "kcal": 393,
+   "protein": "13,4"
+ },
+ {
+   "FødevareNavn": "Creme fraiche 50 %",
+   "kj": 1916,
+   "kcal": 466,
+   "protein": "1,9"
+ },
+ {
+   "FødevareNavn": "Ost, fast, 45+, alle typer",
+   "kj": 1394,
+   "kcal": 335,
+   "protein": "24,7"
+ },
+ {
+   "FødevareNavn": "Hørfrø",
+   "kj": 1917,
+   "kcal": 464,
+   "protein": "25,5"
+ },
+ {
+   "FødevareNavn": "Jordnød, tørret",
+   "kj": 2466,
+   "kcal": 596,
+   "protein": "25,8"
+ },
+ {
+   "FødevareNavn": "Mælkeis",
+   "kj": 649,
+   "kcal": 154,
+   "protein": "4,0"
+ },
+ {
+   "FødevareNavn": "Fløde 50 %",
+   "kj": 1928,
+   "kcal": 468,
+   "protein": "1,9"
+ },
+ {
+   "FødevareNavn": "Peber, hvid",
+   "kj": 1287,
+   "kcal": 307,
+   "protein": "10,4"
+ },
+ {
+   "FødevareNavn": "Sojamel",
+   "kj": 1877,
+   "kcal": 449,
+   "protein": "40,6"
+ },
+ {
+   "FødevareNavn": "Ris, brune",
+   "kj": 1515,
+   "kcal": 358,
+   "protein": "9,0"
+ },
+ {
+   "FødevareNavn": "Skummetmælkspulver",
+   "kj": 1510,
+   "kcal": 356,
+   "protein": "32,2"
+ },
+ {
+   "FødevareNavn": "Havarti, 45+",
+   "kj": 1424,
+   "kcal": 343,
+   "protein": "24,5"
+ },
+ {
+   "FødevareNavn": "Hyben pulver, tørret",
+   "kj": 1156,
+   "kcal": 278,
+   "protein": "4,5"
+ },
+ {
+   "FødevareNavn": "Østers",
+   "kj": 258,
+   "kcal": 61,
+   "protein": "7,8"
+ },
+ {
+   "FødevareNavn": "Hvidvin, tør",
+   "kj": 281,
+   "kcal": 68,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Fiskeboller, konserves",
+   "kj": 287,
+   "kcal": 68,
+   "protein": "8,3"
+ },
+ {
+   "FødevareNavn": "Rugbrød, revet, med brunt sukker",
+   "kj": 1473,
+   "kcal": 348,
+   "protein": "6,1"
+ },
+ {
+   "FødevareNavn": "Hvidvin",
+   "kj": 344,
+   "kcal": 83,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Hvidvin, Rhinskvin",
+   "kj": 278,
+   "kcal": 67,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Tomat, soltørret",
+   "kj": 1187,
+   "kcal": 282,
+   "protein": "14,1"
+ },
+ {
+   "FødevareNavn": "Ymer naturel",
+   "kj": 301,
+   "kcal": 72,
+   "protein": "6,1"
+ },
+ {
+   "FødevareNavn": "Rødvin, rosévin, uden alkohol",
+   "kj": 65,
+   "kcal": 15,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Hvidvin, medium",
+   "kj": 328,
+   "kcal": 79,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Småkage, finsk brød",
+   "kj": 2242,
+   "kcal": 537,
+   "protein": "5,6"
+ },
+ {
+   "FødevareNavn": "Hvidvin, uden alkohol",
+   "kj": 80,
+   "kcal": 19,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Byggryn",
+   "kj": 1476,
+   "kcal": 349,
+   "protein": "9,2"
+ },
+ {
+   "FødevareNavn": "Øl, let pilsner, 2.6 % vol.",
+   "kj": 110,
+   "kcal": 26,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Risstivelse",
+   "kj": 1458,
+   "kcal": 343,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Lakridskonfekt",
+   "kj": 1669,
+   "kcal": 395,
+   "protein": "2,3"
+ },
+ {
+   "FødevareNavn": "Wienerbrød, spandauer",
+   "kj": 1651,
+   "kcal": 397,
+   "protein": "4,7"
+ },
+ {
+   "FødevareNavn": "Dressing, fransk",
+   "kj": 1936,
+   "kcal": 469,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Danablu 60+",
+   "kj": 1682,
+   "kcal": 407,
+   "protein": "16,3"
+ },
+ {
+   "FødevareNavn": "Fynbo, 45+",
+   "kj": 1482,
+   "kcal": 357,
+   "protein": "25,9"
+ },
+ {
+   "FødevareNavn": "Æg, høne, æggehvide, pasteuriseret",
+   "kj": 185,
+   "kcal": 43,
+   "protein": "9,0"
+ },
+ {
+   "FødevareNavn": "Stenbider, røget",
+   "kj": 1542,
+   "kcal": 373,
+   "protein": "15,6"
+ },
+ {
+   "FødevareNavn": "Hvedekerner, hele/knækkede",
+   "kj": 1438,
+   "kcal": 340,
+   "protein": "10,7"
+ },
+ {
+   "FødevareNavn": "Rasp",
+   "kj": 1488,
+   "kcal": 351,
+   "protein": "10,7"
+ },
+ {
+   "FødevareNavn": "Æblemost",
+   "kj": 204,
+   "kcal": 48,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Øl, pilsner, 4.4 % vol.",
+   "kj": 152,
+   "kcal": 36,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Sagogryn (kartoffelstivelse)",
+   "kj": 1503,
+   "kcal": 354,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Maribo, 45+",
+   "kj": 1500,
+   "kcal": 361,
+   "protein": "26,4"
+ },
+ {
+   "FødevareNavn": "Sennep, brun, færdiglavet",
+   "kj": 609,
+   "kcal": 146,
+   "protein": "5,0"
+ },
+ {
+   "FødevareNavn": "Hvidløg",
+   "kj": 669,
+   "kcal": 158,
+   "protein": "6,4"
+ },
+ {
+   "FødevareNavn": "Rosévin",
+   "kj": 297,
+   "kcal": 72,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Mayonnaise, fedtreduceret",
+   "kj": 1899,
+   "kcal": 462,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Millionbøf",
+   "kj": 528,
+   "kcal": 127,
+   "protein": "8,1"
+ },
+ {
+   "FødevareNavn": "Samsø, 45+",
+   "kj": 1503,
+   "kcal": 362,
+   "protein": "26,8"
+ },
+ {
+   "FødevareNavn": "Spædbørnsmad, modermælkserstatning, lavt jernindhold, pulver",
+   "kj": 1990,
+   "kcal": 478,
+   "protein": "9,5"
+ },
+ {
+   "FødevareNavn": "Sherry, medium",
+   "kj": 489,
+   "kcal": 118,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Rødvin",
+   "kj": 321,
+   "kcal": 77,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Cheshire, 50+",
+   "kj": 1579,
+   "kcal": 381,
+   "protein": "24,0"
+ },
+ {
+   "FødevareNavn": "Æg, høne, æggehvide",
+   "kj": 187,
+   "kcal": 44,
+   "protein": "10,2"
+ },
+ {
+   "FødevareNavn": "Bacon, stegestykke",
+   "kj": 1775,
+   "kcal": 430,
+   "protein": "13,0"
+ },
+ {
+   "FødevareNavn": "Vermouth, tør",
+   "kj": 490,
+   "kcal": 118,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Vermouth, sød",
+   "kj": 606,
+   "kcal": 145,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Sveske",
+   "kj": 972,
+   "kcal": 230,
+   "protein": "2,7"
+ },
+ {
+   "FødevareNavn": "Tamarind",
+   "kj": 1086,
+   "kcal": 256,
+   "protein": "2,8"
+ },
+ {
+   "FødevareNavn": "Croissant",
+   "kj": 1752,
+   "kcal": 420,
+   "protein": "7,7"
+ },
+ {
+   "FødevareNavn": "Øl, ubeskattet",
+   "kj": 193,
+   "kcal": 46,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Æg, høne, æggehvide, tørret",
+   "kj": 1516,
+   "kcal": 357,
+   "protein": "82,3"
+ },
+ {
+   "FødevareNavn": "Eddike",
+   "kj": 84,
+   "kcal": 20,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Madeira",
+   "kj": 692,
+   "kcal": 166,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Campari",
+   "kj": 750,
+   "kcal": 180,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Tebirkes",
+   "kj": 1812,
+   "kcal": 434,
+   "protein": "7,6"
+ },
+ {
+   "FødevareNavn": "Ost, blå- og hvidskimmel, 70+",
+   "kj": 1855,
+   "kcal": 449,
+   "protein": "12,6"
+ },
+ {
+   "FødevareNavn": "Hvidvin, sød",
+   "kj": 400,
+   "kcal": 96,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Bitter",
+   "kj": 873,
+   "kcal": 211,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Peber, sort",
+   "kj": 1274,
+   "kcal": 304,
+   "protein": "11,0"
+ },
+ {
+   "FødevareNavn": "Øl, mørkt hvidtøl",
+   "kj": 189,
+   "kcal": 45,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Bitter, Gammel Dansk Bitter Dram",
+   "kj": 885,
+   "kcal": 214,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Cognac",
+   "kj": 928,
+   "kcal": 224,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Hvidvin, mousserende, champagne",
+   "kj": 316,
+   "kcal": 76,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Svenbo, 45+",
+   "kj": 1567,
+   "kcal": 377,
+   "protein": "27,6"
+ },
+ {
+   "FødevareNavn": "Snaps, krydder-",
+   "kj": 1113,
+   "kcal": 268,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Sherry, tør",
+   "kj": 487,
+   "kcal": 117,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Oliven, sorte, uden sten, i saltlage",
+   "kj": 703,
+   "kcal": 171,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Øl, Guld-, 5.6 % vol.",
+   "kj": 199,
+   "kcal": 48,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Spirituosa, gennemsnitlige værdier",
+   "kj": 969,
+   "kcal": 234,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Vodka",
+   "kj": 969,
+   "kcal": 234,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Skærekage, citronkage",
+   "kj": 1796,
+   "kcal": 429,
+   "protein": "4,6"
+ },
+ {
+   "FødevareNavn": "Bitter, krabask bitter",
+   "kj": 945,
+   "kcal": 228,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Emmentaler, 45+",
+   "kj": 1566,
+   "kcal": 377,
+   "protein": "28,1"
+ },
+ {
+   "FødevareNavn": "Morgenmadsprodukt, Rice Krispies",
+   "kj": 1577,
+   "kcal": 372,
+   "protein": "6,0"
+ },
+ {
+   "FødevareNavn": "Snaps, 40 % vol.",
+   "kj": 928,
+   "kcal": 224,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Ispind, jordbær",
+   "kj": 661,
+   "kcal": 157,
+   "protein": "4,0"
+ },
+ {
+   "FødevareNavn": "Citronsaft, friskpresset",
+   "kj": 134,
+   "kcal": 31,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Esrom, 60+",
+   "kj": 1762,
+   "kcal": 426,
+   "protein": "19,4"
+ },
+ {
+   "FødevareNavn": "Flødeyoghurt med frugt, 9 % fedt",
+   "kj": 535,
+   "kcal": 128,
+   "protein": "3,0"
+ },
+ {
+   "FødevareNavn": "Tofu, sojabønneost",
+   "kj": 523,
+   "kcal": 126,
+   "protein": "13,3"
+ },
+ {
+   "FødevareNavn": "Portvin",
+   "kj": 640,
+   "kcal": 153,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Skærekage, chokoladekage/-pie",
+   "kj": 1808,
+   "kcal": 432,
+   "protein": "5,3"
+ },
+ {
+   "FødevareNavn": "Bouillon, hønsekød, spiseklar",
+   "kj": 18,
+   "kcal": 4,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Wienerbrød, kanelsnegl",
+   "kj": 1717,
+   "kcal": 412,
+   "protein": "4,5"
+ },
+ {
+   "FødevareNavn": "Wienerbrød",
+   "kj": 1844,
+   "kcal": 442,
+   "protein": "4,5"
+ },
+ {
+   "FødevareNavn": "Skærekage, formkage",
+   "kj": 1775,
+   "kcal": 424,
+   "protein": "4,6"
+ },
+ {
+   "FødevareNavn": "Pop corn, traditionelle",
+   "kj": 1960,
+   "kcal": 468,
+   "protein": "9,6"
+ },
+ {
+   "FødevareNavn": "Bulgur, parboiled",
+   "kj": 1444,
+   "kcal": 342,
+   "protein": "10,8"
+ },
+ {
+   "FødevareNavn": "Linsespirer",
+   "kj": 522,
+   "kcal": 123,
+   "protein": "9,0"
+ },
+ {
+   "FødevareNavn": "Whisky",
+   "kj": 1046,
+   "kcal": 252,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Spegepølse, oksekød",
+   "kj": 1587,
+   "kcal": 383,
+   "protein": "19,1"
+ },
+ {
+   "FødevareNavn": "Havarti, 60+",
+   "kj": 1756,
+   "kcal": 424,
+   "protein": "19,5"
+ },
+ {
+   "FødevareNavn": "Øl, skatteklasse 3",
+   "kj": 260,
+   "kcal": 62,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Syrnet fløde 9 % (Fraiche 9%)",
+   "kj": 492,
+   "kcal": 118,
+   "protein": "6,8"
+ },
+ {
+   "FødevareNavn": "Pølse, tepølse",
+   "kj": 1972,
+   "kcal": 478,
+   "protein": "10,9"
+ },
+ {
+   "FødevareNavn": "Hasselnød, tørret",
+   "kj": 2712,
+   "kcal": 657,
+   "protein": "13,2"
+ },
+ {
+   "FødevareNavn": "Fløde 9 %",
+   "kj": 460,
+   "kcal": 111,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Pasta",
+   "kj": 1532,
+   "kcal": 361,
+   "protein": "12,3"
+ },
+ {
+   "FødevareNavn": "Kvark, 5+",
+   "kj": 245,
+   "kcal": 58,
+   "protein": "9,1"
+ },
+ {
+   "FødevareNavn": "Grana, 32+",
+   "kj": 1474,
+   "kcal": 354,
+   "protein": "33,1"
+ },
+ {
+   "FødevareNavn": "Parmesan, 32+",
+   "kj": 1498,
+   "kcal": 360,
+   "protein": "33,6"
+ },
+ {
+   "FødevareNavn": "Gin",
+   "kj": 1099,
+   "kcal": 265,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Agurk, syltet, uden tilsat sukker",
+   "kj": 41,
+   "kcal": 10,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Bagegær, presset",
+   "kj": 479,
+   "kcal": 114,
+   "protein": "7,7"
+ },
+ {
+   "FødevareNavn": "Småkage, vanillekranse",
+   "kj": 2207,
+   "kcal": 528,
+   "protein": "4,7"
+ },
+ {
+   "FødevareNavn": "Cheddar, 50+",
+   "kj": 1682,
+   "kcal": 405,
+   "protein": "25,8"
+ },
+ {
+   "FødevareNavn": "Fiskefars",
+   "kj": 455,
+   "kcal": 108,
+   "protein": "8,5"
+ },
+ {
+   "FødevareNavn": "Rom",
+   "kj": 1151,
+   "kcal": 278,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Pistacienød, tørret",
+   "kj": 2506,
+   "kcal": 606,
+   "protein": "21,6"
+ },
+ {
+   "FødevareNavn": "Flødeboller, skumboller",
+   "kj": 1707,
+   "kcal": 406,
+   "protein": "4,2"
+ },
+ {
+   "FødevareNavn": "Hirseflager",
+   "kj": 1566,
+   "kcal": 370,
+   "protein": "12,1"
+ },
+ {
+   "FødevareNavn": "Rygeost, 1 % fedt",
+   "kj": 288,
+   "kcal": 68,
+   "protein": "11,9"
+ },
+ {
+   "FødevareNavn": "Torsk, lever, konserves",
+   "kj": 2192,
+   "kcal": 532,
+   "protein": "4,6"
+ },
+ {
+   "FødevareNavn": "Snacks, ekspanderet, majsbasis",
+   "kj": 2105,
+   "kcal": 503,
+   "protein": "7,4"
+ },
+ {
+   "FødevareNavn": "Myseost, 33+",
+   "kj": 1808,
+   "kcal": 433,
+   "protein": "15,0"
+ },
+ {
+   "FødevareNavn": "Gruyere, 45+",
+   "kj": 1646,
+   "kcal": 396,
+   "protein": "29,9"
+ },
+ {
+   "FødevareNavn": "Rødkål, konserves, uden tilsat sukker",
+   "kj": 82,
+   "kcal": 20,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Wienerbrød, kringle/stang",
+   "kj": 1734,
+   "kcal": 416,
+   "protein": "4,3"
+ },
+ {
+   "FødevareNavn": "Sherry, sød",
+   "kj": 565,
+   "kcal": 136,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Figen, tørret",
+   "kj": 1234,
+   "kcal": 292,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Tranebær",
+   "kj": 177,
+   "kcal": 42,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Tørkage, linse",
+   "kj": 1609,
+   "kcal": 385,
+   "protein": "5,6"
+ },
+ {
+   "FødevareNavn": "Pop Corn (poppede majskærner)",
+   "kj": 2042,
+   "kcal": 489,
+   "protein": "9,6"
+ },
+ {
+   "FødevareNavn": "Wienerbrød, julekage",
+   "kj": 1908,
+   "kcal": 458,
+   "protein": "5,2"
+ },
+ {
+   "FødevareNavn": "Spegepølse",
+   "kj": 1878,
+   "kcal": 455,
+   "protein": "14,8"
+ },
+ {
+   "FødevareNavn": "Skærekage, sandkage",
+   "kj": 1865,
+   "kcal": 446,
+   "protein": "6,2"
+ },
+ {
+   "FødevareNavn": "Kvæde",
+   "kj": 254,
+   "kcal": 60,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Græskar",
+   "kj": 75,
+   "kcal": 18,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Dressing, blue cheese",
+   "kj": 2143,
+   "kcal": 520,
+   "protein": "4,8"
+ },
+ {
+   "FødevareNavn": "Kinaradise, japanræddike",
+   "kj": 71,
+   "kcal": 17,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Sesamfrø, hele",
+   "kj": 2497,
+   "kcal": 605,
+   "protein": "19,6"
+ },
+ {
+   "FødevareNavn": "Oliven, grønne, marinerede, konserves",
+   "kj": 554,
+   "kcal": 134,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Tang, agar, tørret",
+   "kj": 1268,
+   "kcal": 299,
+   "protein": "2,3"
+ },
+ {
+   "FødevareNavn": "Knækbrød, rug-, groft",
+   "kj": 1449,
+   "kcal": 343,
+   "protein": "9,3"
+ },
+ {
+   "FødevareNavn": "Makaroni, spaghetti, fuldkorns-",
+   "kj": 1486,
+   "kcal": 352,
+   "protein": "13,1"
+ },
+ {
+   "FødevareNavn": "Rugbrød, fuldkorn, importeret",
+   "kj": 845,
+   "kcal": 200,
+   "protein": "5,7"
+ },
+ {
+   "FødevareNavn": "Pære, konserves",
+   "kj": 299,
+   "kcal": 71,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Majroe",
+   "kj": 110,
+   "kcal": 26,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Bitter, sød",
+   "kj": 1106,
+   "kcal": 265,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Bønnespirer, adzuki",
+   "kj": 568,
+   "kcal": 135,
+   "protein": "10,0"
+ },
+ {
+   "FødevareNavn": "Hirse, hele korn",
+   "kj": 1558,
+   "kcal": 368,
+   "protein": "11,0"
+ },
+ {
+   "FødevareNavn": "Pop corn, mikroovn",
+   "kj": 2109,
+   "kcal": 505,
+   "protein": "9,6"
+ },
+ {
+   "FødevareNavn": "Musling",
+   "kj": 348,
+   "kcal": 83,
+   "protein": "11,9"
+ },
+ {
+   "FødevareNavn": "Agurk",
+   "kj": 50,
+   "kcal": 12,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Loquat, japansk mispel",
+   "kj": 206,
+   "kcal": 49,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Cashewnød, olieristet",
+   "kj": 2532,
+   "kcal": 610,
+   "protein": "16,8"
+ },
+ {
+   "FødevareNavn": "Wienerbrød, smørkrans",
+   "kj": 1953,
+   "kcal": 469,
+   "protein": "4,3"
+ },
+ {
+   "FødevareNavn": "Nøddepasta med cacao, smørepålæg",
+   "kj": 2199,
+   "kcal": 527,
+   "protein": "7,0"
+ },
+ {
+   "FødevareNavn": "Cornflakes",
+   "kj": 1586,
+   "kcal": 374,
+   "protein": "7,5"
+ },
+ {
+   "FødevareNavn": "Müsli",
+   "kj": 1704,
+   "kcal": 405,
+   "protein": "9,4"
+ },
+ {
+   "FødevareNavn": "Forloren skildpadde",
+   "kj": 457,
+   "kcal": 109,
+   "protein": "7,9"
+ },
+ {
+   "FødevareNavn": "Abrikos, konserves, let sukkerlage",
+   "kj": 289,
+   "kcal": 68,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Agurk, syltet",
+   "kj": 246,
+   "kcal": 58,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Kødpølse, fedtreduceret, pålæg",
+   "kj": 541,
+   "kcal": 130,
+   "protein": "10,0"
+ },
+ {
+   "FødevareNavn": "Druesaft",
+   "kj": 266,
+   "kcal": 63,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Krebs",
+   "kj": 287,
+   "kcal": 68,
+   "protein": "14,6"
+ },
+ {
+   "FødevareNavn": "Majsstivelse",
+   "kj": 1534,
+   "kcal": 361,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Gulerod, konserves",
+   "kj": 99,
+   "kcal": 23,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Kartoffelmos, pulver med tørmælk",
+   "kj": 1408,
+   "kcal": 333,
+   "protein": "10,9"
+ },
+ {
+   "FødevareNavn": "Rugbrød, lyst",
+   "kj": 868,
+   "kcal": 205,
+   "protein": "5,4"
+ },
+ {
+   "FødevareNavn": "Bitter, jägermeister",
+   "kj": 1224,
+   "kcal": 294,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Salt, bordsalt (jodberiget)",
+   "kj": 0,
+   "kcal": 0,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Pumpernikkel",
+   "kj": 828,
+   "kcal": 196,
+   "protein": "5,3"
+ },
+ {
+   "FødevareNavn": "Forårsrulle, dybfrost",
+   "kj": 631,
+   "kcal": 151,
+   "protein": "5,8"
+ },
+ {
+   "FødevareNavn": "Abrikos, konserves, uden tilsat sukker",
+   "kj": 113,
+   "kcal": 27,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Græskar, konserves",
+   "kj": 438,
+   "kcal": 103,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Ananas, konserves",
+   "kj": 269,
+   "kcal": 64,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Løg, hakkede, dybfrost",
+   "kj": 117,
+   "kcal": 28,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Flødeskumskage, lagkagesnitte",
+   "kj": 1264,
+   "kcal": 302,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Krydder",
+   "kj": 1629,
+   "kcal": 385,
+   "protein": "9,3"
+ },
+ {
+   "FødevareNavn": "Tvebakker",
+   "kj": 1581,
+   "kcal": 375,
+   "protein": "9,3"
+ },
+ {
+   "FødevareNavn": "Cayote, Kayote",
+   "kj": 80,
+   "kcal": 19,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Knækbrød, rug-, fint",
+   "kj": 1455,
+   "kcal": 345,
+   "protein": "10,8"
+ },
+ {
+   "FødevareNavn": "Sennep, gul, færdiglavet",
+   "kj": 691,
+   "kcal": 165,
+   "protein": "5,7"
+ },
+ {
+   "FødevareNavn": "Fersken, konserves",
+   "kj": 300,
+   "kcal": 71,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Likør",
+   "kj": 1127,
+   "kcal": 269,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Cornflakes, frosted",
+   "kj": 1616,
+   "kcal": 381,
+   "protein": "5,3"
+ },
+ {
+   "FødevareNavn": "Solsikkefrø, afskallede, tørrede",
+   "kj": 2564,
+   "kcal": 620,
+   "protein": "24,7"
+ },
+ {
+   "FødevareNavn": "Sauce, gravad laks",
+   "kj": 2322,
+   "kcal": 563,
+   "protein": "1,6"
+ },
+ {
+   "FødevareNavn": "Snacks, ekstruderet, majsbasis",
+   "kj": 2243,
+   "kcal": 537,
+   "protein": "9,0"
+ },
+ {
+   "FødevareNavn": "Havregryn, beriget",
+   "kj": 1526,
+   "kcal": 362,
+   "protein": "13,0"
+ },
+ {
+   "FødevareNavn": "Netmelon",
+   "kj": 99,
+   "kcal": 23,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Tomat, dansk",
+   "kj": 82,
+   "kcal": 20,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Mandarin, konserves",
+   "kj": 261,
+   "kcal": 62,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Rødspætte, filet, paneret, dybfrost",
+   "kj": 577,
+   "kcal": 136,
+   "protein": "12,5"
+ },
+ {
+   "FødevareNavn": "Abrikos, tørret",
+   "kj": 1043,
+   "kcal": 248,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Sauce, barbeque",
+   "kj": 623,
+   "kcal": 147,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Müsli med tilsat sukker.",
+   "kj": 1558,
+   "kcal": 370,
+   "protein": "12,0"
+ },
+ {
+   "FødevareNavn": "Müsli uden tilsat sukker.",
+   "kj": 1546,
+   "kcal": 367,
+   "protein": "12,0"
+ },
+ {
+   "FødevareNavn": "Bondebrød, industrifremstillet",
+   "kj": 950,
+   "kcal": 225,
+   "protein": "6,5"
+ },
+ {
+   "FødevareNavn": "Lime",
+   "kj": 155,
+   "kcal": 37,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Paradisæble",
+   "kj": 351,
+   "kcal": 83,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Hyldebærsaft, sur, koncentreret",
+   "kj": 129,
+   "kcal": 31,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Fløde 13 % (UHT)",
+   "kj": 607,
+   "kcal": 147,
+   "protein": "2,8"
+ },
+ {
+   "FødevareNavn": "Frølår, dybfrost",
+   "kj": 293,
+   "kcal": 69,
+   "protein": "16,4"
+ },
+ {
+   "FødevareNavn": "Peber, chili, konserves",
+   "kj": 112,
+   "kcal": 26,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Sesamfrø, afskallede",
+   "kj": 2657,
+   "kcal": 643,
+   "protein": "22,7"
+ },
+ {
+   "FødevareNavn": "Jordbærsaft, sur, koncentreret",
+   "kj": 146,
+   "kcal": 35,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Hindbærsaft, sur, koncentreret",
+   "kj": 146,
+   "kcal": 35,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Knude",
+   "kj": 297,
+   "kcal": 70,
+   "protein": "16,4"
+ },
+ {
+   "FødevareNavn": "Kulmule",
+   "kj": 292,
+   "kcal": 69,
+   "protein": "16,3"
+ },
+ {
+   "FødevareNavn": "Flødeskumskage, jordbærkage",
+   "kj": 907,
+   "kcal": 216,
+   "protein": "2,9"
+ },
+ {
+   "FødevareNavn": "Dressing, mayonnaise, kalorielet",
+   "kj": 742,
+   "kcal": 179,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Likør, Curacao",
+   "kj": 1243,
+   "kcal": 297,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Salat, Iceberg",
+   "kj": 67,
+   "kcal": 16,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Havregryn, ikke beriget",
+   "kj": 1541,
+   "kcal": 366,
+   "protein": "13,3"
+ },
+ {
+   "FødevareNavn": "Ribssaft, sur, koncentreret",
+   "kj": 163,
+   "kcal": 39,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Jordbær, dybfrost, sukrede",
+   "kj": 355,
+   "kcal": 84,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Fløde 13 %",
+   "kj": 624,
+   "kcal": 151,
+   "protein": "2,9"
+ },
+ {
+   "FødevareNavn": "Sakkarin",
+   "kj": 1531,
+   "kcal": 360,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Salami",
+   "kj": 2104,
+   "kcal": 509,
+   "protein": "13,9"
+ },
+ {
+   "FødevareNavn": "Ræddike",
+   "kj": 93,
+   "kcal": 22,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Cantaloupe (melon)",
+   "kj": 152,
+   "kcal": 36,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Rødbede, konserves, uden tilsat sukker",
+   "kj": 123,
+   "kcal": 29,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Kødboller, konserves",
+   "kj": 525,
+   "kcal": 126,
+   "protein": "7,1"
+ },
+ {
+   "FødevareNavn": "Blæksprutte",
+   "kj": 324,
+   "kcal": 77,
+   "protein": "16,4"
+ },
+ {
+   "FødevareNavn": "Peberrod",
+   "kj": 438,
+   "kcal": 104,
+   "protein": "7,7"
+ },
+ {
+   "FødevareNavn": "Jordbær i sukkerlage, konserves",
+   "kj": 345,
+   "kcal": 81,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Grisekød i karrysovs, dybfrost",
+   "kj": 497,
+   "kcal": 119,
+   "protein": "8,5"
+ },
+ {
+   "FødevareNavn": "Solbærsaft, sur, koncentreret",
+   "kj": 214,
+   "kcal": 51,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Vinbjergssnegle",
+   "kj": 355,
+   "kcal": 84,
+   "protein": "16,0"
+ },
+ {
+   "FødevareNavn": "Gulerod, dybfrost",
+   "kj": 124,
+   "kcal": 30,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Peberfrugt, konserves",
+   "kj": 80,
+   "kcal": 19,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Tørkage, kokosmakroner",
+   "kj": 1884,
+   "kcal": 453,
+   "protein": "6,3"
+ },
+ {
+   "FødevareNavn": "Ispind, vanille",
+   "kj": 778,
+   "kcal": 186,
+   "protein": "4,0"
+ },
+ {
+   "FødevareNavn": "Nougat is",
+   "kj": 827,
+   "kcal": 198,
+   "protein": "4,0"
+ },
+ {
+   "FødevareNavn": "Vanilleis",
+   "kj": 827,
+   "kcal": 198,
+   "protein": "4,0"
+ },
+ {
+   "FødevareNavn": "Vindrue, grønne",
+   "kj": 288,
+   "kcal": 68,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Papaya",
+   "kj": 197,
+   "kcal": 47,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Sødmælkspulver",
+   "kj": 2061,
+   "kcal": 493,
+   "protein": "23,9"
+ },
+ {
+   "FødevareNavn": "Pizza romana, dybfrost",
+   "kj": 745,
+   "kcal": 177,
+   "protein": "7,2"
+ },
+ {
+   "FødevareNavn": "Kirsebærsaft, sur, koncentreret",
+   "kj": 248,
+   "kcal": 59,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Tyttebær, syltede",
+   "kj": 660,
+   "kcal": 156,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Pecannød, tørret",
+   "kj": 2968,
+   "kcal": 721,
+   "protein": "9,2"
+ },
+ {
+   "FødevareNavn": "Hytteost, 20+",
+   "kj": 415,
+   "kcal": 99,
+   "protein": "13,3"
+ },
+ {
+   "FødevareNavn": "Reje, dybvands-, kogt, dybfrost",
+   "kj": 286,
+   "kcal": 68,
+   "protein": "15,0"
+ },
+ {
+   "FødevareNavn": "Kålrabi (kålroe)",
+   "kj": 143,
+   "kcal": 34,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Frugtkvark",
+   "kj": 693,
+   "kcal": 166,
+   "protein": "6,9"
+ },
+ {
+   "FødevareNavn": "Torsk, rogn, konserves",
+   "kj": 417,
+   "kcal": 99,
+   "protein": "16,4"
+ },
+ {
+   "FødevareNavn": "Valle",
+   "kj": 115,
+   "kcal": 27,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Reje, dybvands-, konserves",
+   "kj": 336,
+   "kcal": 79,
+   "protein": "17,2"
+ },
+ {
+   "FødevareNavn": "Hybensaft, sød, koncentreret",
+   "kj": 983,
+   "kcal": 231,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Daddel, tørret",
+   "kj": 1310,
+   "kcal": 309,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Bouillon, oksekød, terning, spiseklar",
+   "kj": 28,
+   "kcal": 7,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Is, tre-farvet",
+   "kj": 827,
+   "kcal": 198,
+   "protein": "4,0"
+ },
+ {
+   "FødevareNavn": "Te, blade",
+   "kj": 961,
+   "kcal": 233,
+   "protein": "19,6"
+ },
+ {
+   "FødevareNavn": "Rabarber, dybfrost",
+   "kj": 108,
+   "kcal": 26,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Drueagurk (sylteagurk)",
+   "kj": 70,
+   "kcal": 17,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Rødtunge",
+   "kj": 303,
+   "kcal": 72,
+   "protein": "16,3"
+ },
+ {
+   "FødevareNavn": "Asier, syltede",
+   "kj": 320,
+   "kcal": 76,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Julesalat",
+   "kj": 79,
+   "kcal": 19,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Ising",
+   "kj": 319,
+   "kcal": 75,
+   "protein": "16,6"
+ },
+ {
+   "FødevareNavn": "Nyre, kalv",
+   "kj": 403,
+   "kcal": 95,
+   "protein": "16,4"
+ },
+ {
+   "FødevareNavn": "Torsk, filet, paneret",
+   "kj": 479,
+   "kcal": 113,
+   "protein": "13,7"
+ },
+ {
+   "FødevareNavn": "Sortmund, blåhvilling, filet",
+   "kj": 327,
+   "kcal": 77,
+   "protein": "17,5"
+ },
+ {
+   "FødevareNavn": "Lever, gris, i flødesovs, dybfrost",
+   "kj": 519,
+   "kcal": 124,
+   "protein": "11,9"
+ },
+ {
+   "FødevareNavn": "Tørkage",
+   "kj": 1966,
+   "kcal": 471,
+   "protein": "6,0"
+ },
+ {
+   "FødevareNavn": "Hvilling",
+   "kj": 332,
+   "kcal": 78,
+   "protein": "18,2"
+ },
+ {
+   "FødevareNavn": "Salt, havsalt (ikke jodberiget)",
+   "kj": 0,
+   "kcal": 0,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Havreklid, dansk",
+   "kj": 1542,
+   "kcal": 367,
+   "protein": "17,3"
+ },
+ {
+   "FødevareNavn": "Gulerod, dansk",
+   "kj": 123,
+   "kcal": 29,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Mandarin",
+   "kj": 201,
+   "kcal": 47,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Aborre",
+   "kj": 327,
+   "kcal": 77,
+   "protein": "16,4"
+ },
+ {
+   "FødevareNavn": "Torsk, filet, kogt",
+   "kj": 319,
+   "kcal": 75,
+   "protein": "17,5"
+ },
+ {
+   "FødevareNavn": "Havkat",
+   "kj": 408,
+   "kcal": 97,
+   "protein": "16,1"
+ },
+ {
+   "FødevareNavn": "Flødeis",
+   "kj": 865,
+   "kcal": 206,
+   "protein": "4,0"
+ },
+ {
+   "FødevareNavn": "Hjerte, kalvt",
+   "kj": 446,
+   "kcal": 106,
+   "protein": "14,9"
+ },
+ {
+   "FødevareNavn": "Nyre, okse",
+   "kj": 447,
+   "kcal": 106,
+   "protein": "15,6"
+ },
+ {
+   "FødevareNavn": "Brosme",
+   "kj": 334,
+   "kcal": 79,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Torsk, filet, røget, med skind",
+   "kj": 334,
+   "kcal": 79,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Kaktusfigen",
+   "kj": 162,
+   "kcal": 39,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Kinakål",
+   "kj": 71,
+   "kcal": 17,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Nyre, gris",
+   "kj": 412,
+   "kcal": 98,
+   "protein": "16,0"
+ },
+ {
+   "FødevareNavn": "Sperling, kød",
+   "kj": 336,
+   "kcal": 79,
+   "protein": "17,6"
+ },
+ {
+   "FødevareNavn": "Tørkage, mazariner",
+   "kj": 1990,
+   "kcal": 477,
+   "protein": "5,7"
+ },
+ {
+   "FødevareNavn": "Figen",
+   "kj": 324,
+   "kcal": 77,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Stjernefrugt",
+   "kj": 140,
+   "kcal": 33,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Pighvarre",
+   "kj": 380,
+   "kcal": 90,
+   "protein": "16,4"
+ },
+ {
+   "FødevareNavn": "Kuller",
+   "kj": 326,
+   "kcal": 77,
+   "protein": "17,9"
+ },
+ {
+   "FødevareNavn": "Leverpostej, fedtreduceret",
+   "kj": 631,
+   "kcal": 151,
+   "protein": "10,0"
+ },
+ {
+   "FødevareNavn": "Skrubbe",
+   "kj": 363,
+   "kcal": 86,
+   "protein": "17,9"
+ },
+ {
+   "FødevareNavn": "Salat, endivie, bredbladet (escarole)",
+   "kj": 58,
+   "kcal": 14,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Lyssej",
+   "kj": 302,
+   "kcal": 71,
+   "protein": "17,4"
+ },
+ {
+   "FødevareNavn": "Skærekage, mazarinkage",
+   "kj": 1801,
+   "kcal": 430,
+   "protein": "5,2"
+ },
+ {
+   "FødevareNavn": "Kaviar, uægte (stenbiderrogn)",
+   "kj": 443,
+   "kcal": 106,
+   "protein": "13,3"
+ },
+ {
+   "FødevareNavn": "Pizza napolitana, dybfrost",
+   "kj": 761,
+   "kcal": 181,
+   "protein": "8,6"
+ },
+ {
+   "FødevareNavn": "Salat, egeløv",
+   "kj": 65,
+   "kcal": 15,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Gule ærter (flækærter)",
+   "kj": 1470,
+   "kcal": 347,
+   "protein": "22,0"
+ },
+ {
+   "FødevareNavn": "Kakifrugt (Sharon)",
+   "kj": 367,
+   "kcal": 87,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Lange, filet",
+   "kj": 339,
+   "kcal": 80,
+   "protein": "19,5"
+ },
+ {
+   "FødevareNavn": "Søtunge",
+   "kj": 360,
+   "kcal": 85,
+   "protein": "18,7"
+ },
+ {
+   "FødevareNavn": "Tomat, flået, konserves",
+   "kj": 90,
+   "kcal": 21,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Kødboller",
+   "kj": 603,
+   "kcal": 145,
+   "protein": "8,8"
+ },
+ {
+   "FødevareNavn": "Fiskefrikadelle",
+   "kj": 642,
+   "kcal": 153,
+   "protein": "13,7"
+ },
+ {
+   "FødevareNavn": "Salat, endivie, kruset (frisee)",
+   "kj": 77,
+   "kcal": 18,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Salat, Romaine, romersk",
+   "kj": 73,
+   "kcal": 17,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Sandart",
+   "kj": 368,
+   "kcal": 87,
+   "protein": "19,2"
+ },
+ {
+   "FødevareNavn": "Kartoffelmos, pulver uden tørmælk",
+   "kj": 1479,
+   "kcal": 350,
+   "protein": "8,2"
+ },
+ {
+   "FødevareNavn": "Rødfisk",
+   "kj": 355,
+   "kcal": 84,
+   "protein": "18,9"
+ },
+ {
+   "FødevareNavn": "Forårsrulle med hakket oksekød og hvidkål, friturestegt, fastfood",
+   "kj": 851,
+   "kcal": 203,
+   "protein": "6,1"
+ },
+ {
+   "FødevareNavn": "Gulerod, importeret",
+   "kj": 139,
+   "kcal": 33,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Torsk, lever, røget",
+   "kj": 2568,
+   "kcal": 624,
+   "protein": "5,1"
+ },
+ {
+   "FødevareNavn": "Torsk, lever",
+   "kj": 2568,
+   "kcal": 624,
+   "protein": "5,1"
+ },
+ {
+   "FødevareNavn": "Nektarin",
+   "kj": 177,
+   "kcal": 42,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Gedde",
+   "kj": 379,
+   "kcal": 90,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Dressing, olie-eddike, kalorielet",
+   "kj": 205,
+   "kcal": 49,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Squash, alle typer",
+   "kj": 70,
+   "kcal": 17,
+   "protein": "1,6"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, groft, kærnebrød",
+   "kj": 976,
+   "kcal": 231,
+   "protein": "6,9"
+ },
+ {
+   "FødevareNavn": "Avocado",
+   "kj": 637,
+   "kcal": 155,
+   "protein": "1,6"
+ },
+ {
+   "FødevareNavn": "Hvedeklid",
+   "kj": 1211,
+   "kcal": 291,
+   "protein": "16,2"
+ },
+ {
+   "FødevareNavn": "Rødbede, konserves",
+   "kj": 255,
+   "kcal": 60,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Brune linser, tørrede",
+   "kj": 1422,
+   "kcal": 336,
+   "protein": "25,1"
+ },
+ {
+   "FødevareNavn": "Tomat, importeret",
+   "kj": 137,
+   "kcal": 33,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Hummer, kogt",
+   "kj": 379,
+   "kcal": 90,
+   "protein": "18,7"
+ },
+ {
+   "FødevareNavn": "Hummer, konserves",
+   "kj": 379,
+   "kcal": 90,
+   "protein": "18,7"
+ },
+ {
+   "FødevareNavn": "Salat, hovedsalat",
+   "kj": 58,
+   "kcal": 14,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Margarine, 70 %, bordbrug, blød, vegetabilsk fedt",
+   "kj": 2806,
+   "kcal": 681,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Rødkål, konserves",
+   "kj": 318,
+   "kcal": 75,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Litchi",
+   "kj": 300,
+   "kcal": 71,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Pizza, dybfrost",
+   "kj": 797,
+   "kcal": 190,
+   "protein": "8,9"
+ },
+ {
+   "FødevareNavn": "Granatæble",
+   "kj": 283,
+   "kcal": 67,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Guavabær",
+   "kj": 177,
+   "kcal": 42,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Havkat, plettet",
+   "kj": 450,
+   "kcal": 107,
+   "protein": "16,0"
+ },
+ {
+   "FødevareNavn": "Musling, konserves",
+   "kj": 433,
+   "kcal": 103,
+   "protein": "17,8"
+ },
+ {
+   "FødevareNavn": "Ananaskirsebær",
+   "kj": 215,
+   "kcal": 51,
+   "protein": "1,9"
+ },
+ {
+   "FødevareNavn": "Rygeost, 10 % fedt",
+   "kj": 539,
+   "kcal": 130,
+   "protein": "8,6"
+ },
+ {
+   "FødevareNavn": "Brasen",
+   "kj": 452,
+   "kcal": 108,
+   "protein": "16,7"
+ },
+ {
+   "FødevareNavn": "Hjerte, okset",
+   "kj": 432,
+   "kcal": 103,
+   "protein": "17,7"
+ },
+ {
+   "FødevareNavn": "Pak choi (bok choy)",
+   "kj": 61,
+   "kcal": 15,
+   "protein": "1,5"
+ },
+ {
+   "FødevareNavn": "Hjerte, grist",
+   "kj": 428,
+   "kcal": 102,
+   "protein": "16,0"
+ },
+ {
+   "FødevareNavn": "Rugbrød med fedtrige frø og kerner, industrifremstillet",
+   "kj": 904,
+   "kcal": 215,
+   "protein": "5,7"
+ },
+ {
+   "FødevareNavn": "Valnød, tørret",
+   "kj": 2861,
+   "kcal": 693,
+   "protein": "14,1"
+ },
+ {
+   "FødevareNavn": "Asparges, konserves",
+   "kj": 68,
+   "kcal": 16,
+   "protein": "1,7"
+ },
+ {
+   "FødevareNavn": "Hvidløg, tørret, pulver",
+   "kj": 1460,
+   "kcal": 345,
+   "protein": "16,8"
+ },
+ {
+   "FødevareNavn": "Pizza med broccoli, dybfrost",
+   "kj": 816,
+   "kcal": 194,
+   "protein": "8,7"
+ },
+ {
+   "FødevareNavn": "Salat, Radicchio rosso",
+   "kj": 102,
+   "kcal": 24,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Æg, høne, tørret",
+   "kj": 2351,
+   "kcal": 564,
+   "protein": "50,7"
+ },
+ {
+   "FødevareNavn": "Hummer",
+   "kj": 393,
+   "kcal": 93,
+   "protein": "19,6"
+ },
+ {
+   "FødevareNavn": "Jomfruhummer",
+   "kj": 393,
+   "kcal": 93,
+   "protein": "19,6"
+ },
+ {
+   "FødevareNavn": "Knækbrød, hvede-, grahamstype",
+   "kj": 1565,
+   "kcal": 371,
+   "protein": "13,0"
+ },
+ {
+   "FødevareNavn": "Karry, pulver",
+   "kj": 1243,
+   "kcal": 303,
+   "protein": "12,7"
+ },
+ {
+   "FødevareNavn": "Rødfisk, lille, filet",
+   "kj": 380,
+   "kcal": 90,
+   "protein": "19,1"
+ },
+ {
+   "FødevareNavn": "Kartoffel, chips, fedtreducerede",
+   "kj": 2043,
+   "kcal": 488,
+   "protein": "5,0"
+ },
+ {
+   "FødevareNavn": "Tungepølse, pålæg",
+   "kj": 616,
+   "kcal": 148,
+   "protein": "9,8"
+ },
+ {
+   "FødevareNavn": "Sej, filet, dybfrost",
+   "kj": 387,
+   "kcal": 91,
+   "protein": "20,5"
+ },
+ {
+   "FødevareNavn": "Fløde 18 %",
+   "kj": 785,
+   "kcal": 190,
+   "protein": "2,7"
+ },
+ {
+   "FødevareNavn": "Voksbønner, konserves",
+   "kj": 110,
+   "kcal": 26,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, groft, fiberbrød",
+   "kj": 914,
+   "kcal": 216,
+   "protein": "9,8"
+ },
+ {
+   "FødevareNavn": "Skinke, kogt, konserves",
+   "kj": 467,
+   "kcal": 111,
+   "protein": "15,7"
+ },
+ {
+   "FødevareNavn": "Surbrød",
+   "kj": 1053,
+   "kcal": 249,
+   "protein": "7,0"
+ },
+ {
+   "FødevareNavn": "Æg, høne, langæg, kogt, dybfrost",
+   "kj": 537,
+   "kcal": 129,
+   "protein": "12,0"
+ },
+ {
+   "FødevareNavn": "Brombær, syltede",
+   "kj": 837,
+   "kcal": 197,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Mangomarmelade",
+   "kj": 917,
+   "kcal": 216,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Creme fraiche 18 %",
+   "kj": 793,
+   "kcal": 192,
+   "protein": "2,8"
+ },
+ {
+   "FødevareNavn": "Grahamsbrød",
+   "kj": 1051,
+   "kcal": 249,
+   "protein": "8,3"
+ },
+ {
+   "FødevareNavn": "Lever, gåse",
+   "kj": 544,
+   "kcal": 129,
+   "protein": "16,4"
+ },
+ {
+   "FødevareNavn": "Salt kød, pålæg",
+   "kj": 423,
+   "kcal": 100,
+   "protein": "19,2"
+ },
+ {
+   "FødevareNavn": "Chokolade, fløde",
+   "kj": 2278,
+   "kcal": 545,
+   "protein": "7,1"
+ },
+ {
+   "FødevareNavn": "Sigtebrød",
+   "kj": 1053,
+   "kcal": 249,
+   "protein": "7,6"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, italiensk, store, industrifremstillet",
+   "kj": 1091,
+   "kcal": 258,
+   "protein": "8,2"
+ },
+ {
+   "FødevareNavn": "Miso, sojapasta",
+   "kj": 700,
+   "kcal": 167,
+   "protein": "10,5"
+ },
+ {
+   "FødevareNavn": "Grønne bønner, konserves",
+   "kj": 103,
+   "kcal": 25,
+   "protein": "1,5"
+ },
+ {
+   "FødevareNavn": "Linser, tørrede",
+   "kj": 1466,
+   "kcal": 347,
+   "protein": "26,2"
+ },
+ {
+   "FødevareNavn": "Kråse, kylling",
+   "kj": 473,
+   "kcal": 113,
+   "protein": "18,2"
+ },
+ {
+   "FødevareNavn": "Knudekål, glaskål",
+   "kj": 106,
+   "kcal": 25,
+   "protein": "1,7"
+ },
+ {
+   "FødevareNavn": "Brøndkarse",
+   "kj": 78,
+   "kcal": 19,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Dressing, creme fraiche, kalorielet",
+   "kj": 880,
+   "kcal": 213,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Æg, høne, blomme, tørret",
+   "kj": 2718,
+   "kcal": 656,
+   "protein": "34,5"
+ },
+ {
+   "FødevareNavn": "Flûte, fint, industrifremstillet",
+   "kj": 1085,
+   "kcal": 256,
+   "protein": "8,2"
+ },
+ {
+   "FødevareNavn": "Kartoffel, konserves",
+   "kj": 236,
+   "kcal": 56,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Paranød, tørret",
+   "kj": 2811,
+   "kcal": 681,
+   "protein": "14,4"
+ },
+ {
+   "FødevareNavn": "Skinke, kogt, skiveskåret",
+   "kj": 459,
+   "kcal": 109,
+   "protein": "17,9"
+ },
+ {
+   "FødevareNavn": "Bækforel",
+   "kj": 414,
+   "kcal": 98,
+   "protein": "18,5"
+ },
+ {
+   "FødevareNavn": "Kødboller, dybfrost",
+   "kj": 679,
+   "kcal": 163,
+   "protein": "10,5"
+ },
+ {
+   "FødevareNavn": "Æg, høne, pasteuriseret",
+   "kj": 547,
+   "kcal": 131,
+   "protein": "11,4"
+ },
+ {
+   "FødevareNavn": "Lever, kalv",
+   "kj": 551,
+   "kcal": 131,
+   "protein": "20,4"
+ },
+ {
+   "FødevareNavn": "Kalvekød, helt magertt",
+   "kj": 389,
+   "kcal": 92,
+   "protein": "18,1"
+ },
+ {
+   "FødevareNavn": "Helleflynder, røget",
+   "kj": 442,
+   "kcal": 104,
+   "protein": "20,6"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, toastbrød, fint, industrifremstillet",
+   "kj": 1077,
+   "kcal": 255,
+   "protein": "7,9"
+ },
+ {
+   "FødevareNavn": "Grisespæk, rygspækt",
+   "kj": 2718,
+   "kcal": 661,
+   "protein": "3,2"
+ },
+ {
+   "FødevareNavn": "Brombær, dybfrost, usukrede",
+   "kj": 188,
+   "kcal": 45,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Kokosmel",
+   "kj": 2614,
+   "kcal": 636,
+   "protein": "6,5"
+ },
+ {
+   "FødevareNavn": "Brissel, lam",
+   "kj": 549,
+   "kcal": 131,
+   "protein": "15,3"
+ },
+ {
+   "FødevareNavn": "Høne, kød",
+   "kj": 462,
+   "kcal": 110,
+   "protein": "20,3"
+ },
+ {
+   "FødevareNavn": "Ribsgele",
+   "kj": 1010,
+   "kcal": 238,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Helleflynder",
+   "kj": 442,
+   "kcal": 104,
+   "protein": "20,6"
+ },
+ {
+   "FødevareNavn": "Lever, kylling",
+   "kj": 487,
+   "kcal": 116,
+   "protein": "19,1"
+ },
+ {
+   "FødevareNavn": "Ørred, hav-",
+   "kj": 546,
+   "kcal": 130,
+   "protein": "18,3"
+ },
+ {
+   "FødevareNavn": "Batat, sød kartoffel",
+   "kj": 302,
+   "kcal": 72,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Bladbede, sølvbede",
+   "kj": 87,
+   "kcal": 21,
+   "protein": "1,8"
+ },
+ {
+   "FødevareNavn": "Løg",
+   "kj": 183,
+   "kcal": 43,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Jordbær, syltede",
+   "kj": 857,
+   "kcal": 202,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Sapodille (chiku)",
+   "kj": 340,
+   "kcal": 81,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Kaffe, instant, pulver",
+   "kj": 1270,
+   "kcal": 302,
+   "protein": "15,5"
+ },
+ {
+   "FødevareNavn": "Parmesan, revet",
+   "kj": 1781,
+   "kcal": 428,
+   "protein": "38,5"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, bolle, grov, industrifremstillet",
+   "kj": 1040,
+   "kcal": 246,
+   "protein": "8,2"
+ },
+ {
+   "FødevareNavn": "Grisekød, skinke af inderlår, helt afpudset",
+   "kj": 449,
+   "kcal": 106,
+   "protein": "21,4"
+ },
+ {
+   "FødevareNavn": "Kirsebær, syltede",
+   "kj": 610,
+   "kcal": 144,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Torsk, filet, stegt",
+   "kj": 504,
+   "kcal": 120,
+   "protein": "18,7"
+ },
+ {
+   "FødevareNavn": "And, kød",
+   "kj": 530,
+   "kcal": 126,
+   "protein": "18,3"
+ },
+ {
+   "FødevareNavn": "Kalkun, bryst (filet), kogt/røget, pålæg",
+   "kj": 453,
+   "kcal": 107,
+   "protein": "21,0"
+ },
+ {
+   "FødevareNavn": "Pizza med tunfisk, dybfrost",
+   "kj": 855,
+   "kcal": 203,
+   "protein": "11,0"
+ },
+ {
+   "FødevareNavn": "Flødeskumskage, kartoffelkage",
+   "kj": 1569,
+   "kcal": 374,
+   "protein": "5,2"
+ },
+ {
+   "FødevareNavn": "Kalkun, kød",
+   "kj": 444,
+   "kcal": 105,
+   "protein": "21,3"
+ },
+ {
+   "FødevareNavn": "Grisekød, skinkemignon af lårtunge, helt afpudset",
+   "kj": 493,
+   "kcal": 117,
+   "protein": "19,3"
+ },
+ {
+   "FødevareNavn": "Loganbær, frosne",
+   "kj": 211,
+   "kcal": 50,
+   "protein": "1,5"
+ },
+ {
+   "FødevareNavn": "Rugbrød, med sigtet mel (soft) og fedtrige frø, industrifremstillet",
+   "kj": 959,
+   "kcal": 228,
+   "protein": "6,4"
+ },
+ {
+   "FødevareNavn": "Stenbider",
+   "kj": 697,
+   "kcal": 168,
+   "protein": "9,8"
+ },
+ {
+   "FødevareNavn": "And, brystkød",
+   "kj": 489,
+   "kcal": 116,
+   "protein": "19,4"
+ },
+ {
+   "FødevareNavn": "Grisekød, filet, helt afpudset",
+   "kj": 450,
+   "kcal": 106,
+   "protein": "22,3"
+ },
+ {
+   "FødevareNavn": "Forårsløg",
+   "kj": 140,
+   "kcal": 33,
+   "protein": "1,8"
+ },
+ {
+   "FødevareNavn": "Lever, okse",
+   "kj": 515,
+   "kcal": 122,
+   "protein": "20,3"
+ },
+ {
+   "FødevareNavn": "Grisefilet, røget, pålæg",
+   "kj": 473,
+   "kcal": 112,
+   "protein": "19,4"
+ },
+ {
+   "FødevareNavn": "Tørkage, napoleonshatte",
+   "kj": 2026,
+   "kcal": 485,
+   "protein": "6,4"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, toastbrød, groft, industrifremstillet",
+   "kj": 1080,
+   "kcal": 256,
+   "protein": "8,4"
+ },
+ {
+   "FødevareNavn": "Grisekød, skinke af yderlår, helt afpudsett",
+   "kj": 486,
+   "kcal": 115,
+   "protein": "20,2"
+ },
+ {
+   "FødevareNavn": "Lever, ande",
+   "kj": 550,
+   "kcal": 131,
+   "protein": "18,7"
+ },
+ {
+   "FødevareNavn": "Marcipanprodukt, m/chokolade",
+   "kj": 2197,
+   "kcal": 526,
+   "protein": "4,9"
+ },
+ {
+   "FødevareNavn": "Hamburgerryg, røget",
+   "kj": 507,
+   "kcal": 121,
+   "protein": "18,4"
+ },
+ {
+   "FødevareNavn": "Hamburgerryg, kogt",
+   "kj": 501,
+   "kcal": 119,
+   "protein": "18,4"
+ },
+ {
+   "FødevareNavn": "Tun i tomat, konserves",
+   "kj": 494,
+   "kcal": 117,
+   "protein": "17,2"
+ },
+ {
+   "FødevareNavn": "Savoykål",
+   "kj": 113,
+   "kcal": 27,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Asparges",
+   "kj": 95,
+   "kcal": 23,
+   "protein": "1,9"
+ },
+ {
+   "FødevareNavn": "Kylling, bryst (filet), kogt, pålæg",
+   "kj": 475,
+   "kcal": 113,
+   "protein": "20,6"
+ },
+ {
+   "FødevareNavn": "Citronskal",
+   "kj": 213,
+   "kcal": 52,
+   "protein": "1,5"
+ },
+ {
+   "FødevareNavn": "Pistacienød, tørristet med salt",
+   "kj": 2441,
+   "kcal": 589,
+   "protein": "21,3"
+ },
+ {
+   "FødevareNavn": "Kirsebærsaft, sød, koncentreret",
+   "kj": 724,
+   "kcal": 171,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Ribssaft, sød, koncentreret",
+   "kj": 724,
+   "kcal": 171,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Hindbærsaft, sød, koncentreret",
+   "kj": 724,
+   "kcal": 171,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Jordbærsaft, sød, koncentreret",
+   "kj": 724,
+   "kcal": 171,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Grønne bønner",
+   "kj": 126,
+   "kcal": 30,
+   "protein": "1,9"
+ },
+ {
+   "FødevareNavn": "Dild, tørret",
+   "kj": 1342,
+   "kcal": 319,
+   "protein": "20,0"
+ },
+ {
+   "FødevareNavn": "Pølsebrød",
+   "kj": 1071,
+   "kcal": 253,
+   "protein": "8,7"
+ },
+ {
+   "FødevareNavn": "Selleri, blade",
+   "kj": 143,
+   "kcal": 34,
+   "protein": "1,8"
+ },
+ {
+   "FødevareNavn": "Helt",
+   "kj": 478,
+   "kcal": 113,
+   "protein": "21,6"
+ },
+ {
+   "FødevareNavn": "Tyttebær",
+   "kj": 228,
+   "kcal": 54,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Oksekød, inderlår uden kappe",
+   "kj": 496,
+   "kcal": 118,
+   "protein": "22,3"
+ },
+ {
+   "FødevareNavn": "Grisekød, mørbrad, afpudset",
+   "kj": 484,
+   "kcal": 115,
+   "protein": "21,2"
+ },
+ {
+   "FødevareNavn": "Knækbrød, hvede-, fint",
+   "kj": 1684,
+   "kcal": 399,
+   "protein": "11,3"
+ },
+ {
+   "FødevareNavn": "Harekød",
+   "kj": 475,
+   "kcal": 112,
+   "protein": "21,6"
+ },
+ {
+   "FødevareNavn": "Ørred, regnbue-",
+   "kj": 639,
+   "kcal": 153,
+   "protein": "18,5"
+ },
+ {
+   "FødevareNavn": "Koriander, frø",
+   "kj": 1540,
+   "kcal": 371,
+   "protein": "12,4"
+ },
+ {
+   "FødevareNavn": "Hjerte, høne (kylling)t",
+   "kj": 622,
+   "kcal": 149,
+   "protein": "15,6"
+ },
+ {
+   "FødevareNavn": "Grisekød, magertt",
+   "kj": 482,
+   "kcal": 114,
+   "protein": "21,8"
+ },
+ {
+   "FødevareNavn": "Torsk, rogn",
+   "kj": 508,
+   "kcal": 120,
+   "protein": "23,2"
+ },
+ {
+   "FødevareNavn": "Lever, gris",
+   "kj": 516,
+   "kcal": 122,
+   "protein": "21,1"
+ },
+ {
+   "FødevareNavn": "Krabbekløer",
+   "kj": 473,
+   "kcal": 112,
+   "protein": "22,9"
+ },
+ {
+   "FødevareNavn": "Krabbekløer, konserves",
+   "kj": 473,
+   "kcal": 112,
+   "protein": "22,9"
+ },
+ {
+   "FødevareNavn": "Kalkun, kød og skind",
+   "kj": 528,
+   "kcal": 126,
+   "protein": "20,2"
+ },
+ {
+   "FødevareNavn": "Grovfranskbrød",
+   "kj": 1096,
+   "kcal": 259,
+   "protein": "8,3"
+ },
+ {
+   "FødevareNavn": "Marcipan",
+   "kj": 1997,
+   "kcal": 478,
+   "protein": "11,0"
+ },
+ {
+   "FødevareNavn": "Grisekød, bov, helt afpudset",
+   "kj": 530,
+   "kcal": 126,
+   "protein": "19,6"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, kastanjebrød",
+   "kj": 1091,
+   "kcal": 258,
+   "protein": "8,0"
+ },
+ {
+   "FødevareNavn": "Hyldebærsaft, sød, koncentreret",
+   "kj": 931,
+   "kcal": 219,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Fennikel, frø",
+   "kj": 1350,
+   "kcal": 327,
+   "protein": "15,8"
+ },
+ {
+   "FødevareNavn": "Marmelade, engelsk type",
+   "kj": 1175,
+   "kcal": 277,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Kylling, kød",
+   "kj": 537,
+   "kcal": 128,
+   "protein": "19,3"
+ },
+ {
+   "FødevareNavn": "Lammekød, kølle, afpudset",
+   "kj": 537,
+   "kcal": 128,
+   "protein": "19,6"
+ },
+ {
+   "FødevareNavn": "Hvalkødt",
+   "kj": 468,
+   "kcal": 111,
+   "protein": "22,3"
+ },
+ {
+   "FødevareNavn": "Kalvekød, magertt",
+   "kj": 509,
+   "kcal": 121,
+   "protein": "18,6"
+ },
+ {
+   "FødevareNavn": "Blomkål, dansk",
+   "kj": 79,
+   "kcal": 19,
+   "protein": "1,7"
+ },
+ {
+   "FødevareNavn": "Krabbe, kogt",
+   "kj": 541,
+   "kcal": 129,
+   "protein": "20,1"
+ },
+ {
+   "FødevareNavn": "Kartoffel, kogt",
+   "kj": 360,
+   "kcal": 85,
+   "protein": "1,7"
+ },
+ {
+   "FødevareNavn": "Rype, kød",
+   "kj": 475,
+   "kcal": 112,
+   "protein": "23,5"
+ },
+ {
+   "FødevareNavn": "Abrikosmarmelade",
+   "kj": 938,
+   "kcal": 221,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Chokolade, fløde, med nødder",
+   "kj": 2383,
+   "kcal": 572,
+   "protein": "8,8"
+ },
+ {
+   "FødevareNavn": "Oksekød, tykstegsfilet uden kappe",
+   "kj": 518,
+   "kcal": 123,
+   "protein": "21,3"
+ },
+ {
+   "FødevareNavn": "Pinjekerner, tørret",
+   "kj": 2801,
+   "kcal": 678,
+   "protein": "14,0"
+ },
+ {
+   "FødevareNavn": "Kaninkød",
+   "kj": 495,
+   "kcal": 118,
+   "protein": "20,4"
+ },
+ {
+   "FødevareNavn": "Peber, chili",
+   "kj": 187,
+   "kcal": 44,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Sælkødt",
+   "kj": 480,
+   "kcal": 114,
+   "protein": "22,6"
+ },
+ {
+   "FødevareNavn": "Flûte, groft, industrifremstillet",
+   "kj": 1094,
+   "kcal": 259,
+   "protein": "8,1"
+ },
+ {
+   "FødevareNavn": "Cashewnød, tørristet",
+   "kj": 2504,
+   "kcal": 603,
+   "protein": "15,3"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, bolle, italiensk type, industrifremstillet",
+   "kj": 1083,
+   "kcal": 256,
+   "protein": "8,9"
+ },
+ {
+   "FødevareNavn": "Oksekød, helt magertt",
+   "kj": 525,
+   "kcal": 125,
+   "protein": "21,5"
+ },
+ {
+   "FødevareNavn": "Oksekød, klump uden kappe",
+   "kj": 617,
+   "kcal": 147,
+   "protein": "20,8"
+ },
+ {
+   "FødevareNavn": "Kaviar, uægte (lodderogn)",
+   "kj": 770,
+   "kcal": 185,
+   "protein": "9,1"
+ },
+ {
+   "FødevareNavn": "Morgenmadsprodukt, Guldkorn",
+   "kj": 1638,
+   "kcal": 386,
+   "protein": "6,7"
+ },
+ {
+   "FødevareNavn": "Porre",
+   "kj": 146,
+   "kcal": 35,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Tun i vand, konserves",
+   "kj": 451,
+   "kcal": 107,
+   "protein": "23,9"
+ },
+ {
+   "FødevareNavn": "Flødeskumskage, walesbolle/-kringle",
+   "kj": 1349,
+   "kcal": 324,
+   "protein": "4,1"
+ },
+ {
+   "FødevareNavn": "Roastbeef, pålæg",
+   "kj": 504,
+   "kcal": 120,
+   "protein": "21,7"
+ },
+ {
+   "FødevareNavn": "Flødeskumskage",
+   "kj": 1298,
+   "kcal": 312,
+   "protein": "2,7"
+ },
+ {
+   "FødevareNavn": "Oksekød, mørbrad, afpudset",
+   "kj": 579,
+   "kcal": 138,
+   "protein": "20,5"
+ },
+ {
+   "FødevareNavn": "Fårekød, kølle",
+   "kj": 564,
+   "kcal": 134,
+   "protein": "20,1"
+ },
+ {
+   "FødevareNavn": "Frugtpålæg, figen",
+   "kj": 1334,
+   "kcal": 316,
+   "protein": "2,5"
+ },
+ {
+   "FødevareNavn": "Koriander, blade, tørrede",
+   "kj": 1339,
+   "kcal": 318,
+   "protein": "21,9"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, trekornsbrød",
+   "kj": 1113,
+   "kcal": 264,
+   "protein": "9,0"
+ },
+ {
+   "FødevareNavn": "Bondebrød med fedtrige frø, industrifremstillet",
+   "kj": 991,
+   "kcal": 235,
+   "protein": "7,5"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, bolle, fin, industrifremstillet",
+   "kj": 1144,
+   "kcal": 270,
+   "protein": "8,6"
+ },
+ {
+   "FødevareNavn": "Kartoffel, chips (franske kartofler)",
+   "kj": 2221,
+   "kcal": 532,
+   "protein": "5,4"
+ },
+ {
+   "FødevareNavn": "Appelsinmarmelade",
+   "kj": 858,
+   "kcal": 202,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Grisekød, bagskank uden svær",
+   "kj": 599,
+   "kcal": 143,
+   "protein": "18,9"
+ },
+ {
+   "FødevareNavn": "Ørred, dam-, sø-",
+   "kj": 606,
+   "kcal": 145,
+   "protein": "18,7"
+ },
+ {
+   "FødevareNavn": "Spinat, hakket, dybfrost",
+   "kj": 108,
+   "kcal": 26,
+   "protein": "2,3"
+ },
+ {
+   "FødevareNavn": "Fasan, kød",
+   "kj": 513,
+   "kcal": 122,
+   "protein": "22,2"
+ },
+ {
+   "FødevareNavn": "Yams",
+   "kj": 469,
+   "kcal": 111,
+   "protein": "1,5"
+ },
+ {
+   "FødevareNavn": "Kartoffel, ny (maj til september)",
+   "kj": 321,
+   "kcal": 76,
+   "protein": "1,8"
+ },
+ {
+   "FødevareNavn": "Bøfsandwich med salat og dressing, fastfood",
+   "kj": 949,
+   "kcal": 227,
+   "protein": "9,3"
+ },
+ {
+   "FødevareNavn": "Æg, and",
+   "kj": 752,
+   "kcal": 181,
+   "protein": "12,8"
+ },
+ {
+   "FødevareNavn": "Grisekød, tunge",
+   "kj": 761,
+   "kcal": 182,
+   "protein": "17,0"
+ },
+ {
+   "FødevareNavn": "Kiwimarmelade",
+   "kj": 955,
+   "kcal": 225,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Tunge, gris, saltet",
+   "kj": 759,
+   "kcal": 182,
+   "protein": "17,0"
+ },
+ {
+   "FødevareNavn": "Isvaffel med vaniljeis",
+   "kj": 1142,
+   "kcal": 273,
+   "protein": "3,9"
+ },
+ {
+   "FødevareNavn": "Frugtpålæg",
+   "kj": 1349,
+   "kcal": 320,
+   "protein": "2,7"
+ },
+ {
+   "FødevareNavn": "Due, vildt, kød",
+   "kj": 592,
+   "kcal": 142,
+   "protein": "18,5"
+ },
+ {
+   "FødevareNavn": "Franskbrød",
+   "kj": 1146,
+   "kcal": 271,
+   "protein": "8,8"
+ },
+ {
+   "FødevareNavn": "Solbærsaft, sød, koncentreret",
+   "kj": 843,
+   "kcal": 199,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, valnøddebrød",
+   "kj": 1180,
+   "kcal": 280,
+   "protein": "8,9"
+ },
+ {
+   "FødevareNavn": "Peanuts, (jordnød, ristet og saltet)",
+   "kj": 2614,
+   "kcal": 632,
+   "protein": "24,6"
+ },
+ {
+   "FødevareNavn": "Brisling",
+   "kj": 564,
+   "kcal": 136,
+   "protein": "10,3"
+ },
+ {
+   "FødevareNavn": "Koriander, blade, friske",
+   "kj": 93,
+   "kcal": 22,
+   "protein": "2,1"
+ },
+ {
+   "FødevareNavn": "Bambusskud, konserves, saltet",
+   "kj": 96,
+   "kcal": 23,
+   "protein": "2,6"
+ },
+ {
+   "FødevareNavn": "Bambusskud, konserves, usaltet",
+   "kj": 96,
+   "kcal": 23,
+   "protein": "2,6"
+ },
+ {
+   "FødevareNavn": "Oksekød, skank (osso buco)",
+   "kj": 586,
+   "kcal": 140,
+   "protein": "21,4"
+ },
+ {
+   "FødevareNavn": "Oksekød, højrebsfilet, afpudset",
+   "kj": 723,
+   "kcal": 173,
+   "protein": "20,9"
+ },
+ {
+   "FødevareNavn": "Syre (krydderplante)",
+   "kj": 88,
+   "kcal": 21,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Kvark, 45+",
+   "kj": 817,
+   "kcal": 197,
+   "protein": "11,2"
+ },
+ {
+   "FødevareNavn": "Æg, gås",
+   "kj": 750,
+   "kcal": 180,
+   "protein": "13,9"
+ },
+ {
+   "FødevareNavn": "Sukker, brun farin",
+   "kj": 1624,
+   "kcal": 382,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Kaffe, instant, decaffeinated, pulver",
+   "kj": 1497,
+   "kcal": 352,
+   "protein": "11,6"
+ },
+ {
+   "FødevareNavn": "Asparges, hvide",
+   "kj": 109,
+   "kcal": 26,
+   "protein": "2,4"
+ },
+ {
+   "FødevareNavn": "Oksekød, yderlårt",
+   "kj": 611,
+   "kcal": 146,
+   "protein": "20,5"
+ },
+ {
+   "FødevareNavn": "Rosin uden kerner",
+   "kj": 1412,
+   "kcal": 333,
+   "protein": "3,2"
+ },
+ {
+   "FødevareNavn": "Solbær, syltede",
+   "kj": 836,
+   "kcal": 197,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Kylling, ben, kød og skind",
+   "kj": 635,
+   "kcal": 152,
+   "protein": "18,4"
+ },
+ {
+   "FødevareNavn": "Solbærmarmelade",
+   "kj": 844,
+   "kcal": 199,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Kylling, lår, kød og skind",
+   "kj": 647,
+   "kcal": 155,
+   "protein": "18,7"
+ },
+ {
+   "FødevareNavn": "Flûte med fedtrige frø, industrifremstillet",
+   "kj": 1140,
+   "kcal": 270,
+   "protein": "8,5"
+ },
+ {
+   "FødevareNavn": "Grønkål, frossent",
+   "kj": 100,
+   "kcal": 24,
+   "protein": "2,1"
+ },
+ {
+   "FødevareNavn": "Kørvel, hakket, dybfrost",
+   "kj": 99,
+   "kcal": 24,
+   "protein": "2,2"
+ },
+ {
+   "FødevareNavn": "Oksekød, lårtunge",
+   "kj": 606,
+   "kcal": 145,
+   "protein": "21,5"
+ },
+ {
+   "FødevareNavn": "Melbanan, plantain",
+   "kj": 557,
+   "kcal": 131,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Tyggegummi, med sukker",
+   "kj": 1522,
+   "kcal": 358,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Cherimoya",
+   "kj": 331,
+   "kcal": 78,
+   "protein": "1,7"
+ },
+ {
+   "FødevareNavn": "Hellefisk, gravad",
+   "kj": 740,
+   "kcal": 178,
+   "protein": "12,3"
+ },
+ {
+   "FødevareNavn": "Hellefisk",
+   "kj": 740,
+   "kcal": 178,
+   "protein": "12,3"
+ },
+ {
+   "FødevareNavn": "Knækbrød, fladbrød",
+   "kj": 1522,
+   "kcal": 361,
+   "protein": "9,1"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, sandwich/toastbrød med fedtrige frø, industrifremstillet",
+   "kj": 1131,
+   "kcal": 268,
+   "protein": "8,1"
+ },
+ {
+   "FødevareNavn": "Wienerpølse, konserves",
+   "kj": 835,
+   "kcal": 201,
+   "protein": "10,6"
+ },
+ {
+   "FødevareNavn": "Kongeål (pighaj)",
+   "kj": 671,
+   "kcal": 161,
+   "protein": "19,1"
+ },
+ {
+   "FødevareNavn": "Bolcher, blandede",
+   "kj": 1657,
+   "kcal": 390,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Tun",
+   "kj": 496,
+   "kcal": 117,
+   "protein": "26,8"
+ },
+ {
+   "FødevareNavn": "Kalkunkød, hakket, 0-5% fedtt",
+   "kj": 551,
+   "kcal": 131,
+   "protein": "22,1"
+ },
+ {
+   "FødevareNavn": "Likør, kaffe med fløde",
+   "kj": 1382,
+   "kcal": 332,
+   "protein": "2,8"
+ },
+ {
+   "FødevareNavn": "Kylling, bryst, kød og skind",
+   "kj": 623,
+   "kcal": 149,
+   "protein": "21,5"
+ },
+ {
+   "FødevareNavn": "Nougat",
+   "kj": 2332,
+   "kcal": 560,
+   "protein": "8,7"
+ },
+ {
+   "FødevareNavn": "Oksekød, magertt",
+   "kj": 635,
+   "kcal": 152,
+   "protein": "20,4"
+ },
+ {
+   "FødevareNavn": "Oksekød, tunge",
+   "kj": 778,
+   "kcal": 187,
+   "protein": "16,2"
+ },
+ {
+   "FødevareNavn": "Tunge, kalv, saltet",
+   "kj": 652,
+   "kcal": 157,
+   "protein": "13,1"
+ },
+ {
+   "FødevareNavn": "Broccoli, kogt",
+   "kj": 148,
+   "kcal": 35,
+   "protein": "2,4"
+ },
+ {
+   "FødevareNavn": "Marmelade",
+   "kj": 860,
+   "kcal": 203,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Kirsebærmarmelade",
+   "kj": 860,
+   "kcal": 203,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Sild, paneret, stegt, i lage",
+   "kj": 1138,
+   "kcal": 272,
+   "protein": "12,8"
+ },
+ {
+   "FødevareNavn": "Ispind, vanille med chokoladeovertræk",
+   "kj": 1145,
+   "kcal": 275,
+   "protein": "3,0"
+ },
+ {
+   "FødevareNavn": "Laks, atlantisk, vild, konserves",
+   "kj": 958,
+   "kcal": 228,
+   "protein": "20,3"
+ },
+ {
+   "FødevareNavn": "Tomatketchup, stærk",
+   "kj": 435,
+   "kcal": 102,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Hestekødt",
+   "kj": 693,
+   "kcal": 166,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Sardin, i tomat, konserves",
+   "kj": 652,
+   "kcal": 156,
+   "protein": "16,4"
+ },
+ {
+   "FødevareNavn": "Kyllingepølse, pålæg",
+   "kj": 806,
+   "kcal": 194,
+   "protein": "12,8"
+ },
+ {
+   "FødevareNavn": "Champignon, konserves",
+   "kj": 92,
+   "kcal": 22,
+   "protein": "2,5"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, solsikkebrød",
+   "kj": 1135,
+   "kcal": 269,
+   "protein": "9,0"
+ },
+ {
+   "FødevareNavn": "Purløg",
+   "kj": 107,
+   "kcal": 26,
+   "protein": "2,4"
+ },
+ {
+   "FødevareNavn": "Kumquat, guldorange, dværgappelsin",
+   "kj": 272,
+   "kcal": 65,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Kalvekød, Tunge",
+   "kj": 666,
+   "kcal": 160,
+   "protein": "12,6"
+ },
+ {
+   "FødevareNavn": "Ispind, limonade",
+   "kj": 370,
+   "kcal": 88,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Grisekød, skinkeculotte af yderlår, ca. 2 mm spæk",
+   "kj": 677,
+   "kcal": 162,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Krydderskinke, udbenet",
+   "kj": 845,
+   "kcal": 203,
+   "protein": "12,0"
+ },
+ {
+   "FødevareNavn": "Pastinak",
+   "kj": 264,
+   "kcal": 63,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Kartoffel, efterår (oktober til januar)",
+   "kj": 363,
+   "kcal": 86,
+   "protein": "2,2"
+ },
+ {
+   "FødevareNavn": "Maniok, kassava",
+   "kj": 664,
+   "kcal": 157,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Oksekød, inderlår med kappe",
+   "kj": 677,
+   "kcal": 162,
+   "protein": "21,1"
+ },
+ {
+   "FødevareNavn": "Remoulade, fedtreduceret",
+   "kj": 939,
+   "kcal": 228,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Oksekød, hakket, 10-15% fedt",
+   "kj": 687,
+   "kcal": 164,
+   "protein": "19,4"
+ },
+ {
+   "FødevareNavn": "Tyggegummi, uden sukker",
+   "kj": 1451,
+   "kcal": 342,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Oksekød, mellemskærtt",
+   "kj": 687,
+   "kcal": 164,
+   "protein": "20,8"
+ },
+ {
+   "FødevareNavn": "Grisekød, hakket, 5-10% fedtt",
+   "kj": 701,
+   "kcal": 168,
+   "protein": "19,3"
+ },
+ {
+   "FødevareNavn": "Kartoffel, gammel (februar - juni)",
+   "kj": 345,
+   "kcal": 81,
+   "protein": "2,2"
+ },
+ {
+   "FødevareNavn": "Klipfisk",
+   "kj": 421,
+   "kcal": 99,
+   "protein": "24,3"
+ },
+ {
+   "FødevareNavn": "Grisekød, nakkefilet, helt afpudset (Nakkekotelet)",
+   "kj": 758,
+   "kcal": 182,
+   "protein": "17,4"
+ },
+ {
+   "FødevareNavn": "Jordskok",
+   "kj": 335,
+   "kcal": 79,
+   "protein": "2,1"
+ },
+ {
+   "FødevareNavn": "Likør, kaffe",
+   "kj": 1438,
+   "kcal": 342,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Gås, kød",
+   "kj": 663,
+   "kcal": 158,
+   "protein": "22,8"
+ },
+ {
+   "FødevareNavn": "Rundstykke, spansk",
+   "kj": 1192,
+   "kcal": 281,
+   "protein": "9,4"
+ },
+ {
+   "FødevareNavn": "Grønkål, konserves",
+   "kj": 123,
+   "kcal": 30,
+   "protein": "2,2"
+ },
+ {
+   "FødevareNavn": "Spinat, konserves",
+   "kj": 92,
+   "kcal": 22,
+   "protein": "2,7"
+ },
+ {
+   "FødevareNavn": "Kylling, kød og skind",
+   "kj": 726,
+   "kcal": 174,
+   "protein": "18,0"
+ },
+ {
+   "FødevareNavn": "Makrel i tomat, konserves",
+   "kj": 640,
+   "kcal": 154,
+   "protein": "11,7"
+ },
+ {
+   "FødevareNavn": "Champignon",
+   "kj": 97,
+   "kcal": 23,
+   "protein": "1,6"
+ },
+ {
+   "FødevareNavn": "Roulade, abrikos",
+   "kj": 1382,
+   "kcal": 327,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Oksekød, tykstegsfilet med kappe",
+   "kj": 715,
+   "kcal": 171,
+   "protein": "19,4"
+ },
+ {
+   "FødevareNavn": "Kiks, Marie",
+   "kj": 1834,
+   "kcal": 435,
+   "protein": "7,0"
+ },
+ {
+   "FødevareNavn": "Karse, frisk",
+   "kj": 111,
+   "kcal": 27,
+   "protein": "2,8"
+ },
+ {
+   "FødevareNavn": "Bønnespirer, mung",
+   "kj": 143,
+   "kcal": 34,
+   "protein": "3,0"
+ },
+ {
+   "FødevareNavn": "Lakrids, sød",
+   "kj": 1463,
+   "kcal": 345,
+   "protein": "6,8"
+ },
+ {
+   "FødevareNavn": "Hindbærmarmelade",
+   "kj": 860,
+   "kcal": 203,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Grisekød, skinkesteg af yderlår, med svær",
+   "kj": 759,
+   "kcal": 182,
+   "protein": "18,5"
+ },
+ {
+   "FødevareNavn": "Gaffelbidder",
+   "kj": 796,
+   "kcal": 192,
+   "protein": "12,0"
+ },
+ {
+   "FødevareNavn": "Persillerod",
+   "kj": 232,
+   "kcal": 55,
+   "protein": "2,3"
+ },
+ {
+   "FødevareNavn": "Vallepulver, tørret",
+   "kj": 1525,
+   "kcal": 359,
+   "protein": "12,9"
+ },
+ {
+   "FødevareNavn": "Bønnespirer",
+   "kj": 157,
+   "kcal": 37,
+   "protein": "3,0"
+ },
+ {
+   "FødevareNavn": "Minarine, 30 %, vegetabilsk fedt",
+   "kj": 1316,
+   "kcal": 319,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Oksekød, tykbov (marvpibebov)",
+   "kj": 760,
+   "kcal": 182,
+   "protein": "19,9"
+ },
+ {
+   "FødevareNavn": "Torsk, rogn, røget",
+   "kj": 613,
+   "kcal": 145,
+   "protein": "26,8"
+ },
+ {
+   "FødevareNavn": "Medisterpølse",
+   "kj": 907,
+   "kcal": 219,
+   "protein": "12,2"
+ },
+ {
+   "FødevareNavn": "Kalvekød, middelfedtt",
+   "kj": 768,
+   "kcal": 184,
+   "protein": "20,0"
+ },
+ {
+   "FødevareNavn": "Grisekød, bov med svær",
+   "kj": 787,
+   "kcal": 189,
+   "protein": "18,2"
+ },
+ {
+   "FødevareNavn": "Smørbart blandingsprodukt, 80% fedt",
+   "kj": 3005,
+   "kcal": 731,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Skumfiduser",
+   "kj": 1466,
+   "kcal": 345,
+   "protein": "5,2"
+ },
+ {
+   "FødevareNavn": "Grisekød, ca. 10 % fedtt",
+   "kj": 763,
+   "kcal": 183,
+   "protein": "18,7"
+ },
+ {
+   "FødevareNavn": "Sylte",
+   "kj": 898,
+   "kcal": 217,
+   "protein": "13,0"
+ },
+ {
+   "FødevareNavn": "Kylling, vinge, kød og skind",
+   "kj": 780,
+   "kcal": 187,
+   "protein": "19,2"
+ },
+ {
+   "FødevareNavn": "Hvedebrød med fedtrige frø, store, industrifremstillet",
+   "kj": 1122,
+   "kcal": 267,
+   "protein": "9,6"
+ },
+ {
+   "FødevareNavn": "Brisling (sardin), i tomat, konserves",
+   "kj": 857,
+   "kcal": 206,
+   "protein": "15,1"
+ },
+ {
+   "FødevareNavn": "Lammekød, bov",
+   "kj": 959,
+   "kcal": 231,
+   "protein": "18,5"
+ },
+ {
+   "FødevareNavn": "Fasan, kød og skind",
+   "kj": 712,
+   "kcal": 170,
+   "protein": "21,7"
+ },
+ {
+   "FødevareNavn": "Jordbærmarmelade",
+   "kj": 960,
+   "kcal": 226,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Laks, atlantisk, vild, koldrøget",
+   "kj": 676,
+   "kcal": 162,
+   "protein": "21,4"
+ },
+ {
+   "FødevareNavn": "Pastiller, sukkerfri",
+   "kj": 1589,
+   "kcal": 374,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Hellefisk, røget",
+   "kj": 838,
+   "kcal": 202,
+   "protein": "14,3"
+ },
+ {
+   "FødevareNavn": "Grisekød, kam uden svær, ca. 3 mm spæk",
+   "kj": 815,
+   "kcal": 196,
+   "protein": "19,2"
+ },
+ {
+   "FødevareNavn": "Blomkål, importeret",
+   "kj": 132,
+   "kcal": 31,
+   "protein": "3,1"
+ },
+ {
+   "FødevareNavn": "Fruktose",
+   "kj": 1696,
+   "kcal": 399,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Salt, stensalt, køkkensalt",
+   "kj": 0,
+   "kcal": 0,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Karameller, blandede",
+   "kj": 2023,
+   "kcal": 482,
+   "protein": "2,1"
+ },
+ {
+   "FødevareNavn": "Mayonnaise",
+   "kj": 3002,
+   "kcal": 730,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Leverpostej",
+   "kj": 989,
+   "kcal": 238,
+   "protein": "11,3"
+ },
+ {
+   "FødevareNavn": "Æblegele",
+   "kj": 1030,
+   "kcal": 243,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Solbærgele",
+   "kj": 1030,
+   "kcal": 243,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Grovbolle",
+   "kj": 1207,
+   "kcal": 286,
+   "protein": "9,6"
+ },
+ {
+   "FødevareNavn": "Smør, usaltet",
+   "kj": 3054,
+   "kcal": 743,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Gåsefedt",
+   "kj": 3693,
+   "kcal": 898,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Lammekød, kølle, med fedt",
+   "kj": 835,
+   "kcal": 201,
+   "protein": "18,4"
+ },
+ {
+   "FødevareNavn": "Plantemargarine, 80%, stege/bage",
+   "kj": 2984,
+   "kcal": 726,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Oksekød, tykkam",
+   "kj": 805,
+   "kcal": 193,
+   "protein": "18,8"
+ },
+ {
+   "FødevareNavn": "Margarine, 80 %, bordbrug, blød, vegetabilsk fedt",
+   "kj": 2990,
+   "kcal": 727,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Skinke, røget, kogt",
+   "kj": 829,
+   "kcal": 199,
+   "protein": "18,3"
+ },
+ {
+   "FødevareNavn": "Chokolade, mørk",
+   "kj": 2294,
+   "kcal": 549,
+   "protein": "4,3"
+ },
+ {
+   "FødevareNavn": "Tomatsuppe, spiseklar",
+   "kj": 304,
+   "kcal": 72,
+   "protein": "1,6"
+ },
+ {
+   "FødevareNavn": "Sild, marineret, kryddersild",
+   "kj": 955,
+   "kcal": 229,
+   "protein": "12,4"
+ },
+ {
+   "FødevareNavn": "Kødrand, dybfrost",
+   "kj": 908,
+   "kcal": 218,
+   "protein": "15,8"
+ },
+ {
+   "FødevareNavn": "Sild, røget",
+   "kj": 900,
+   "kcal": 216,
+   "protein": "20,5"
+ },
+ {
+   "FødevareNavn": "Grisekød, skinkeculotte af yderlår, ca. 5 mm spækt",
+   "kj": 927,
+   "kcal": 222,
+   "protein": "19,2"
+ },
+ {
+   "FødevareNavn": "Laks, atlantisk, vild, gravad",
+   "kj": 747,
+   "kcal": 178,
+   "protein": "21,2"
+ },
+ {
+   "FødevareNavn": "Margarine, 80 %, bordbrug, vegetabilsk fedt",
+   "kj": 3006,
+   "kcal": 731,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Ansjos, marineret, konserves",
+   "kj": 896,
+   "kcal": 215,
+   "protein": "13,4"
+ },
+ {
+   "FødevareNavn": "Brisling (ansjovis), marineret, konserves",
+   "kj": 896,
+   "kcal": 215,
+   "protein": "13,4"
+ },
+ {
+   "FødevareNavn": "Margarine, 80 %, stegning/bagning, animalsk og vegetabilsk fedt",
+   "kj": 3030,
+   "kcal": 737,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Høne, kød og skind",
+   "kj": 888,
+   "kcal": 214,
+   "protein": "17,1"
+ },
+ {
+   "FødevareNavn": "Margarine, 80 %, bordbrug, animalsk og vegetabilsk fedt",
+   "kj": 3038,
+   "kcal": 739,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Oksekød, spidsbrystt",
+   "kj": 699,
+   "kcal": 167,
+   "protein": "18,9"
+ },
+ {
+   "FødevareNavn": "Poulard, kød og skind",
+   "kj": 793,
+   "kcal": 190,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Oksekød, tyndbov + mellembov",
+   "kj": 852,
+   "kcal": 205,
+   "protein": "19,2"
+ },
+ {
+   "FødevareNavn": "Skinkepølse, pålæg",
+   "kj": 924,
+   "kcal": 222,
+   "protein": "15,1"
+ },
+ {
+   "FødevareNavn": "Margarine, gennemsnit",
+   "kj": 3049,
+   "kcal": 742,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Flødeskumskage, gåsebryst",
+   "kj": 1499,
+   "kcal": 359,
+   "protein": "3,1"
+ },
+ {
+   "FødevareNavn": "Dressing, italiensk",
+   "kj": 1233,
+   "kcal": 299,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, bolle, grov, med fedtrige frø, industrifremstillet",
+   "kj": 1179,
+   "kcal": 280,
+   "protein": "9,0"
+ },
+ {
+   "FødevareNavn": "Skummetmælk, økologisk",
+   "kj": 150,
+   "kcal": 35,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Skummetmælk",
+   "kj": 150,
+   "kcal": 35,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Bambusskud",
+   "kj": 173,
+   "kcal": 41,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Smør, saltet",
+   "kj": 3047,
+   "kcal": 741,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Oksekød, middelfedtt",
+   "kj": 1012,
+   "kcal": 242,
+   "protein": "19,7"
+ },
+ {
+   "FødevareNavn": "Sild, marineret, i madeirasauce",
+   "kj": 966,
+   "kcal": 232,
+   "protein": "14,0"
+ },
+ {
+   "FødevareNavn": "Passionsfrugt",
+   "kj": 435,
+   "kcal": 104,
+   "protein": "2,8"
+ },
+ {
+   "FødevareNavn": "Pølse, bierwurst",
+   "kj": 949,
+   "kcal": 228,
+   "protein": "14,6"
+ },
+ {
+   "FødevareNavn": "Syltetøj",
+   "kj": 1135,
+   "kcal": 267,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Grisekød, rullesteg af slagt",
+   "kj": 900,
+   "kcal": 217,
+   "protein": "17,9"
+ },
+ {
+   "FødevareNavn": "Roulade, hindbær",
+   "kj": 1590,
+   "kcal": 379,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Bayonneskinke, udbenet",
+   "kj": 804,
+   "kcal": 193,
+   "protein": "20,8"
+ },
+ {
+   "FødevareNavn": "Sukkerært (mangetout)",
+   "kj": 202,
+   "kcal": 48,
+   "protein": "3,8"
+ },
+ {
+   "FødevareNavn": "Roulade",
+   "kj": 1480,
+   "kcal": 351,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Rundstykke",
+   "kj": 1241,
+   "kcal": 294,
+   "protein": "9,7"
+ },
+ {
+   "FødevareNavn": "Oksekød, culotte",
+   "kj": 1125,
+   "kcal": 271,
+   "protein": "17,0"
+ },
+ {
+   "FødevareNavn": "Lakrids",
+   "kj": 1523,
+   "kcal": 359,
+   "protein": "3,8"
+ },
+ {
+   "FødevareNavn": "Minimælk, 0.5 % fedt",
+   "kj": 158,
+   "kcal": 37,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Oksekød, hakket, 15-20% fedt",
+   "kj": 903,
+   "kcal": 217,
+   "protein": "17,8"
+ },
+ {
+   "FødevareNavn": "Kærnemælk med citronsaft",
+   "kj": 214,
+   "kcal": 50,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Oksekød, tyndsteg med mørbrad",
+   "kj": 878,
+   "kcal": 211,
+   "protein": "20,3"
+ },
+ {
+   "FødevareNavn": "Kalv- og svinekød, hakket kalv og flæsk, 15-20% fedtt",
+   "kj": 904,
+   "kcal": 218,
+   "protein": "17,6"
+ },
+ {
+   "FødevareNavn": "Flødeskumskage, medalje",
+   "kj": 1543,
+   "kcal": 370,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Salat, mayonnaise-, italiensk",
+   "kj": 1266,
+   "kcal": 307,
+   "protein": "1,9"
+ },
+ {
+   "FødevareNavn": "Jagtpølse, pålæg",
+   "kj": 983,
+   "kcal": 237,
+   "protein": "13,1"
+ },
+ {
+   "FødevareNavn": "Kaffebønne, ristet, formalet",
+   "kj": 1668,
+   "kcal": 399,
+   "protein": "11,7"
+ },
+ {
+   "FødevareNavn": "Grisekød, hakket, 15-20% fedtt",
+   "kj": 929,
+   "kcal": 224,
+   "protein": "17,1"
+ },
+ {
+   "FødevareNavn": "Grisekød, kogestykke af bryst uden svær, ca. 2 mm spæk",
+   "kj": 948,
+   "kcal": 228,
+   "protein": "17,4"
+ },
+ {
+   "FødevareNavn": "Sild, marineret, i karrysauce",
+   "kj": 1157,
+   "kcal": 279,
+   "protein": "7,7"
+ },
+ {
+   "FødevareNavn": "Kakao, instant, med mælk, pulver",
+   "kj": 1617,
+   "kcal": 382,
+   "protein": "5,5"
+ },
+ {
+   "FødevareNavn": "Rødspætte, filet, paneret, friturestegt",
+   "kj": 1049,
+   "kcal": 251,
+   "protein": "15,2"
+ },
+ {
+   "FødevareNavn": "Risklid",
+   "kj": 1654,
+   "kcal": 398,
+   "protein": "13,4"
+ },
+ {
+   "FødevareNavn": "Oksekød, tyndstegsfilet med fedtkant",
+   "kj": 883,
+   "kcal": 212,
+   "protein": "19,9"
+ },
+ {
+   "FødevareNavn": "Tørkage, kransekage",
+   "kj": 1857,
+   "kcal": 443,
+   "protein": "9,2"
+ },
+ {
+   "FødevareNavn": "Hvedekim",
+   "kj": 1593,
+   "kcal": 379,
+   "protein": "27,9"
+ },
+ {
+   "FødevareNavn": "Kuller, paneret, stegt",
+   "kj": 827,
+   "kcal": 198,
+   "protein": "25,0"
+ },
+ {
+   "FødevareNavn": "Tun i olie, konserves",
+   "kj": 845,
+   "kcal": 202,
+   "protein": "24,5"
+ },
+ {
+   "FødevareNavn": "Skorzonerrod",
+   "kj": 317,
+   "kcal": 75,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Fårekød, bov",
+   "kj": 947,
+   "kcal": 228,
+   "protein": "18,7"
+ },
+ {
+   "FødevareNavn": "Kylling, kød og skind, grillstegt",
+   "kj": 811,
+   "kcal": 194,
+   "protein": "24,2"
+ },
+ {
+   "FødevareNavn": "Chokolade, koge-",
+   "kj": 2344,
+   "kcal": 562,
+   "protein": "5,7"
+ },
+ {
+   "FødevareNavn": "Wienerpølse, kogt, fastfood",
+   "kj": 1082,
+   "kcal": 261,
+   "protein": "12,7"
+ },
+ {
+   "FødevareNavn": "Flødeskumskage, napoleonskage",
+   "kj": 1494,
+   "kcal": 359,
+   "protein": "2,8"
+ },
+ {
+   "FødevareNavn": "Mælkebøtte, blade",
+   "kj": 241,
+   "kcal": 57,
+   "protein": "3,0"
+ },
+ {
+   "FødevareNavn": "Kanel, stang",
+   "kj": 1016,
+   "kcal": 246,
+   "protein": "4,0"
+ },
+ {
+   "FødevareNavn": "Sirup",
+   "kj": 1307,
+   "kcal": 308,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Paté, pålæg",
+   "kj": 1064,
+   "kcal": 257,
+   "protein": "13,0"
+ },
+ {
+   "FødevareNavn": "Kantarel",
+   "kj": 114,
+   "kcal": 27,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Kødpølse, pålæg",
+   "kj": 1125,
+   "kcal": 272,
+   "protein": "11,2"
+ },
+ {
+   "FødevareNavn": "Sapote, stor sapodil",
+   "kj": 609,
+   "kcal": 144,
+   "protein": "2,1"
+ },
+ {
+   "FødevareNavn": "Flæskesvær, snacks",
+   "kj": 2413,
+   "kcal": 580,
+   "protein": "54,1"
+ },
+ {
+   "FødevareNavn": "Malakoffpølse, pålæg",
+   "kj": 1132,
+   "kcal": 273,
+   "protein": "9,8"
+ },
+ {
+   "FødevareNavn": "Makrel, filet, naturel, konserves",
+   "kj": 931,
+   "kcal": 224,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Ribbensstegssandwich",
+   "kj": 1159,
+   "kcal": 277,
+   "protein": "12,3"
+ },
+ {
+   "FødevareNavn": "Cacaoskummetmælk",
+   "kj": 246,
+   "kcal": 58,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Cacaoskummetmælk (UHT)",
+   "kj": 251,
+   "kcal": 59,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Oksekød, højrebsfilet med kappe",
+   "kj": 893,
+   "kcal": 214,
+   "protein": "20,1"
+ },
+ {
+   "FødevareNavn": "Camembert, 30+",
+   "kj": 832,
+   "kcal": 199,
+   "protein": "25,0"
+ },
+ {
+   "FødevareNavn": "Lucernespirer",
+   "kj": 112,
+   "kcal": 27,
+   "protein": "4,0"
+ },
+ {
+   "FødevareNavn": "Grisekød, ca. 20 % fedtt",
+   "kj": 1008,
+   "kcal": 243,
+   "protein": "17,9"
+ },
+ {
+   "FødevareNavn": "Lakrids, salt",
+   "kj": 1507,
+   "kcal": 355,
+   "protein": "6,7"
+ },
+ {
+   "FødevareNavn": "Kiks, 20-30% fuldkorn, digestivetype",
+   "kj": 1931,
+   "kcal": 460,
+   "protein": "6,5"
+ },
+ {
+   "FødevareNavn": "Grisekød, mellemkam med svær",
+   "kj": 1114,
+   "kcal": 268,
+   "protein": "18,3"
+ },
+ {
+   "FødevareNavn": "Vingummi",
+   "kj": 1482,
+   "kcal": 349,
+   "protein": "5,5"
+ },
+ {
+   "FødevareNavn": "Brisling (sardin), i olie, konserves",
+   "kj": 856,
+   "kcal": 205,
+   "protein": "24,6"
+ },
+ {
+   "FødevareNavn": "Sardin, i olie, konserves",
+   "kj": 856,
+   "kcal": 205,
+   "protein": "24,6"
+ },
+ {
+   "FødevareNavn": "Kiks til ost, Cream Crackers",
+   "kj": 1863,
+   "kcal": 443,
+   "protein": "9,4"
+ },
+ {
+   "FødevareNavn": "Grisekød, kogestykke af bryst med svær",
+   "kj": 1218,
+   "kcal": 294,
+   "protein": "16,3"
+ },
+ {
+   "FødevareNavn": "Modermælk, colostrum",
+   "kj": 242,
+   "kcal": 58,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Morgenmadsprodukt, Havrefras",
+   "kj": 1590,
+   "kcal": 377,
+   "protein": "13,2"
+ },
+ {
+   "FødevareNavn": "Pølse, cervelatpølse, pålæg",
+   "kj": 1146,
+   "kcal": 277,
+   "protein": "11,1"
+ },
+ {
+   "FødevareNavn": "Mintgele",
+   "kj": 1141,
+   "kcal": 269,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Sild, høstsild, fedsild",
+   "kj": 1031,
+   "kcal": 248,
+   "protein": "19,3"
+ },
+ {
+   "FødevareNavn": "Spædbørnsmad, modermælkserstatning, lavt jernindhold, drikkeklar",
+   "kj": 254,
+   "kcal": 61,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Vekao",
+   "kj": 2342,
+   "kcal": 561,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Medisterpølse, røget",
+   "kj": 1156,
+   "kcal": 279,
+   "protein": "11,6"
+ },
+ {
+   "FødevareNavn": "Bacon i skiver",
+   "kj": 1088,
+   "kcal": 263,
+   "protein": "15,9"
+ },
+ {
+   "FødevareNavn": "Sandwich med skinke og ost, toasted, fastfood (Parisertoast)",
+   "kj": 1248,
+   "kcal": 298,
+   "protein": "11,0"
+ },
+ {
+   "FødevareNavn": "Lucerne, alfalfa, frø",
+   "kj": 1702,
+   "kcal": 405,
+   "protein": "35,1"
+ },
+ {
+   "FødevareNavn": "Wienerpølse",
+   "kj": 771,
+   "kcal": 188,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Dressing, mayonnaise",
+   "kj": 1437,
+   "kcal": 348,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Rugsigtemel (udmalingsgrad ca. 70 %)",
+   "kj": 1447,
+   "kcal": 342,
+   "protein": "6,1"
+ },
+ {
+   "FødevareNavn": "Oksekød, entrecote med kappe",
+   "kj": 1098,
+   "kcal": 265,
+   "protein": "18,2"
+ },
+ {
+   "FødevareNavn": "Kippers i olie, konserves",
+   "kj": 1033,
+   "kcal": 249,
+   "protein": "20,5"
+ },
+ {
+   "FødevareNavn": "Spegesild",
+   "kj": 1092,
+   "kcal": 264,
+   "protein": "13,1"
+ },
+ {
+   "FødevareNavn": "Letmælkskefir",
+   "kj": 201,
+   "kcal": 48,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Letmælk, økologisk",
+   "kj": 199,
+   "kcal": 47,
+   "protein": "3,4"
+ },
+ {
+   "FødevareNavn": "Dressing, olie-eddike",
+   "kj": 1446,
+   "kcal": 350,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Muskatnød, hel",
+   "kj": 2097,
+   "kcal": 507,
+   "protein": "6,0"
+ },
+ {
+   "FødevareNavn": "Rullepølse, pålæg",
+   "kj": 1128,
+   "kcal": 272,
+   "protein": "15,3"
+ },
+ {
+   "FødevareNavn": "Rosenkål, vinter (januar til april)",
+   "kj": 213,
+   "kcal": 51,
+   "protein": "4,4"
+ },
+ {
+   "FødevareNavn": "Kørvel",
+   "kj": 88,
+   "kcal": 21,
+   "protein": "2,2"
+ },
+ {
+   "FødevareNavn": "Pølse, bratwurst, thüringer",
+   "kj": 1172,
+   "kcal": 283,
+   "protein": "14,4"
+ },
+ {
+   "FødevareNavn": "Jordnøddesmør",
+   "kj": 2636,
+   "kcal": 637,
+   "protein": "22,6"
+ },
+ {
+   "FødevareNavn": "Pølse, krakowpølse",
+   "kj": 1176,
+   "kcal": 284,
+   "protein": "15,2"
+ },
+ {
+   "FødevareNavn": "Majs, kerner, konserves",
+   "kj": 428,
+   "kcal": 101,
+   "protein": "3,1"
+ },
+ {
+   "FødevareNavn": "Æble, tørret",
+   "kj": 1069,
+   "kcal": 253,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Modermælk, overgangsmælk (10. dag efter fødslen)",
+   "kj": 280,
+   "kcal": 67,
+   "protein": "1,5"
+ },
+ {
+   "FødevareNavn": "Yoghurt, med frugt, 1.5 % fedt",
+   "kj": 306,
+   "kcal": 72,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Kalvekød, fedtt",
+   "kj": 1138,
+   "kcal": 274,
+   "protein": "17,3"
+ },
+ {
+   "FødevareNavn": "Sprængt nakke, grisekød",
+   "kj": 1095,
+   "kcal": 264,
+   "protein": "19,5"
+ },
+ {
+   "FødevareNavn": "Småkage",
+   "kj": 2100,
+   "kcal": 502,
+   "protein": "5,3"
+ },
+ {
+   "FødevareNavn": "Fløde 38 %, piskefløde",
+   "kj": 1484,
+   "kcal": 360,
+   "protein": "2,1"
+ },
+ {
+   "FødevareNavn": "Honning",
+   "kj": 1391,
+   "kcal": 327,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Sojadrik, kommercielt tilberedt, ikke beriget",
+   "kj": 210,
+   "kcal": 50,
+   "protein": "3,1"
+ },
+ {
+   "FødevareNavn": "Modermælk, moden",
+   "kj": 296,
+   "kcal": 71,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Creme fraiche 38 %",
+   "kj": 1492,
+   "kcal": 362,
+   "protein": "2,1"
+ },
+ {
+   "FødevareNavn": "Laks, atlantisk, vild, saltet",
+   "kj": 818,
+   "kcal": 198,
+   "protein": "8,5"
+ },
+ {
+   "FødevareNavn": "Blodpølse, kogt",
+   "kj": 1298,
+   "kcal": 312,
+   "protein": "10,7"
+ },
+ {
+   "FødevareNavn": "Æg, høne, blomme, saltet, pasteuriseret",
+   "kj": 1116,
+   "kcal": 269,
+   "protein": "14,0"
+ },
+ {
+   "FødevareNavn": "Bækforel, filet, røget",
+   "kj": 852,
+   "kcal": 204,
+   "protein": "27,7"
+ },
+ {
+   "FødevareNavn": "Cacaomælk (UHT)",
+   "kj": 292,
+   "kcal": 69,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Gelatine",
+   "kj": 1481,
+   "kcal": 349,
+   "protein": "86,9"
+ },
+ {
+   "FødevareNavn": "Minarine, gennemsnit",
+   "kj": 1534,
+   "kcal": 373,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Wienerpølse, ristet, fastfood",
+   "kj": 1208,
+   "kcal": 292,
+   "protein": "14,0"
+ },
+ {
+   "FødevareNavn": "Pekannød, olieristet",
+   "kj": 3076,
+   "kcal": 747,
+   "protein": "9,2"
+ },
+ {
+   "FødevareNavn": "Pecannød, tørristet",
+   "kj": 3055,
+   "kcal": 742,
+   "protein": "9,5"
+ },
+ {
+   "FødevareNavn": "Minarine, 40 %, vegetabilsk fedt",
+   "kj": 1538,
+   "kcal": 374,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Rosenkål, efterår (oktober til december)",
+   "kj": 240,
+   "kcal": 57,
+   "protein": "4,8"
+ },
+ {
+   "FødevareNavn": "Boghvedemel",
+   "kj": 1454,
+   "kcal": 343,
+   "protein": "12,0"
+ },
+ {
+   "FødevareNavn": "Gær, tørret",
+   "kj": 1327,
+   "kcal": 315,
+   "protein": "32,5"
+ },
+ {
+   "FødevareNavn": "Due, vildt, kød og skind",
+   "kj": 1190,
+   "kcal": 287,
+   "protein": "18,2"
+ },
+ {
+   "FødevareNavn": "Grisekød, stegestykke af bryst, uden svær, ca. 2 mm spæk",
+   "kj": 1255,
+   "kcal": 303,
+   "protein": "15,5"
+ },
+ {
+   "FødevareNavn": "Smelteost, 20+",
+   "kj": 934,
+   "kcal": 223,
+   "protein": "22,2"
+ },
+ {
+   "FødevareNavn": "Danbo, 20+",
+   "kj": 939,
+   "kcal": 225,
+   "protein": "27,2"
+ },
+ {
+   "FødevareNavn": "Tang, kombu, tørret",
+   "kj": 1037,
+   "kcal": 245,
+   "protein": "7,9"
+ },
+ {
+   "FødevareNavn": "Cacaomælk",
+   "kj": 292,
+   "kcal": 69,
+   "protein": "3,7"
+ },
+ {
+   "FødevareNavn": "Kakao, instant, uden mælk, pulver",
+   "kj": 1660,
+   "kcal": 392,
+   "protein": "4,1"
+ },
+ {
+   "FødevareNavn": "Gærekstrakt, marmite",
+   "kj": 658,
+   "kcal": 155,
+   "protein": "27,8"
+ },
+ {
+   "FødevareNavn": "Salat, mayonnaise-, karry-",
+   "kj": 1548,
+   "kcal": 375,
+   "protein": "1,7"
+ },
+ {
+   "FødevareNavn": "Pommes frites, friturestegt, fastfood",
+   "kj": 1265,
+   "kcal": 302,
+   "protein": "3,8"
+ },
+ {
+   "FødevareNavn": "Æg, blomme, tilsat sukker, pasteuriseret, dybfrost",
+   "kj": 1303,
+   "kcal": 313,
+   "protein": "14,2"
+ },
+ {
+   "FødevareNavn": "Ost, fast, 20+, alle typer",
+   "kj": 936,
+   "kcal": 224,
+   "protein": "30,0"
+ },
+ {
+   "FødevareNavn": "Flødeost, 60+",
+   "kj": 1379,
+   "kcal": 334,
+   "protein": "10,2"
+ },
+ {
+   "FødevareNavn": "Tomatpure, koncentreret",
+   "kj": 375,
+   "kcal": 89,
+   "protein": "4,3"
+ },
+ {
+   "FødevareNavn": "Sojabønner, tørrede",
+   "kj": 1720,
+   "kcal": 412,
+   "protein": "35,5"
+ },
+ {
+   "FødevareNavn": "Kødekstrakt, terning",
+   "kj": 1002,
+   "kcal": 238,
+   "protein": "16,0"
+ },
+ {
+   "FødevareNavn": "Makrel, røget",
+   "kj": 1243,
+   "kcal": 300,
+   "protein": "18,0"
+ },
+ {
+   "FødevareNavn": "Kogt oksebryst, pålæg",
+   "kj": 1141,
+   "kcal": 275,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Dressing, thousand island",
+   "kj": 1561,
+   "kcal": 378,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Kammerjunkere",
+   "kj": 1959,
+   "kcal": 467,
+   "protein": "5,4"
+ },
+ {
+   "FødevareNavn": "Risengryn, grødris, polerede",
+   "kj": 1528,
+   "kcal": 360,
+   "protein": "6,5"
+ },
+ {
+   "FødevareNavn": "Skinke, røget",
+   "kj": 964,
+   "kcal": 231,
+   "protein": "28,4"
+ },
+ {
+   "FødevareNavn": "Smelteost, 30+",
+   "kj": 1068,
+   "kcal": 256,
+   "protein": "26,4"
+ },
+ {
+   "FødevareNavn": "Brie, 45+",
+   "kj": 1182,
+   "kcal": 285,
+   "protein": "20,8"
+ },
+ {
+   "FødevareNavn": "Kylling, kød og skind, paneret, friturestegt",
+   "kj": 1178,
+   "kcal": 282,
+   "protein": "22,5"
+ },
+ {
+   "FødevareNavn": "Æg, høne, blomme",
+   "kj": 1340,
+   "kcal": 324,
+   "protein": "15,6"
+ },
+ {
+   "FødevareNavn": "Oksekød, fedtt",
+   "kj": 1332,
+   "kcal": 322,
+   "protein": "16,4"
+ },
+ {
+   "FødevareNavn": "Oksekød, tyndbrystt",
+   "kj": 1148,
+   "kcal": 278,
+   "protein": "7,0"
+ },
+ {
+   "FødevareNavn": "Lammekød",
+   "kj": 1365,
+   "kcal": 330,
+   "protein": "13,9"
+ },
+ {
+   "FødevareNavn": "Camembert, 45+",
+   "kj": 1196,
+   "kcal": 288,
+   "protein": "21,4"
+ },
+ {
+   "FødevareNavn": "Kylling, kød og skind, friturestegt",
+   "kj": 1086,
+   "kcal": 260,
+   "protein": "28,3"
+ },
+ {
+   "FødevareNavn": "Oksekød, tykbrystt",
+   "kj": 950,
+   "kcal": 229,
+   "protein": "15,9"
+ },
+ {
+   "FødevareNavn": "Sildepostej",
+   "kj": 1428,
+   "kcal": 346,
+   "protein": "11,1"
+ },
+ {
+   "FødevareNavn": "Boghvedegryn",
+   "kj": 1507,
+   "kcal": 355,
+   "protein": "7,0"
+ },
+ {
+   "FødevareNavn": "Feta, 50+",
+   "kj": 1257,
+   "kcal": 303,
+   "protein": "17,8"
+ },
+ {
+   "FødevareNavn": "Skummetmælksost, max. 5+",
+   "kj": 783,
+   "kcal": 185,
+   "protein": "43,1"
+ },
+ {
+   "FødevareNavn": "Tomatpure",
+   "kj": 184,
+   "kcal": 43,
+   "protein": "1,6"
+ },
+ {
+   "FødevareNavn": "?",
+   "kj": null,
+   "kcal": null,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "l",
+   "kj": 1282,
+   "kcal": 310,
+   "protein": "15,1"
+ },
+ {
+   "FødevareNavn": "Grisekød, stegestykke af bryst med svær",
+   "kj": 1478,
+   "kcal": 358,
+   "protein": "15,0"
+ },
+ {
+   "FødevareNavn": "Remoulade",
+   "kj": 1568,
+   "kcal": 380,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Oksekød, tværrebt",
+   "kj": 1366,
+   "kcal": 330,
+   "protein": "15,3"
+ },
+ {
+   "FødevareNavn": "Ris, polerede",
+   "kj": 1504,
+   "kcal": 354,
+   "protein": "8,4"
+ },
+ {
+   "FødevareNavn": "Bouillon, oksekød, koncentreret, terning",
+   "kj": 676,
+   "kcal": 160,
+   "protein": "17,0"
+ },
+ {
+   "FødevareNavn": "Rismel",
+   "kj": 1527,
+   "kcal": 360,
+   "protein": "7,3"
+ },
+ {
+   "FødevareNavn": "Kakao, pulver",
+   "kj": 1682,
+   "kcal": 405,
+   "protein": "16,5"
+ },
+ {
+   "FødevareNavn": "Oliven, sorte, saltede, i olie",
+   "kj": 1476,
+   "kcal": 358,
+   "protein": "2,2"
+ },
+ {
+   "FødevareNavn": "Rugmel, halvsigtet (udmalingsgrad ca. 85 %)",
+   "kj": 1436,
+   "kcal": 339,
+   "protein": "7,8"
+ },
+ {
+   "FødevareNavn": "Danbo, 30+",
+   "kj": 1074,
+   "kcal": 257,
+   "protein": "27,7"
+ },
+ {
+   "FødevareNavn": "Oksekød, slagt",
+   "kj": 1387,
+   "kcal": 335,
+   "protein": "16,1"
+ },
+ {
+   "FødevareNavn": "Tomatketchup",
+   "kj": 479,
+   "kcal": 114,
+   "protein": "2,5"
+ },
+ {
+   "FødevareNavn": "Sødmælk (UHT)",
+   "kj": 264,
+   "kcal": 63,
+   "protein": "3,4"
+ },
+ {
+   "FødevareNavn": "Sødmælk, økologisk",
+   "kj": 269,
+   "kcal": 64,
+   "protein": "3,4"
+ },
+ {
+   "FødevareNavn": "Lammekød, rygstykket",
+   "kj": 1205,
+   "kcal": 290,
+   "protein": "15,8"
+ },
+ {
+   "FødevareNavn": "Grisekød, fedtt",
+   "kj": 1429,
+   "kcal": 346,
+   "protein": "14,4"
+ },
+ {
+   "FødevareNavn": "Yoghurt med jordbær",
+   "kj": 354,
+   "kcal": 84,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Ris, parboiled",
+   "kj": 1518,
+   "kcal": 358,
+   "protein": "7,8"
+ },
+ {
+   "FødevareNavn": "Kartoffelmel",
+   "kj": 1455,
+   "kcal": 342,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Yoghurt med skovbær",
+   "kj": 362,
+   "kcal": 86,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Ost, fast, 30+, alle typer",
+   "kj": 1097,
+   "kcal": 263,
+   "protein": "28,7"
+ },
+ {
+   "FødevareNavn": "Spædbørnsmad, modermælkserstatning, højt jernindhold, pulver",
+   "kj": 2112,
+   "kcal": 505,
+   "protein": "11,3"
+ },
+ {
+   "FødevareNavn": "Fersken, tørret",
+   "kj": 1407,
+   "kcal": 333,
+   "protein": "4,9"
+ },
+ {
+   "FødevareNavn": "Camembert, 50+",
+   "kj": 1264,
+   "kcal": 305,
+   "protein": "17,5"
+ },
+ {
+   "FødevareNavn": "Yoghurt med peach melba",
+   "kj": 368,
+   "kcal": 87,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Yoghurt, sødmælk, med frugt",
+   "kj": 373,
+   "kcal": 89,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Maribo, 30+",
+   "kj": 1119,
+   "kcal": 268,
+   "protein": "29,1"
+ },
+ {
+   "FødevareNavn": "Yoghurt med pære og banan",
+   "kj": 372,
+   "kcal": 89,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Yoghurt med kirsebær",
+   "kj": 376,
+   "kcal": 89,
+   "protein": "3,4"
+ },
+ {
+   "FødevareNavn": "A38, acidophilus tykmælk af sødmælk, 3,5% fedt",
+   "kj": 271,
+   "kcal": 65,
+   "protein": "4,9"
+ },
+ {
+   "FødevareNavn": "Birkes, frø",
+   "kj": 2273,
+   "kcal": 549,
+   "protein": "18,4"
+ },
+ {
+   "FødevareNavn": "Bygmel",
+   "kj": 1428,
+   "kcal": 338,
+   "protein": "9,2"
+ },
+ {
+   "FødevareNavn": "Pastiller, med sukker",
+   "kj": 1577,
+   "kcal": 371,
+   "protein": "4,4"
+ },
+ {
+   "FødevareNavn": "Pasta, kogt",
+   "kj": 541,
+   "kcal": 128,
+   "protein": "5,0"
+ },
+ {
+   "FødevareNavn": "Majsmel",
+   "kj": 1528,
+   "kcal": 361,
+   "protein": "8,0"
+ },
+ {
+   "FødevareNavn": "Mozzarella, 30+",
+   "kj": 1163,
+   "kcal": 279,
+   "protein": "28,9"
+ },
+ {
+   "FødevareNavn": "Hvedemel",
+   "kj": 1454,
+   "kcal": 343,
+   "protein": "9,7"
+ },
+ {
+   "FødevareNavn": "?\nl, røget",
+   "kj": 1362,
+   "kcal": 329,
+   "protein": "19,4"
+ },
+ {
+   "FødevareNavn": "Flødeost, 70+",
+   "kj": 1569,
+   "kcal": 380,
+   "protein": "9,6"
+ },
+ {
+   "FødevareNavn": "Yoghurt med müsli",
+   "kj": 368,
+   "kcal": 88,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Hvedemel, bagerimel",
+   "kj": 1478,
+   "kcal": 349,
+   "protein": "10,0"
+ },
+ {
+   "FødevareNavn": "Dressing, creme fraiche",
+   "kj": 1733,
+   "kcal": 420,
+   "protein": "1,6"
+ },
+ {
+   "FødevareNavn": "Hvedegryn, mannagryn",
+   "kj": 1497,
+   "kcal": 353,
+   "protein": "9,4"
+ },
+ {
+   "FødevareNavn": "Bagepulver",
+   "kj": 731,
+   "kcal": 172,
+   "protein": "5,2"
+ },
+ {
+   "FødevareNavn": "Brie, 50+",
+   "kj": 1372,
+   "kcal": 331,
+   "protein": "19,8"
+ },
+ {
+   "FødevareNavn": "Grønne ærter, konserves",
+   "kj": 314,
+   "kcal": 75,
+   "protein": "5,2"
+ },
+ {
+   "FødevareNavn": "Lammekød, slagt",
+   "kj": 1525,
+   "kcal": 369,
+   "protein": "14,5"
+ },
+ {
+   "FødevareNavn": "Lammekød, brystt",
+   "kj": 1525,
+   "kcal": 369,
+   "protein": "14,5"
+ },
+ {
+   "FødevareNavn": "Bønnespirer, soja",
+   "kj": 240,
+   "kcal": 57,
+   "protein": "6,2"
+ },
+ {
+   "FødevareNavn": "Samsø, 30+",
+   "kj": 1164,
+   "kcal": 279,
+   "protein": "30,1"
+ },
+ {
+   "FødevareNavn": "Gedemælk",
+   "kj": 289,
+   "kcal": 69,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Tidselolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Majskimolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Theboller o.l. (bløddejsboller)",
+   "kj": 1250,
+   "kcal": 296,
+   "protein": "9,1"
+ },
+ {
+   "FødevareNavn": "Hvedekimolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Bomuldsfrøolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Sorbitol",
+   "kj": 1000,
+   "kcal": 240,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Palmeolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Kakaosmør",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Sennep, pulver",
+   "kj": 2007,
+   "kcal": 482,
+   "protein": "28,9"
+ },
+ {
+   "FødevareNavn": "Palmekerneolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Jordnøddeolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Solsikkeolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Valnøddeolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Rødbede, dansk",
+   "kj": 173,
+   "kcal": 41,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Grønkål, dansk",
+   "kj": 177,
+   "kcal": 43,
+   "protein": "3,4"
+ },
+ {
+   "FødevareNavn": "Salat, Iceberg, dansk",
+   "kj": 51,
+   "kcal": 12,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Torsk, levertran",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Melboller, dybfrost",
+   "kj": 878,
+   "kcal": 211,
+   "protein": "7,0"
+ },
+ {
+   "FødevareNavn": "Sesamolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Salat, Iceberg, importeret",
+   "kj": 58,
+   "kcal": 14,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Sukker, brunt rørsukker",
+   "kj": 1697,
+   "kcal": 399,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Majsolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Hørfrøolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Rugbrød, soft, uden fedtrige frø, uden kerner, industrifremstillet",
+   "kj": 887,
+   "kcal": 210,
+   "protein": "5,0"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, italiensk type, stort, detailbageri",
+   "kj": 1057,
+   "kcal": 249,
+   "protein": "8,0"
+ },
+ {
+   "FødevareNavn": "Vindruekerneolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Kokosolie",
+   "kj": 3696,
+   "kcal": 899,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Levertran (Sej)",
+   "kj": 3698,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Oksetalg",
+   "kj": 3600,
+   "kcal": 875,
+   "protein": "5,0"
+ },
+ {
+   "FødevareNavn": "Sojaolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Fiskefilet, paneret, friturestegt, fastfood",
+   "kj": 1196,
+   "kcal": 286,
+   "protein": "13,4"
+ },
+ {
+   "FødevareNavn": "Olivenolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Rapsolie",
+   "kj": 3700,
+   "kcal": 900,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Selleri, rod, dansk",
+   "kj": 126,
+   "kcal": 30,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Rucola",
+   "kj": 89,
+   "kcal": 21,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Græskarkerner, tørret",
+   "kj": 2351,
+   "kcal": 568,
+   "protein": "30,8"
+ },
+ {
+   "FødevareNavn": "Hvedemel, durum",
+   "kj": 1471,
+   "kcal": 347,
+   "protein": "12,4"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, fint, store, industrifremstillet",
+   "kj": 1108,
+   "kcal": 262,
+   "protein": "8,4"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, fint, store, detailbageri",
+   "kj": 1157,
+   "kcal": 274,
+   "protein": "8,2"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, groft, store, industrifremstillet",
+   "kj": 1070,
+   "kcal": 253,
+   "protein": "8,9"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, groft, store, detailbageri",
+   "kj": 1084,
+   "kcal": 256,
+   "protein": "8,4"
+ },
+ {
+   "FødevareNavn": "Tigerreje, opdræt, dybfrost",
+   "kj": 289,
+   "kcal": 68,
+   "protein": "15,7"
+ },
+ {
+   "FødevareNavn": "Reje, sort tiger-, opdræt, kogt, dybfrost",
+   "kj": 246,
+   "kcal": 58,
+   "protein": "13,5"
+ },
+ {
+   "FødevareNavn": "Laks, atlantisk, opdræt, koldrøget",
+   "kj": 711,
+   "kcal": 170,
+   "protein": "20,9"
+ },
+ {
+   "FødevareNavn": "Laks, atlantisk, opdræt, varmrøget",
+   "kj": 1108,
+   "kcal": 267,
+   "protein": "20,1"
+ },
+ {
+   "FødevareNavn": "Hvid hvede, melmix",
+   "kj": 1439,
+   "kcal": 341,
+   "protein": "11,9"
+ },
+ {
+   "FødevareNavn": "Småkage, hvede, traditionelle danske, industrifremstillet",
+   "kj": 2174,
+   "kcal": 520,
+   "protein": "4,9"
+ },
+ {
+   "FødevareNavn": "Småkage, cookie (amerikansk type), industrifremstillet",
+   "kj": 2139,
+   "kcal": 511,
+   "protein": "5,4"
+ },
+ {
+   "FødevareNavn": "Småkage, havreflager, industrifremstillet",
+   "kj": 2106,
+   "kcal": 504,
+   "protein": "4,5"
+ },
+ {
+   "FødevareNavn": "Småkage, brunkage, industrifremstillet",
+   "kj": 1968,
+   "kcal": 469,
+   "protein": "5,2"
+ },
+ {
+   "FødevareNavn": "Småkage, pebernød, industrifremstillet",
+   "kj": 1997,
+   "kcal": 476,
+   "protein": "5,3"
+ },
+ {
+   "FødevareNavn": "Småkage, klejne, industrifremstillet",
+   "kj": 2191,
+   "kcal": 527,
+   "protein": "5,4"
+ },
+ {
+   "FødevareNavn": "Småkage, med lavt sukkerindhold (sukkerfri, light) industrifremstillet",
+   "kj": 2019,
+   "kcal": 483,
+   "protein": "6,5"
+ },
+ {
+   "FødevareNavn": "Småkage, kokoskager, industrifremstillet",
+   "kj": 1927,
+   "kcal": 460,
+   "protein": "4,1"
+ },
+ {
+   "FødevareNavn": "Kage, trøffelprodukt / koldprodukt, industrifremstillet",
+   "kj": 1880,
+   "kcal": 449,
+   "protein": "3,7"
+ },
+ {
+   "FødevareNavn": "Kransekage, industrifremstillet",
+   "kj": 1857,
+   "kcal": 443,
+   "protein": "6,0"
+ },
+ {
+   "FødevareNavn": "Babymajs",
+   "kj": 154,
+   "kcal": 37,
+   "protein": "2,3"
+ },
+ {
+   "FødevareNavn": "Pomelo",
+   "kj": 242,
+   "kcal": 57,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Kiks, rug",
+   "kj": 1873,
+   "kcal": 446,
+   "protein": "6,1"
+ },
+ {
+   "FødevareNavn": "Kiks, hvede, sød, med tyk chokolade",
+   "kj": 2110,
+   "kcal": 504,
+   "protein": "6,4"
+ },
+ {
+   "FødevareNavn": "Kiks, dobbelte, hvede, søde",
+   "kj": 2019,
+   "kcal": 481,
+   "protein": "5,7"
+ },
+ {
+   "FødevareNavn": "Kiks, havre, søde",
+   "kj": 1963,
+   "kcal": 468,
+   "protein": "6,9"
+ },
+ {
+   "FødevareNavn": "Kiks, havre, søde, med chokolade",
+   "kj": 2047,
+   "kcal": 489,
+   "protein": "6,5"
+ },
+ {
+   "FødevareNavn": "Müslibar",
+   "kj": 1830,
+   "kcal": 435,
+   "protein": "6,1"
+ },
+ {
+   "FødevareNavn": "Vaffelrør",
+   "kj": 2133,
+   "kcal": 510,
+   "protein": "4,2"
+ },
+ {
+   "FødevareNavn": "Kiks, grov med frugt eller grønt",
+   "kj": 1822,
+   "kcal": 433,
+   "protein": "7,8"
+ },
+ {
+   "FødevareNavn": "Skummetmælk, 0.1 % fedt",
+   "kj": 148,
+   "kcal": 35,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Yoghurt naturel, 1.5 % fedt",
+   "kj": 200,
+   "kcal": 48,
+   "protein": "4,1"
+ },
+ {
+   "FødevareNavn": "Yoghurt naturel, 0.1 % fedt",
+   "kj": 164,
+   "kcal": 39,
+   "protein": "4,3"
+ },
+ {
+   "FødevareNavn": "Hvid hvede brød, groft, store, detailbageri",
+   "kj": 1066,
+   "kcal": 252,
+   "protein": "8,9"
+ },
+ {
+   "FødevareNavn": "Hvid hvede bolle, grov, industrifremstillet",
+   "kj": 977,
+   "kcal": 231,
+   "protein": "8,2"
+ },
+ {
+   "FødevareNavn": "Hvid hvede brød, groft, store, industrifremstillet",
+   "kj": 942,
+   "kcal": 223,
+   "protein": "7,9"
+ },
+ {
+   "FødevareNavn": "Sild, Østersø, uspecificeret",
+   "kj": 513,
+   "kcal": 123,
+   "protein": "16,2"
+ },
+ {
+   "FødevareNavn": "Oksekød, hakket, 5-10% fedt",
+   "kj": 683,
+   "kcal": 163,
+   "protein": "19,5"
+ },
+ {
+   "FødevareNavn": "Grisekød, hakket, 10-15% fedtt",
+   "kj": 705,
+   "kcal": 169,
+   "protein": "18,9"
+ },
+ {
+   "FødevareNavn": "Kalkunkød, hakket, 5-10% fedtt",
+   "kj": 657,
+   "kcal": 157,
+   "protein": "20,1"
+ },
+ {
+   "FødevareNavn": "Burger med lille bøf, salat og dressing, fastfood",
+   "kj": 945,
+   "kcal": 226,
+   "protein": "9,8"
+ },
+ {
+   "FødevareNavn": "Burger med medium bøf, salat og dressing, fastfood",
+   "kj": 943,
+   "kcal": 225,
+   "protein": "11,2"
+ },
+ {
+   "FødevareNavn": "Burger med stor bøf, salat og dressing, fastfood",
+   "kj": 966,
+   "kcal": 231,
+   "protein": "12,7"
+ },
+ {
+   "FødevareNavn": "Burger med bøf og bacon, salat og dressing, fastfood",
+   "kj": 1063,
+   "kcal": 255,
+   "protein": "11,7"
+ },
+ {
+   "FødevareNavn": "Burger med bøf og ost, salat og dressing, fastfood",
+   "kj": 988,
+   "kcal": 236,
+   "protein": "11,2"
+ },
+ {
+   "FødevareNavn": "Burger med bøf, bacon og ost, salat og dressing, fastfood",
+   "kj": 998,
+   "kcal": 239,
+   "protein": "14,4"
+ },
+ {
+   "FødevareNavn": "Burger med kylling, salat og dressing, fastfood",
+   "kj": 944,
+   "kcal": 226,
+   "protein": "9,2"
+ },
+ {
+   "FødevareNavn": "Sandwich med kylling, salat og dressing, fastfood",
+   "kj": 925,
+   "kcal": 220,
+   "protein": "10,5"
+ },
+ {
+   "FødevareNavn": "Sandwich med kylling og bacon, salat og dressing, fastfood",
+   "kj": 846,
+   "kcal": 202,
+   "protein": "11,4"
+ },
+ {
+   "FødevareNavn": "Sandwich med skinke og ost, salat og dressing, fastfood",
+   "kj": 945,
+   "kcal": 225,
+   "protein": "9,3"
+ },
+ {
+   "FødevareNavn": "Sandwich med æg / rejer, salat og dressing, fastfood",
+   "kj": 781,
+   "kcal": 186,
+   "protein": "7,8"
+ },
+ {
+   "FødevareNavn": "Sandwich med fisk, salat og dressing, fastfood",
+   "kj": 853,
+   "kcal": 203,
+   "protein": "9,6"
+ },
+ {
+   "FødevareNavn": "Sandwich med kebab, salat og dressing, fastfood",
+   "kj": 906,
+   "kcal": 216,
+   "protein": "8,5"
+ },
+ {
+   "FødevareNavn": "Sandwich med ribbenssteg, rødkål og agurk, fastfood",
+   "kj": 1052,
+   "kcal": 251,
+   "protein": "14,3"
+ },
+ {
+   "FødevareNavn": "Trekantsandwich med kylling og bacon, salat og dressing, fastfood",
+   "kj": 865,
+   "kcal": 206,
+   "protein": "11,3"
+ },
+ {
+   "FødevareNavn": "Trekantsandwich med skinke og ost, salat og dressing, fastfood",
+   "kj": 960,
+   "kcal": 229,
+   "protein": "10,4"
+ },
+ {
+   "FødevareNavn": "Trekantsandwich med æg, salat og dressing, fastfood",
+   "kj": 856,
+   "kcal": 204,
+   "protein": "8,7"
+ },
+ {
+   "FødevareNavn": "Sandwich med frikadelle, salat og dressing, fastfood",
+   "kj": 918,
+   "kcal": 219,
+   "protein": "8,8"
+ },
+ {
+   "FødevareNavn": "Pitasandwich med kebab, salat og dressing, fastfood",
+   "kj": 863,
+   "kcal": 206,
+   "protein": "10,2"
+ },
+ {
+   "FødevareNavn": "Pitasandwich med kylling, salat og dressing, fastfood",
+   "kj": 695,
+   "kcal": 165,
+   "protein": "9,8"
+ },
+ {
+   "FødevareNavn": "Pitasandwich med rejer, salat og dressing, fastfood",
+   "kj": 539,
+   "kcal": 128,
+   "protein": "5,8"
+ },
+ {
+   "FødevareNavn": "Pitasandwich med falafel, salat og dressing, fastfood",
+   "kj": 968,
+   "kcal": 231,
+   "protein": "6,1"
+ },
+ {
+   "FødevareNavn": "Pitasandwich med salat og dressing, fastfood",
+   "kj": 629,
+   "kcal": 150,
+   "protein": "3,6"
+ },
+ {
+   "FødevareNavn": "Dürumrulle med kebab, salat og dressing, fastfood",
+   "kj": 906,
+   "kcal": 217,
+   "protein": "11,9"
+ },
+ {
+   "FødevareNavn": "Pølse med bacon, ristet, fastfood",
+   "kj": 1319,
+   "kcal": 318,
+   "protein": "16,3"
+ },
+ {
+   "FødevareNavn": "Fransk hot dog, fastfood",
+   "kj": 1203,
+   "kcal": 288,
+   "protein": "10,1"
+ },
+ {
+   "FødevareNavn": "Hot dog, almindelig, fastfood",
+   "kj": 1070,
+   "kcal": 256,
+   "protein": "8,5"
+ },
+ {
+   "FødevareNavn": "Pølsemix med pommes frites, fastfood",
+   "kj": 1349,
+   "kcal": 323,
+   "protein": "8,0"
+ },
+ {
+   "FødevareNavn": "Kebabmix med pommes frites, friturestegt, fastfood",
+   "kj": 1227,
+   "kcal": 294,
+   "protein": "8,9"
+ },
+ {
+   "FødevareNavn": "Kylling, grillstegt, fastfood",
+   "kj": 822,
+   "kcal": 196,
+   "protein": "28,2"
+ },
+ {
+   "FødevareNavn": "Kyllingenuggets, friturestegt, fastfood",
+   "kj": 1171,
+   "kcal": 280,
+   "protein": "14,7"
+ },
+ {
+   "FødevareNavn": "Pizza med tomat og ost, fastfood",
+   "kj": 1338,
+   "kcal": 319,
+   "protein": "14,0"
+ },
+ {
+   "FødevareNavn": "Pizza med fisk, tomat og ost, fastfood",
+   "kj": 1073,
+   "kcal": 256,
+   "protein": "13,8"
+ },
+ {
+   "FødevareNavn": "Pizza med salami, tomat og ost, fastfood",
+   "kj": 1326,
+   "kcal": 316,
+   "protein": "12,9"
+ },
+ {
+   "FødevareNavn": "Pizza med grønt og frugt, tomat og ost, fastfood",
+   "kj": 921,
+   "kcal": 220,
+   "protein": "8,1"
+ },
+ {
+   "FødevareNavn": "Pizza med kød, tomat og ost, fastfood",
+   "kj": 1081,
+   "kcal": 257,
+   "protein": "11,8"
+ },
+ {
+   "FødevareNavn": "Pizza med kød og fisk, tomat og ost, fastfood",
+   "kj": 958,
+   "kcal": 228,
+   "protein": "12,8"
+ },
+ {
+   "FødevareNavn": "Fiskefilet, paneret, stegt, delikatesse",
+   "kj": 1176,
+   "kcal": 281,
+   "protein": "12,7"
+ },
+ {
+   "FødevareNavn": "Tun, gulfinnet",
+   "kj": 477,
+   "kcal": 113,
+   "protein": "24,4"
+ },
+ {
+   "FødevareNavn": "Reje, dybvands, kogt, i lage",
+   "kj": 301,
+   "kcal": 71,
+   "protein": "15,5"
+ },
+ {
+   "FødevareNavn": "Laks, atlantisk, opdræt, gravad",
+   "kj": 710,
+   "kcal": 170,
+   "protein": "20,4"
+ },
+ {
+   "FødevareNavn": "Skrubbe, filet, paneret, dybfrost",
+   "kj": 636,
+   "kcal": 150,
+   "protein": "11,1"
+ },
+ {
+   "FødevareNavn": "Fiskepinde, panerede, dybfrost",
+   "kj": 775,
+   "kcal": 185,
+   "protein": "12,8"
+ },
+ {
+   "FødevareNavn": "Laks, atlantisk, opdræt",
+   "kj": 947,
+   "kcal": 228,
+   "protein": "15,8"
+ },
+ {
+   "FødevareNavn": "Laks, Stillehavs-, vild",
+   "kj": 444,
+   "kcal": 105,
+   "protein": "21,2"
+ },
+ {
+   "FødevareNavn": "Hajmalle, dybfrost",
+   "kj": 294,
+   "kcal": 69,
+   "protein": "14,6"
+ },
+ {
+   "FødevareNavn": "Blåmusling, kogt",
+   "kj": 474,
+   "kcal": 112,
+   "protein": "17,8"
+ },
+ {
+   "FødevareNavn": "Æg, høne, burhøns",
+   "kj": 571,
+   "kcal": 137,
+   "protein": "12,0"
+ },
+ {
+   "FødevareNavn": "Æg, høne, frilands høns",
+   "kj": 571,
+   "kcal": 137,
+   "protein": "12,3"
+ },
+ {
+   "FødevareNavn": "Æg, høne, skrabehøns",
+   "kj": 577,
+   "kcal": 138,
+   "protein": "12,3"
+ },
+ {
+   "FødevareNavn": "Æg, høne, økologisk drift",
+   "kj": 577,
+   "kcal": 139,
+   "protein": "12,3"
+ },
+ {
+   "FødevareNavn": "Æg, høne, kogt, dybfrost",
+   "kj": 608,
+   "kcal": 146,
+   "protein": "13,7"
+ },
+ {
+   "FødevareNavn": "Æg, høne, blomme, pasteuriseret",
+   "kj": 1017,
+   "kcal": 245,
+   "protein": "13,0"
+ },
+ {
+   "FødevareNavn": "Æg, høne, røræg, industrifremstillet",
+   "kj": 491,
+   "kcal": 118,
+   "protein": "10,8"
+ },
+ {
+   "FødevareNavn": "Æg, høne, røræg mix, industrifremstillet",
+   "kj": 551,
+   "kcal": 132,
+   "protein": "10,9"
+ },
+ {
+   "FødevareNavn": "Rugbrød, mørkt, industrifremstillet",
+   "kj": 836,
+   "kcal": 198,
+   "protein": "5,3"
+ },
+ {
+   "FødevareNavn": "Rugbrød, fuldkorn, industrifremstillet",
+   "kj": 842,
+   "kcal": 199,
+   "protein": "5,1"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, groft, med fedtrige frø, stort, detailbageri",
+   "kj": 1183,
+   "kcal": 281,
+   "protein": "9,3"
+ },
+ {
+   "FødevareNavn": "Rugbrød, kun groft rugmel, detailbageri",
+   "kj": 912,
+   "kcal": 216,
+   "protein": "6,0"
+ },
+ {
+   "FødevareNavn": "Rugbrød, kun groft rugmel, med hele kerner, detailbageri",
+   "kj": 887,
+   "kcal": 210,
+   "protein": "5,1"
+ },
+ {
+   "FødevareNavn": "Rugbrød, kun groft rugmel, med fedtrige frø, detailbageri",
+   "kj": 1015,
+   "kcal": 242,
+   "protein": "7,4"
+ },
+ {
+   "FødevareNavn": "Rugbrød, med sigtet mel (soft) og fedtrige frø, detailbageri",
+   "kj": 1060,
+   "kcal": 253,
+   "protein": "8,1"
+ },
+ {
+   "FødevareNavn": "Yoghurt, med frugt, 0.1 % fedt, uden tilsat sukker",
+   "kj": 182,
+   "kcal": 43,
+   "protein": "3,9"
+ },
+ {
+   "FødevareNavn": "Hytteost, 10+",
+   "kj": 364,
+   "kcal": 86,
+   "protein": "13,1"
+ },
+ {
+   "FødevareNavn": "Hytteost, 5+",
+   "kj": 321,
+   "kcal": 76,
+   "protein": "13,6"
+ },
+ {
+   "FødevareNavn": "Lactose, pulver",
+   "kj": 1665,
+   "kcal": 392,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Yoghurt med frugt, 0.4 % fedt",
+   "kj": 321,
+   "kcal": 76,
+   "protein": "4,7"
+ },
+ {
+   "FødevareNavn": "Koldskål",
+   "kj": 303,
+   "kcal": 72,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Milkshake",
+   "kj": 364,
+   "kcal": 86,
+   "protein": "5,1"
+ },
+ {
+   "FødevareNavn": "Smørbart blandingsprodukt, 75% fedt",
+   "kj": 2820,
+   "kcal": 686,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Smørbart blandingsprodukt, let, 57% fedt",
+   "kj": 2227,
+   "kcal": 542,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Grisekød, skinkeklump, helt afpudset",
+   "kj": 425,
+   "kcal": 100,
+   "protein": "20,8"
+ },
+ {
+   "FødevareNavn": "Grisekød, bryst med svær",
+   "kj": 1240,
+   "kcal": 299,
+   "protein": "17,2"
+ },
+ {
+   "FødevareNavn": "Grisekød, filet, 0-1 mm fedtkant",
+   "kj": 547,
+   "kcal": 130,
+   "protein": "21,9"
+ },
+ {
+   "FødevareNavn": "Grisekød, kæbe, afpudset",
+   "kj": 491,
+   "kcal": 117,
+   "protein": "19,8"
+ },
+ {
+   "FødevareNavn": "Havredrik, ikke beriget",
+   "kj": 200,
+   "kcal": 48,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Risdrik, ikke beriget",
+   "kj": 209,
+   "kcal": 50,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Mandeldrik, ikke beriget",
+   "kj": 199,
+   "kcal": 48,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Skyr, 0.2 % fedt",
+   "kj": 297,
+   "kcal": 70,
+   "protein": "11,0"
+ },
+ {
+   "FødevareNavn": "Galia melon",
+   "kj": 145,
+   "kcal": 34,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Flødeskumskage, chokoladebolle",
+   "kj": 1514,
+   "kcal": 363,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Kommen",
+   "kj": 1382,
+   "kcal": 334,
+   "protein": "19,8"
+ },
+ {
+   "FødevareNavn": "Spidskommen",
+   "kj": 1784,
+   "kcal": 428,
+   "protein": "17,8"
+ },
+ {
+   "FødevareNavn": "Tahin, lys",
+   "kj": 2555,
+   "kcal": 618,
+   "protein": "17,0"
+ },
+ {
+   "FødevareNavn": "Risdrik, tilsat calcium",
+   "kj": 228,
+   "kcal": 54,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Havredrik, tilsat calcium",
+   "kj": 165,
+   "kcal": 39,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Sojadrik, tilsat calcium",
+   "kj": 187,
+   "kcal": 45,
+   "protein": "3,2"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, bolle, italiensk type, detailbageri",
+   "kj": 1088,
+   "kcal": 257,
+   "protein": "9,0"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, pitabrød, fint",
+   "kj": 1061,
+   "kcal": 251,
+   "protein": "7,6"
+ },
+ {
+   "FødevareNavn": "Hvedebrød, pitabrød, groft",
+   "kj": 1059,
+   "kcal": 250,
+   "protein": "8,5"
+ },
+ {
+   "FødevareNavn": "Morgenmadsprodukt, med klid",
+   "kj": 1372,
+   "kcal": 327,
+   "protein": "11,0"
+ },
+ {
+   "FødevareNavn": "Havtorn",
+   "kj": 311,
+   "kcal": 75,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Kalvekød, culotte",
+   "kj": 599,
+   "kcal": 143,
+   "protein": "20,6"
+ },
+ {
+   "FødevareNavn": "Peberfrugt, gul",
+   "kj": 96,
+   "kcal": 23,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Speltmel, sigtet",
+   "kj": 1473,
+   "kcal": 348,
+   "protein": "12,0"
+ },
+ {
+   "FødevareNavn": "Speltmel, fuldkorn",
+   "kj": 1402,
+   "kcal": 332,
+   "protein": "13,4"
+ },
+ {
+   "FødevareNavn": "Quinoa, hvid",
+   "kj": 1525,
+   "kcal": 362,
+   "protein": "11,7"
+ },
+ {
+   "FødevareNavn": "Quinoa, rød",
+   "kj": 1507,
+   "kcal": 358,
+   "protein": "12,8"
+ },
+ {
+   "FødevareNavn": "Quinoa, sort",
+   "kj": 1461,
+   "kcal": 347,
+   "protein": "12,0"
+ },
+ {
+   "FødevareNavn": "Rugmel",
+   "kj": 1358,
+   "kcal": 322,
+   "protein": "8,1"
+ },
+ {
+   "FødevareNavn": "Chiafrø",
+   "kj": 1899,
+   "kcal": 462,
+   "protein": "18,2"
+ },
+ {
+   "FødevareNavn": "Perlespelt",
+   "kj": 1386,
+   "kcal": 329,
+   "protein": "11,1"
+ },
+ {
+   "FødevareNavn": "Perlebyg",
+   "kj": 1413,
+   "kcal": 335,
+   "protein": "8,5"
+ },
+ {
+   "FødevareNavn": "Flydende olie margarine",
+   "kj": 3018,
+   "kcal": 734,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Flydende olie margarine, beriget med A- og D-vitamin",
+   "kj": 2992,
+   "kcal": 728,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Plantemargarine, 80%, stege/bage, beriget med A- og D-vitamin",
+   "kj": 2983,
+   "kcal": 726,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Plantemargarine, 80%, stege/bage, beriget med A-vitamin",
+   "kj": 2983,
+   "kcal": 726,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Plantemargarine, 75%, stege/bage, beriget med A-vitamin",
+   "kj": 2812,
+   "kcal": 684,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Plantemargarine, 60%, bordbrug, blød, beriget med A-vitamin",
+   "kj": 2247,
+   "kcal": 547,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Minarine, 40%, bordbrug, blød, beriget med A- og D-vitamin",
+   "kj": 1500,
+   "kcal": 365,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Oksekød, hakket, 8-12% fedt",
+   "kj": 722,
+   "kcal": 173,
+   "protein": "20,0"
+ },
+ {
+   "FødevareNavn": "Kyllingekød, hakket, 3-10% fedt",
+   "kj": 574,
+   "kcal": 137,
+   "protein": "17,0"
+ },
+ {
+   "FødevareNavn": "Babyspinat",
+   "kj": 66,
+   "kcal": 16,
+   "protein": "2,5"
+ },
+ {
+   "FødevareNavn": "Salat, hjerte",
+   "kj": 59,
+   "kcal": 14,
+   "protein": "1,6"
+ },
+ {
+   "FødevareNavn": "Græskar, hokkaido, dansk",
+   "kj": 142,
+   "kcal": 34,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Græskar, butternut squash",
+   "kj": 135,
+   "kcal": 32,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Energi drik, Red Bull",
+   "kj": 182,
+   "kcal": 43,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Valle protein pulver",
+   "kj": 1628,
+   "kcal": 385,
+   "protein": "66,7"
+ },
+ {
+   "FødevareNavn": "Riskiks/riskage, poppede brune ris",
+   "kj": 1591,
+   "kcal": 376,
+   "protein": "8,2"
+ },
+ {
+   "FødevareNavn": "Spinat, helbladet, dybfrost",
+   "kj": 81,
+   "kcal": 19,
+   "protein": "2,2"
+ },
+ {
+   "FødevareNavn": "Rødkål, dansk",
+   "kj": 102,
+   "kcal": 24,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Spidskål, dansk",
+   "kj": 88,
+   "kcal": 21,
+   "protein": "1,5"
+ },
+ {
+   "FødevareNavn": "Pastinak, dansk",
+   "kj": 302,
+   "kcal": 72,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Kalvekød, cuvette",
+   "kj": 734,
+   "kcal": 176,
+   "protein": "20,1"
+ },
+ {
+   "FødevareNavn": "Kalvekød, inderlår, afpudset",
+   "kj": 453,
+   "kcal": 107,
+   "protein": "22,3"
+ },
+ {
+   "FødevareNavn": "Kalvekød, tykstegsfilet",
+   "kj": 441,
+   "kcal": 104,
+   "protein": "21,9"
+ },
+ {
+   "FødevareNavn": "Kalvekød, tyndstegsfilet",
+   "kj": 665,
+   "kcal": 159,
+   "protein": "21,3"
+ },
+ {
+   "FødevareNavn": "Oksekød, cuvette",
+   "kj": 927,
+   "kcal": 223,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Oksekød, flanksteak",
+   "kj": 596,
+   "kcal": 142,
+   "protein": "20,6"
+ },
+ {
+   "FødevareNavn": "Gulerødder, importeret, uden skræl",
+   "kj": 152,
+   "kcal": 36,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Gulerødder, dansk, uden skræl",
+   "kj": 126,
+   "kcal": 30,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Pastinak, importeret",
+   "kj": 278,
+   "kcal": 66,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Selleri, rod, importeret",
+   "kj": 55,
+   "kcal": 13,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Flødeyoghurt naturel, 10% fedt (Græsk og Tyrkisk stil)",
+   "kj": 502,
+   "kcal": 121,
+   "protein": "5,0"
+ },
+ {
+   "FødevareNavn": "Flødeyoghurt naturel, 2% fedt (Græsk og Tyrkisk stil)",
+   "kj": 299,
+   "kcal": 71,
+   "protein": "9,2"
+ },
+ {
+   "FødevareNavn": "A38, acidophilus tykmælk af letmælk, 1,5% fedt",
+   "kj": 186,
+   "kcal": 44,
+   "protein": "3,7"
+ },
+ {
+   "FødevareNavn": "A38, acidophilus tykmælk af minimælk, 0,5% fedt",
+   "kj": 178,
+   "kcal": 42,
+   "protein": "4,5"
+ },
+ {
+   "FødevareNavn": "Pizza topping (Revet ost, Mozzarella)",
+   "kj": 1312,
+   "kcal": 315,
+   "protein": "19,7"
+ },
+ {
+   "FødevareNavn": "Skinkeost 30+ (Smelteost med skinke)",
+   "kj": 899,
+   "kcal": 216,
+   "protein": "14,7"
+ },
+ {
+   "FødevareNavn": "Rejeost, let, 8% fedt, (Smelteost med rejer)",
+   "kj": 635,
+   "kcal": 151,
+   "protein": "17,7"
+ },
+ {
+   "FødevareNavn": "Feta, 5% (Salat-tern)",
+   "kj": 738,
+   "kcal": 176,
+   "protein": "21,7"
+ },
+ {
+   "FødevareNavn": "Flødeost, 30-40+",
+   "kj": 635,
+   "kcal": 152,
+   "protein": "10,4"
+ },
+ {
+   "FødevareNavn": "Flødeost, 45-55+",
+   "kj": 1072,
+   "kcal": 260,
+   "protein": "5,6"
+ },
+ {
+   "FødevareNavn": "Brie, 11%",
+   "kj": 737,
+   "kcal": 176,
+   "protein": "23,2"
+ },
+ {
+   "FødevareNavn": "Gedeost, blød, 45-55+",
+   "kj": 1288,
+   "kcal": 311,
+   "protein": "17,8"
+ },
+ {
+   "FødevareNavn": "Gedeost, i saltlage, 20-25%",
+   "kj": 1121,
+   "kcal": 271,
+   "protein": "15,2"
+ },
+ {
+   "FødevareNavn": "Gedeost, fast, 45+",
+   "kj": 1529,
+   "kcal": 369,
+   "protein": "21,8"
+ },
+ {
+   "FødevareNavn": "Skæreost, 6%/10+",
+   "kj": 734,
+   "kcal": 175,
+   "protein": "28,9"
+ },
+ {
+   "FødevareNavn": "Ost, fast, 45+, Dansk",
+   "kj": 1349,
+   "kcal": 325,
+   "protein": "24,2"
+ },
+ {
+   "FødevareNavn": "Ost, fast, 50+, Dansk",
+   "kj": 1524,
+   "kcal": 367,
+   "protein": "23,9"
+ },
+ {
+   "FødevareNavn": "Kalvekød, bryst",
+   "kj": 617,
+   "kcal": 147,
+   "protein": "20,5"
+ },
+ {
+   "FødevareNavn": "Oksekød, bryst",
+   "kj": 821,
+   "kcal": 197,
+   "protein": "19,3"
+ },
+ {
+   "FødevareNavn": "Pålæg i skiver, med hvedeprotein",
+   "kj": 939,
+   "kcal": 223,
+   "protein": "29,2"
+ },
+ {
+   "FødevareNavn": "Seitan",
+   "kj": 818,
+   "kcal": 195,
+   "protein": "26,5"
+ },
+ {
+   "FødevareNavn": "Hakket, med mycoprotein",
+   "kj": 404,
+   "kcal": 97,
+   "protein": "9,9"
+ },
+ {
+   "FødevareNavn": "Hakket, med sojaprotein",
+   "kj": 704,
+   "kcal": 169,
+   "protein": "16,6"
+ },
+ {
+   "FødevareNavn": "Hakket bolle, med sojaprotein",
+   "kj": 654,
+   "kcal": 157,
+   "protein": "14,0"
+ },
+ {
+   "FødevareNavn": "Stykker, med sojaprotein",
+   "kj": 505,
+   "kcal": 121,
+   "protein": "18,6"
+ },
+ {
+   "FødevareNavn": "Pålæg i skiver, med soja- og ærteprotein",
+   "kj": 636,
+   "kcal": 153,
+   "protein": "6,4"
+ },
+ {
+   "FødevareNavn": "Hakket, med ærteprotein",
+   "kj": 912,
+   "kcal": 219,
+   "protein": "14,0"
+ },
+ {
+   "FødevareNavn": "Pølse, med ærteprotein",
+   "kj": 839,
+   "kcal": 202,
+   "protein": "13,6"
+ },
+ {
+   "FødevareNavn": "Pålæg i skiver, med æggehvide",
+   "kj": 718,
+   "kcal": 173,
+   "protein": "7,9"
+ },
+ {
+   "FødevareNavn": "Stykker, med mycoprotein",
+   "kj": 367,
+   "kcal": 88,
+   "protein": "8,9"
+ },
+ {
+   "FødevareNavn": "Pølse, med sojaprotein",
+   "kj": 681,
+   "kcal": 164,
+   "protein": "11,4"
+ },
+ {
+   "FødevareNavn": "Oksekød, filet, marmoreret",
+   "kj": 792,
+   "kcal": 190,
+   "protein": "18,6"
+ },
+ {
+   "FødevareNavn": "Surbær (Aroniabær)",
+   "kj": 210,
+   "kcal": 50,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Havredrik, tilsat calcium og vitaminer",
+   "kj": 261,
+   "kcal": 62,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Mandeldrik, tilsat calcium",
+   "kj": 117,
+   "kcal": 28,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Linser, røde, tørrede",
+   "kj": 1359,
+   "kcal": 323,
+   "protein": "22,5"
+ },
+ {
+   "FødevareNavn": "Linser, grønne, tørrede",
+   "kj": 1303,
+   "kcal": 310,
+   "protein": "20,5"
+ },
+ {
+   "FødevareNavn": "Bønner, hvide, tørrede",
+   "kj": 1153,
+   "kcal": 276,
+   "protein": "18,0"
+ },
+ {
+   "FødevareNavn": "Bønner, røde kidney, tørrede",
+   "kj": 1169,
+   "kcal": 279,
+   "protein": "19,0"
+ },
+ {
+   "FødevareNavn": "Kikærter, tørrede",
+   "kj": 1414,
+   "kcal": 337,
+   "protein": "18,8"
+ },
+ {
+   "FødevareNavn": "Le Puy linser (delikatesse linser), tørrede",
+   "kj": 1267,
+   "kcal": 302,
+   "protein": "20,4"
+ },
+ {
+   "FødevareNavn": "Linser, beluga, tørrede",
+   "kj": 1298,
+   "kcal": 309,
+   "protein": "22,5"
+ },
+ {
+   "FødevareNavn": "Edamamebønner (Sojabønner), pillede, frosne",
+   "kj": 549,
+   "kcal": 132,
+   "protein": "10,7"
+ },
+ {
+   "FødevareNavn": "Linser, grønne, kogte, konserves",
+   "kj": 381,
+   "kcal": 90,
+   "protein": "5,7"
+ },
+ {
+   "FødevareNavn": "Baked beans (hvide bønner i tomatsauce)",
+   "kj": 340,
+   "kcal": 81,
+   "protein": "3,7"
+ },
+ {
+   "FødevareNavn": "Chilibønner (røde kidneybønner i chilisauce)",
+   "kj": 366,
+   "kcal": 87,
+   "protein": "4,5"
+ },
+ {
+   "FødevareNavn": "Bønner, røde kidney, kogte, konserves",
+   "kj": 397,
+   "kcal": 95,
+   "protein": "6,1"
+ },
+ {
+   "FødevareNavn": "Bønner, røde kidney, kogte, spiseklare",
+   "kj": 524,
+   "kcal": 125,
+   "protein": "8,1"
+ },
+ {
+   "FødevareNavn": "Kikærter, lyse, kogte, konserves",
+   "kj": 474,
+   "kcal": 113,
+   "protein": "6,2"
+ },
+ {
+   "FødevareNavn": "Kikærter, lyse, dampede, spiseklare",
+   "kj": 627,
+   "kcal": 150,
+   "protein": "8,5"
+ },
+ {
+   "FødevareNavn": "Bønner, sorte, kogte, konserves",
+   "kj": 449,
+   "kcal": 107,
+   "protein": "6,6"
+ },
+ {
+   "FødevareNavn": "Hvide bønner, tørrede og kogt",
+   "kj": 560,
+   "kcal": 134,
+   "protein": "8,7"
+ },
+ {
+   "FødevareNavn": "Bønner, røde kidney, tørret og kogt",
+   "kj": 549,
+   "kcal": 131,
+   "protein": "8,4"
+ },
+ {
+   "FødevareNavn": "Blåbær, dybfrost",
+   "kj": 203,
+   "kcal": 48,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Hindbær, dybfrost",
+   "kj": 202,
+   "kcal": 48,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Jordbær, dybfrost",
+   "kj": 122,
+   "kcal": 29,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Majs, dybfrost",
+   "kj": 341,
+   "kcal": 81,
+   "protein": "3,3"
+ },
+ {
+   "FødevareNavn": "Ærter, grønne, dybfrost",
+   "kj": 286,
+   "kcal": 69,
+   "protein": "4,9"
+ },
+ {
+   "FødevareNavn": "Grønne bønner (haricots verts), dybfrost",
+   "kj": 128,
+   "kcal": 31,
+   "protein": "1,9"
+ },
+ {
+   "FødevareNavn": "Blomkål, dybfrost",
+   "kj": 48,
+   "kcal": 12,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Broccoli, dybfrost",
+   "kj": 81,
+   "kcal": 19,
+   "protein": "2,2"
+ },
+ {
+   "FødevareNavn": "Rosenkål, dybfrost",
+   "kj": 154,
+   "kcal": 37,
+   "protein": "2,8"
+ },
+ {
+   "FødevareNavn": "Supperurter, dybfrost",
+   "kj": 104,
+   "kcal": 25,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Rodfrugter, dybfrost",
+   "kj": 108,
+   "kcal": 26,
+   "protein": "1,1"
+ },
+ {
+   "FødevareNavn": "Mango, dybfrost",
+   "kj": 235,
+   "kcal": 55,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Granatæblekerner, dybfrost",
+   "kj": 280,
+   "kcal": 67,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Ananas, dybfrost",
+   "kj": 221,
+   "kcal": 52,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Bærmix, dybfrost",
+   "kj": 221,
+   "kcal": 53,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Baby gulerødder, dybfrost",
+   "kj": 99,
+   "kcal": 23,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Porrer, dybfrost",
+   "kj": 108,
+   "kcal": 26,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Avocado, dybfrost",
+   "kj": 569,
+   "kcal": 138,
+   "protein": "1,5"
+ },
+ {
+   "FødevareNavn": "Wokmix, økologisk, dybfrost",
+   "kj": 120,
+   "kcal": 29,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Wokmix, dybfrost",
+   "kj": 108,
+   "kcal": 26,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Perleløg, dybfrost",
+   "kj": 132,
+   "kcal": 32,
+   "protein": "1,2"
+ },
+ {
+   "FødevareNavn": "Bønnemix, dybfrost",
+   "kj": 327,
+   "kcal": 78,
+   "protein": "5,8"
+ },
+ {
+   "FødevareNavn": "Rodfrugtfritter, dybfrost",
+   "kj": 569,
+   "kcal": 137,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Søde kartoffel fritter, dybfrost",
+   "kj": 690,
+   "kcal": 165,
+   "protein": "1,7"
+ },
+ {
+   "FødevareNavn": "Kartoffelbåde, dybfrost",
+   "kj": 486,
+   "kcal": 115,
+   "protein": "1,9"
+ },
+ {
+   "FødevareNavn": "Halve kartofler, dybfrost",
+   "kj": 400,
+   "kcal": 95,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Kartoffel spiraler (Curly fries), dybfrost",
+   "kj": 735,
+   "kcal": 175,
+   "protein": "2,6"
+ },
+ {
+   "FødevareNavn": "Kartoffel røsti, dybfrost",
+   "kj": 679,
+   "kcal": 162,
+   "protein": "2,1"
+ },
+ {
+   "FødevareNavn": "Kartoffel kroketter, dybfrost",
+   "kj": 679,
+   "kcal": 162,
+   "protein": "2,5"
+ },
+ {
+   "FødevareNavn": "Steak fries (tykke pommes frites med skræl), dybfrost",
+   "kj": 502,
+   "kcal": 119,
+   "protein": "2,0"
+ },
+ {
+   "FødevareNavn": "Pommes frites, bølgeskårne, dybfrost",
+   "kj": 543,
+   "kcal": 129,
+   "protein": "2,3"
+ },
+ {
+   "FødevareNavn": "Blåbær",
+   "kj": 229,
+   "kcal": 54,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Brombær",
+   "kj": 146,
+   "kcal": 35,
+   "protein": "1,3"
+ },
+ {
+   "FødevareNavn": "Hindbær",
+   "kj": 171,
+   "kcal": 41,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Abrikos",
+   "kj": 158,
+   "kcal": 37,
+   "protein": "0,8"
+ },
+ {
+   "FødevareNavn": "Blomme",
+   "kj": 195,
+   "kcal": 46,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Fersken",
+   "kj": 175,
+   "kcal": 42,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Kirsebær",
+   "kj": 258,
+   "kcal": 61,
+   "protein": "1,0"
+ },
+ {
+   "FødevareNavn": "Ananas",
+   "kj": 196,
+   "kcal": 46,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Grapefrugt",
+   "kj": 169,
+   "kcal": 40,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Honningmelon",
+   "kj": 143,
+   "kcal": 34,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Kiwi",
+   "kj": 218,
+   "kcal": 52,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Mango",
+   "kj": 218,
+   "kcal": 52,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Vand, postevand",
+   "kj": 0,
+   "kcal": 0,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Lollandske rosiner (beige-brun ært), tørret",
+   "kj": 1497,
+   "kcal": 353,
+   "protein": "18,0"
+ },
+ {
+   "FødevareNavn": "Ananasjuice",
+   "kj": 209,
+   "kcal": 49,
+   "protein": "0,4"
+ },
+ {
+   "FødevareNavn": "Appelsinjuice",
+   "kj": 181,
+   "kcal": 43,
+   "protein": "0,7"
+ },
+ {
+   "FødevareNavn": "Grapefrugtjuice",
+   "kj": 177,
+   "kcal": 42,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Sveskejuice",
+   "kj": 254,
+   "kcal": 60,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Æblejuice",
+   "kj": 189,
+   "kcal": 44,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Blandet frugtjuice",
+   "kj": 6,
+   "kcal": 2,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Gulerodsjuice",
+   "kj": 129,
+   "kcal": 31,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Tomatjuice",
+   "kj": 85,
+   "kcal": 20,
+   "protein": "0,9"
+ },
+ {
+   "FødevareNavn": "Blandet grøntsagsjuice",
+   "kj": 102,
+   "kcal": 24,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Blandet frugt- og grøntsagsjuice",
+   "kj": 182,
+   "kcal": 43,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Frugt smoothie",
+   "kj": 230,
+   "kcal": 54,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Frugt- og grøntsag smoothie",
+   "kj": 15,
+   "kcal": 4,
+   "protein": "0,6"
+ },
+ {
+   "FødevareNavn": "Koncentreret blandet frugt- og bærsaft, tilsat sukker, fortyndes 1+4",
+   "kj": 739,
+   "kcal": 174,
+   "protein": "0,5"
+ },
+ {
+   "FødevareNavn": "Koncentreret blandet frugt- og bærsaft, tilsat sukker, fortyndes 1+5",
+   "kj": 769,
+   "kcal": 181,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Koncentreret tranebærsaft, tilsat kunstig sødestof, fortyndes 1+4",
+   "kj": 128,
+   "kcal": 30,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Koncentreret blandet frugt- og bærsaft, tilsat kunstig sødestof, fortyndes 1+4",
+   "kj": 203,
+   "kcal": 48,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Koncentreret blandet frugt- og bærsaft, tilsat sukker og kunstig sødestof, fortyndes 1+4",
+   "kj": 4,
+   "kcal": 1,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Frugtnektar, tilsat sukker",
+   "kj": 1,
+   "kcal": 0,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Frugtnektar, tilsat kunstig sødestof",
+   "kj": 4,
+   "kcal": 1,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Pærecider, tilsat sukker, alkohol<0,7%",
+   "kj": 17,
+   "kcal": 4,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Æblecider, tilsat sukker, alkohol<0,7%",
+   "kj": 17,
+   "kcal": 4,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Pærecider, tilsat kunstig sødestof, alkohol<0,7%",
+   "kj": 42,
+   "kcal": 10,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Fersken iste, tilsat sukker",
+   "kj": 132,
+   "kcal": 31,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Citron iste, tilsat sukker",
+   "kj": 132,
+   "kcal": 31,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Fersken iste, tilsat kunstig sødestof",
+   "kj": 0,
+   "kcal": 0,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Fersken iste, tilsat sukker og kunstig sødestof",
+   "kj": 0,
+   "kcal": 0,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Citron iste, tilsat sukker, pulver",
+   "kj": 1656,
+   "kcal": 390,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Sodavand, tilsat sukker",
+   "kj": 175,
+   "kcal": 41,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Sodavand, tilsat kunstig sødestof",
+   "kj": 6,
+   "kcal": 1,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Sodavand, tilsat sukker og kunstig sødestof",
+   "kj": 19,
+   "kcal": 5,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Energidrik, tilsat sukker",
+   "kj": 205,
+   "kcal": 48,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Læskedrik, tilsat sukker, drikkeklar",
+   "kj": 2,
+   "kcal": 0,
+   "protein": "0,1"
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat sukker, fortyndes 1+3",
+   "kj": 735,
+   "kcal": 173,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat sukker, fortyndes 1+4",
+   "kj": 0,
+   "kcal": 0,
+   "protein": ""
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat sukker, fortyndes 1+5",
+   "kj": 774,
+   "kcal": 182,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat sukker, fortyndes 1+7",
+   "kj": 0,
+   "kcal": 0,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat sukker, fortyndes 1+9",
+   "kj": 1122,
+   "kcal": 264,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat kunstig sødestof, fortyndes 1+4",
+   "kj": 76,
+   "kcal": 18,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat kunstig sødestof, fortyndes 1+5",
+   "kj": 82,
+   "kcal": 19,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat kunstig sødestof, fortyndes 1+9",
+   "kj": 4,
+   "kcal": 1,
+   "protein": "0,3"
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat kunstig sødestof, fortyndes 1+11",
+   "kj": 4,
+   "kcal": 1,
+   "protein": "0,2"
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat sukker og kunstig sødestof, fortyndes 1+7",
+   "kj": 438,
+   "kcal": 103,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Koncentreret læskedrik, tilsat sukker og kunstig sødestof, fortyndes 1+11",
+   "kj": 116,
+   "kcal": 27,
+   "protein": "0,0"
+ },
+ {
+   "FødevareNavn": "Tørret skinke, Serrano",
+   "kj": 1109,
+   "kcal": 265,
+   "protein": "31,1"
+ },
+ {
+   "FødevareNavn": "Tørret skinke, Schwarzwalder",
+   "kj": 991,
+   "kcal": 238,
+   "protein": "25,5"
+ },
+ {
+   "FødevareNavn": "Grisekød, kam uden svær, krogmodnet",
+   "kj": 1014,
+   "kcal": 244,
+   "protein": "19,9"
+ },
+ {
+   "FødevareNavn": "Pizza med skinke og ananas, fastfood",
+   "kj": 1079,
+   "kcal": 257,
+   "protein": "11,2"
+ },
+ {
+   "FødevareNavn": "Pizza med kebab, salat og dressing, fastfood",
+   "kj": 1056,
+   "kcal": 253,
+   "protein": "10,9"
+ },
+ {
+   "FødevareNavn": "Forårsrulle med grøntsager, friturestegt, fastfood",
+   "kj": 1104,
+   "kcal": 264,
+   "protein": "4,5"
+ },
+ {
+   "FødevareNavn": "Rice, boiled",
+   "kj": 726,
+   "kcal": 171,
+   "protein": "3,5"
+ },
+ {
+   "FødevareNavn": "Shawarma kebabkød, takeaway",
+   "kj": 1131,
+   "kcal": 271,
+   "protein": "24,1"
+ },
+ {
+   "FødevareNavn": "Sushi, takeaway",
+   "kj": 752,
+   "kcal": 179,
+   "protein": "6,6"
+ },
+ {
+   "FødevareNavn": "Wakame tangsalat med sesamfrø, takeaway",
+   "kj": 342,
+   "kcal": 82,
+   "protein": "1,4"
+ },
+ {
+   "FødevareNavn": "Butter chicken, takeaway",
+   "kj": 793,
+   "kcal": 191,
+   "protein": "11,3"
+ },
+ {
+   "FødevareNavn": "Salat med kylling, takeaway",
+   "kj": 359,
+   "kcal": 86,
+   "protein": "10,0"
+ },
+ {
+   "FødevareNavn": "Pad Thai med rejer, takeaway",
+   "kj": 707,
+   "kcal": 168,
+   "protein": "5,7"
+ },
+ {
+   "FødevareNavn": "Kylling i rød karry, takeaway",
+   "kj": 569,
+   "kcal": 136,
+   "protein": "8,7"
+ },
+ {
+   "FødevareNavn": "Wokret med oksekød, takeaway",
+   "kj": 517,
+   "kcal": 124,
+   "protein": "8,9"
+ }
+]
