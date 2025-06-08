@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURATION ---
-    const API_BASE_URL = 'https://smart-recipe-api.onrender.com'; 
+    const API_BASE_URL = 'https://danish-recipe-api.onrender.com'; 
 
     // --- ELEMENT REFERENCES ---
     const ingredientsContainer = document.getElementById('ingredients-container');
@@ -9,31 +9,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const addInstructionBtn = document.getElementById('add-instruction-btn');
     const recipeForm = document.getElementById('add-recipe-form');
     const formStatus = document.getElementById('form-status');
-    const ingredientDataList = document.getElementById('ingredient-list');
+
+    // --- NEW: A variable to hold our master ingredient list ---
+    let masterIngredientList = [];
 
     // --- FUNCTIONS ---
 
-    // NEW: This function now fetches your local JSON file directly!
-    async function loadIngredientSuggestions() {
+    // This function now fetches the local JSON and stores it in our variable
+    async function loadIngredientMasterList() {
         try {
-            // Fetch the local file - no API or proxy needed!
             const response = await fetch('./ingredients.json');
             const ingredientsData = await response.json();
             
-            // Populate the datalist with the names from your master list
-            ingredientDataList.innerHTML = '';
-            ingredientsData.forEach(ingredient => {
-                const option = document.createElement('option');
-                option.value = ingredient.name;
-                ingredientDataList.appendChild(option);
-            });
-            console.log(`Loaded ${ingredientsData.length} ingredient suggestions from local file.`);
+            // Transform the data into the format Tom Select expects: {value: '...', text: '...'}
+            masterIngredientList = ingredientsData.map(ingredient => ({
+                value: ingredient.name,
+                text: ingredient.name
+            }));
+
+            console.log(`Loaded ${masterIngredientList.length} master ingredients.`);
+            // Initialize the form with the first fields now that we have the data
+            addIngredientField();
+            addInstructionField();
         } catch (error) {
             console.error("Could not load local ingredients.json file:", error);
         }
     }
 
-    // This function is now simpler as it doesn't need the unit list hardcoded
+    // This function is now updated to initialize Tom Select on the new input field
     function addIngredientField() {
         const row = document.createElement('div');
         row.className = 'ingredient-row';
@@ -41,13 +44,27 @@ document.addEventListener('DOMContentLoaded', () => {
         const unitOptions = units.map(unit => `<option value="${unit}">${unit}</option>`).join('');
         const unitSelectHTML = `<select class="ingredient-unit"><option value="">Enhed</option>${unitOptions}</select>`;
 
+        // We use a standard input, but give it a specific class for Tom Select to find
         row.innerHTML = `
             <input type="number" placeholder="Mængde" class="ingredient-amount" step="any">
             ${unitSelectHTML}
-            <input type="text" placeholder="Ingrediens" class="ingredient-name" list="ingredient-list" required>
+            <input type="text" placeholder="Søg eller tilføj ingrediens..." class="ingredient-name-select" required>
             <button type="button" class="remove-btn">－</button>
         `;
         ingredientsContainer.appendChild(row);
+        
+        // --- NEW: Initialize Tom Select on the input field we just created ---
+        const selectInput = row.querySelector('.ingredient-name-select');
+        new TomSelect(selectInput, {
+            options: masterIngredientList,
+            create: true, // Allows users to add a new ingredient if it's not in the list
+            maxItems: 1,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
         row.querySelector('.remove-btn').addEventListener('click', () => row.remove());
     }
 
@@ -71,10 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
         formStatus.textContent = 'Gemmer opskrift...';
         formStatus.style.color = 'black';
         
-        // The rest of this submit handler remains the same
+        // The gathering logic now uses the '.ingredient-name-select' class
         const ingredients = [];
         document.querySelectorAll('.ingredient-row').forEach(row => {
-            const name = row.querySelector('.ingredient-name').value.trim();
+            const name = row.querySelector('.ingredient-name-select').value.trim();
             if (name) {
                 ingredients.push({
                     amount: parseFloat(row.querySelector('.ingredient-amount').value) || null,
@@ -127,7 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- INITIALIZE FORM ---
-    addIngredientField();
-    addInstructionField();
-    loadIngredientSuggestions();
+    // Load the master list first, THEN add the initial fields
+    loadIngredientMasterList();
 });
