@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Existing variables ---
+    // --- Variables ---
     const searchForm = document.getElementById('search-form');
     const searchInput = document.getElementById('search-input');
     const recipeListContainer = document.getElementById('recipe-list');
     const proxyUrl = 'https://corsproxy.io/?';
-
-    // --- NEW: Modal variables ---
+    const popularBtn = document.getElementById('popular-btn');
+    const topBtn = document.getElementById('top-btn');
+    const newBtn = document.getElementById('new-btn');
     const modalContainer = document.getElementById('modal-container');
     const modalCloseBtn = document.getElementById('modal-close-btn');
     const modalContent = document.getElementById('modal-recipe-content');
@@ -15,62 +16,76 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         const searchTerm = searchInput.value.trim();
         if (searchTerm) {
-            findRecipes(searchTerm);
+            findSingleRecipe(searchTerm);
         }
     });
 
-    // --- NEW: Close modal when clicking the 'x' button ---
-    modalCloseBtn.addEventListener('click', () => {
-        modalContainer.classList.remove('show');
-    });
-
-    // --- NEW: Close modal when clicking on the background overlay ---
+    popularBtn.addEventListener('click', () => getRecipeList('GetPopularRecipes', 'Populære Opskrifter'));
+    topBtn.addEventListener('click', () => getRecipeList('GetTopRecipes', 'Top Opskrifter'));
+    newBtn.addEventListener('click', () => getRecipeList('GetNewRecipes', 'Nyeste Opskrifter'));
+    
+    modalCloseBtn.addEventListener('click', () => modalContainer.classList.remove('show'));
     modalContainer.addEventListener('click', (event) => {
         if (event.target === modalContainer) {
             modalContainer.classList.remove('show');
         }
     });
 
-
     // --- Functions ---
-    const findRecipes = async (ingredient) => {
-        // ... (This function remains the same as before)
+
+    // Renamed for clarity - handles single ingredient search
+    const findSingleRecipe = async (ingredient) => {
         recipeListContainer.innerHTML = `<p>Søger efter opskrifter med ${ingredient}...</p>`;
         const searchApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipesByFreeText/0/${ingredient}`;
         const fullUrl = proxyUrl + searchApiUrl;
-
         try {
             const response = await fetch(fullUrl);
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
+            if (!response.ok) throw new Error('Search failed.');
             const recipes = await response.json();
-
             if (recipes && recipes.length > 0) {
                 displayRecipes(recipes);
             } else {
-                recipeListContainer.innerHTML = `<p>Ingen opskrifter fundet for '${ingredient}'. Prøv en anden ingrediens.</p>`;
+                recipeListContainer.innerHTML = `<p>Ingen opskrifter fundet for '${ingredient}'.</p>`;
             }
         } catch (error) {
-            console.error('Error fetching recipes:', error);
+            console.error('Error in findSingleRecipe:', error);
             recipeListContainer.innerHTML = `<p style="color: red;">Der opstod en fejl under søgningen.</p>`;
+        }
+    };
+    
+    const getRecipeList = async (endpoint, title) => {
+        recipeListContainer.innerHTML = `<p>Henter ${title.toLowerCase()}...</p>`;
+        const apiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/${endpoint}/0`;
+        const fullUrl = proxyUrl + apiUrl;
+        try {
+            const response = await fetch(fullUrl);
+            if (!response.ok) throw new Error(`Could not fetch ${title}.`);
+            const recipes = await response.json();
+            if (recipes && recipes.length > 0) {
+                displayRecipes(recipes);
+            } else {
+                recipeListContainer.innerHTML = `<p>Kunne ikke finde nogen ${title.toLowerCase()}.</p>`;
+            }
+        } catch (error) {
+            console.error(`Error fetching ${endpoint}:`, error);
+            recipeListContainer.innerHTML = `<p style="color: red;">Der opstod en fejl.</p>`;
         }
     };
 
     const displayRecipes = (recipes) => {
         recipeListContainer.innerHTML = '';
-
-        recipes.forEach(recipe => {
-            // --- UPDATED: Storing the ID and adding a class for styling ---
-            const recipeId = recipe[0];
-            const title = recipe[1];
-            const imageUrl = recipe[2];
-            const price = recipe[3];
+        recipes.forEach(recipeData => {
+            const recipeId = recipeData[0];
+            const title = recipeData[1];
+            // --- FIX IS HERE ---
+            // Force the image URL to use HTTPS
+            const imageUrl = recipeData[2].replace('http://', 'https://');
+            const price = recipeData[3];
 
             const recipeCard = document.createElement('div');
             recipeCard.classList.add('recipe-card');
-            recipeCard.style.cursor = 'pointer'; // Make it look clickable
-            recipeCard.dataset.recipeId = recipeId; // Store the ID on the element
+            recipeCard.style.cursor = 'pointer';
+            recipeCard.dataset.recipeId = recipeId;
 
             recipeCard.innerHTML = `
                 <img src="${imageUrl}" alt="${title}">
@@ -78,43 +93,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${price !== '-' ? `<p>Pris: ${price}</p>` : ''}
             `;
             
-            // --- NEW: Add click listener to each card ---
-            recipeCard.addEventListener('click', () => {
-                getRecipeDetails(recipeId);
-            });
-
+            recipeCard.addEventListener('click', () => getRecipeDetails(recipeId));
             recipeListContainer.appendChild(recipeCard);
         });
     };
-
-    // --- NEW: Function to fetch and display details in the modal ---
+    
     const getRecipeDetails = async (recipeId) => {
-        // Show the modal with a loading message
         modalContent.innerHTML = '<h2>Henter opskrift...</h2>';
         modalContainer.classList.add('show');
-
         const detailsApiUrl = `http://www.madopskrifter.nu/webservices/iphone/iphoneclientservice.svc/GetRecipe/0/${recipeId}/4`;
         const fullUrl = proxyUrl + detailsApiUrl;
-
         try {
             const response = await fetch(fullUrl);
             if (!response.ok) throw new Error('Recipe details not found.');
-            
             const data = await response.json();
-
-            // The first array has general info
             const generalInfo = data[0];
             const title = generalInfo[1];
             const description = generalInfo[2];
-            const imageUrl = generalInfo[3];
-
-            // The last array contains the instructions
+            // --- AND FIX IS HERE ---
+            // Also force the modal's image URL to use HTTPS
+            const imageUrl = generalInfo[3].replace('http://', 'https://');
             const instructions = data[data.length - 1][1].replace(/\n/g, '<br>');
-
-            // Everything in between is an ingredient
             const ingredients = data.slice(1, -1).map(ing => `<li>${ing[0]} ${ing[1]} <strong>${ing[2]}</strong></li>`).join('');
 
-            // Populate the modal with the fetched data
             modalContent.innerHTML = `
                 <h2>${title}</h2>
                 <img src="${imageUrl}" alt="${title}">
@@ -124,10 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h3>Fremgangsmåde</h3>
                 <p>${instructions}</p>
             `;
-
         } catch (error) {
-            modalContent.innerHTML = `<h2>Fejl</h2><p>Kunne ikke hente opskriftens detaljer. Prøv venligst igen senere.</p>`;
+            modalContent.innerHTML = `<h2>Fejl</h2><p>Kunne ikke hente opskriftens detaljer.</p>`;
             console.error("Error fetching details:", error);
         }
     };
+
+    // Fetch popular recipes on page load
+    getRecipeList('GetPopularRecipes', 'Populære Opskrifter');
 });
