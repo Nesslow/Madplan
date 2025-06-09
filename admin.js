@@ -67,11 +67,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             const row = document.createElement('tr');
             row.dataset.id = recipe.id;
             row.innerHTML = `
-                <td>${recipe.title}</td>
-                <td>${recipe.category || 'N/A'}</td>
+                <td><span class="math-inline">\{recipe\.title\}</td\>
+                <td>{recipe.category || 'N/A'}</td>
                 <td class="actions-cell">
-                    <button class="btn btn-primary edit-btn">✏️ Rediger</button>
-                    <button class="btn btn-danger delete-btn">🗑️ Slet</button>
+                    <button class="btn btn-secondary edit-btn">Edit</button>
+                    <button class="btn btn-danger delete-btn">Delete</button>
                 </td>
             `;
             tableBody.appendChild(row);
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <button type="button" id="add-instruction-btn" class="btn btn-light">＋ Trin</button>
                 <div class="modal-actions">
                     <button type="button" id="modal-cancel-btn" class="btn btn-secondary">Annuller</button>
-                    <button type="submit" class="btn btn-success">✔️ Gem Opskrift</button>
+                    <button type="submit" class="btn btn-primary">Save Recipe</button>
                 </div>
             </form>
         `;

@@ -1,45 +1,53 @@
-/* admin.css - v3 with Modal and Clean UI */
+/* admin.css - v4 Minimalist Redesign */
 
-/* 1. Variables */
+/* 1. Variables - Using smaller base values */
 :root {
     --primary-color: #007bff;
-    --success-color: #28a745;
     --danger-color: #dc3545;
     --secondary-color: #6c757d;
     --light-gray-color: #f8f9fa;
-    --border-color: #dee2e6;
+    --border-color: #e9ecef; /* Softer border color */
     --text-color: #212529;
-    --base-spacing: 1rem;
-    --border-radius: 6px;
+    --text-muted-color: #6c757d;
+    --base-font-size: 14px; /* Smaller base font for data density */
+    --base-spacing: 0.75rem; /* Smaller base spacing unit */
+    --border-radius: 5px;   /* Slightly smaller border radius */
 }
 
-/* 2. Page Layout */
+/* 2. Global & Page Layout */
+body {
+    font-size: var(--base-font-size); /* Apply smaller base font size */
+}
+
 .admin-container {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
 }
 
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.1rem; margin-top: 1.5rem; }
+
 .back-link {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
     color: var(--primary-color);
+    font-weight: 500;
 }
 
-/* 3. Table Styling */
+/* 3. Table Styling - More compact */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
     background-color: #fff;
+    border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: none; /* Cleaner without shadow */
 }
 
 th, td {
-    padding: 12px 15px;
+    padding: 10px 12px; /* Reduced padding */
     border-bottom: 1px solid var(--border-color);
     text-align: left;
     vertical-align: middle;
@@ -48,132 +56,100 @@ th, td {
 th {
     background-color: var(--light-gray-color);
     font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--text-muted-color);
 }
 
 tr:last-child td {
     border-bottom: none;
 }
 
-tr:hover {
-    background-color: #f1f1f1;
-}
-
 .actions-col {
-    width: 130px;
+    width: 150px;
     text-align: right;
 }
 
-.actions-cell {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
-
-/* 4. Unified Button Styles */
+/* 4. Unified, Simpler Button Styles */
 .btn {
-    padding: 8px 16px;
-    font-size: 0.9rem;
+    padding: 6px 14px;
+    font-size: 0.85rem; /* Smaller font size */
     font-weight: 600;
-    border: 1px solid transparent;
+    border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
+    background-color: #fff;
+    color: var(--text-color);
     cursor: pointer;
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
     transition: all 0.2s;
 }
 
 .btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: var(--light-gray-color);
+    border-color: #ced4da;
 }
 
-.btn-primary { background-color: var(--primary-color); color: white; }
-.btn-danger { background-color: var(--danger-color); color: white; }
-.btn-secondary { background-color: var(--secondary-color); color: white; }
-.btn-success { background-color: var(--success-color); color: white; }
-.btn-light { background-color: #f8f9fa; border-color: #dee2e6; color: #212529; }
-
-
-/* 5. Modal Styling */
-.modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+#add-new-recipe-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    margin-bottom: 20px;
+}
+#add-new-recipe-btn:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
 }
 
-.modal-backdrop.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
+.btn-primary { background-color: var(--primary-color); color: white; border-color: var(--primary-color); }
+.btn-primary:hover { background-color: #0069d9; border-color: #0062cc; }
 
+.btn-danger { color: var(--danger-color); border-color: var(--danger-color); }
+.btn-danger:hover { background-color: var(--danger-color); color: white; }
+
+.btn-secondary { color: var(--secondary-color); border-color: var(--secondary-color); }
+.btn-secondary:hover { background-color: var(--secondary-color); color: white; }
+
+.btn-light { background-color: var(--light-gray-color); border-color: var(--border-color); }
+
+/* 5. Modal & Form Styling */
 .modal-content {
-    background: white;
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    width: 90%;
-    max-width: 800px;
+    padding: 1.5rem;
     max-height: 90vh;
-    display: flex;
-    flex-direction: column;
 }
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-}
-
-.modal-header h2 {
-    margin: 0;
-}
-
-.close-btn {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    font-weight: 300;
-    cursor: pointer;
-    color: var(--secondary-color);
-}
-
-.modal-body {
-    overflow-y: auto; /* Make form scrollable if it's too long */
-    padding-right: 1rem; /* Space for scrollbar */
-}
-
-/* 6. Form Styling (Inside Modal) */
-.modal-body label { font-weight: bold; display: block; margin-top: 1rem; margin-bottom: 0.5rem; }
+.modal-body label { font-weight: 600; font-size: 0.85rem; margin-top: 0.75rem; margin-bottom: 0.4rem; }
 .modal-body input, .modal-body textarea, .modal-body select, .modal-body .ts-control {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid var(--border-color);
+    padding: 0.6rem;
+    font-size: 0.9rem;
     border-radius: var(--border-radius);
-    box-sizing: border-box;
 }
-
 .modal-body .form-row { display: flex; gap: 1rem; }
 .modal-body .form-row > div { flex: 1; }
 
-.modal-body h3 { margin-top: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
-.modal-body .ingredient-row, .modal-body .instruction-row { display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem; }
-.modal-body .ingredient-row > *:nth-child(1) { flex: 0 1 80px; }
-.modal-body .ingredient-row > *:nth-child(2) { flex: 0 1 100px; }
-.modal-body .ingredient-row > *:nth-child(3) { flex: 1 1 auto; }
-.modal-body .instruction-row > *:nth-child(1) { flex-grow: 1; }
+/* --- FIX for Ingredient Row Layout --- */
+.modal-body .ingredient-row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.modal-body .ingredient-row .ingredient-amount { flex: 0 1 80px; }
+.modal-body .ingredient-row .ingredient-unit { flex: 0 1 100px; }
+.modal-body .ingredient-row .ts-wrapper { flex: 1 1 auto; /* This makes it take up the remaining space */ }
+.modal-body .instruction-row { display: flex; gap: 0.5rem; }
+.modal-body .instruction-row textarea { flex-grow: 1; }
+.modal-body .remove-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    font-size: 1rem;
+    flex-shrink: 0;
+    line-height: 30px;
+    background-color: var(--light-gray-color);
+    color: var(--danger-color);
+    border-color: var(--border-color);
+}
+.modal-body .remove-btn:hover { background-color: var(--danger-color); color: white; }
 
-.modal-body .modal-actions { margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 1rem; }
+.modal-actions { margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 0.75rem; }
