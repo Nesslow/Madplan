@@ -76,7 +76,6 @@ main {
 #search-form {
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 1rem;
     justify-content: center;
 }
 
@@ -95,7 +94,7 @@ main {
 }
 
 /* General Button Styles (adapted from admin.css) */
-.btn, #search-form button, .filter-buttons button, .category-filters-container button {
+.btn, #search-form button {
     display: inline-block;
     padding: 0.5rem 1rem;
     font-size: 0.95rem;
@@ -111,7 +110,7 @@ main {
 }
 
 .btn:focus, .btn.focus,
-#search-form button:focus, .filter-buttons button:focus, .category-filters-container button:focus {
+#search-form button:focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(var(--primary-color-rgb), 0.25);
 }
@@ -127,45 +126,9 @@ main {
     border-color: #0056b3;
 }
 
-/* Filter Buttons (Secondary/Light style) */
-.filter-buttons button,
-.category-filters-container button {
-    color: var(--text-color);
-    background-color: var(--light-gray-color);
-    border-color: var(--border-color);
-    margin: 0.25rem;
-}
+/* Removed filter and category button styles */
 
-.filter-buttons button:hover,
-.category-filters-container button:hover {
-    background-color: #e2e6ea;
-    border-color: #dae0e5;
-}
-
-.filter-buttons button.active,
-.category-filters-container button.active {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border-color: var(--primary-color);
-}
-
-.filter-buttons {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.category-filters-container {
-    padding-top: 1rem;
-    border-top: 1px solid var(--border-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
+/* Recipe Container and Card Styles */
 .recipe-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Slightly larger minmax */
@@ -200,24 +163,47 @@ main {
     font-size: 1.15rem;
     font-weight: 600;
     color: var(--text-color);
-    flex-grow: 1; /* Title takes available space */
+    /* flex-grow: 1; */ /* Removed to allow content below to push title up */
     line-height: 1.4;
+}
+
+.recipe-card h4 {
+    padding: 0.5rem 1rem; /* Add padding for the "Ingredienser:" heading */
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted-color);
+    border-top: 1px solid var(--border-color);
 }
 
 .card-ingredients {
     font-size: 0.875rem;
     text-align: left;
     padding: 0 1rem 1rem; /* Consistent padding */
-    max-height: 100px;
+    max-height: 100px; /* Limit height and allow scroll */
     overflow-y: auto;
-    border-top: 1px solid var(--border-color);
-    margin: 0; /* Remove margin, padding handles spacing */
+    /* border-top: 1px solid var(--border-color); */ /* Moved border to h4 */
+    margin: 0;
     list-style-type: none;
     color: var(--text-muted-color);
 }
 
+.card-ingredients-empty {
+    font-size: 0.875rem;
+    text-align: left;
+    padding: 0 1rem 1rem;
+    margin: 0;
+    color: var(--text-muted-color);
+    font-style: italic;
+}
+
 .card-ingredients li {
-    padding: 0.25rem 0;
+    padding: 0.1rem 0; /* Reduced padding for tighter list */
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
 }
 
 /* MODAL STYLES (Adapted from admin.css modal) */
@@ -371,7 +357,7 @@ main {
     header h1 {
         font-size: 1.3rem;
     }
-    .btn, #search-form button, .filter-buttons button, .category-filters-container button {
+    .btn, #search-form button {
         padding: 0.375rem 0.75rem;
         font-size: 0.9rem;
     }

@@ -4,14 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const recipeListContainer = document.getElementById('recipe-list');
     const API_BASE_URL = 'https://smart-recipe-api.onrender.com'; 
-    const popularBtn = document.getElementById('popular-btn');
-    const topBtn = document.getElementById('top-btn');
-    const newBtn = document.getElementById('new-btn');
     const modalContainer = document.getElementById('modal-container');
     const modalCloseBtn = document.getElementById('modal-close-btn');
     const modalContent = document.getElementById('modal-recipe-content');
     
     let previouslyFocusedElement = null; // To store focus before modal opens
+    let allRecipesCache = []; // Cache for all fetched recipes
 
     // --- Functions ---
 
@@ -22,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(fullUrl);
             if (!response.ok) throw new Error('Could not fetch recipes from your API.');
-            const recipes = await response.json();
-            if (recipes && recipes.length > 0) {
-                displayRecipes(recipes);
+            allRecipesCache = await response.json(); // Store recipes in cache
+            if (allRecipesCache && allRecipesCache.length > 0) {
+                displayRecipes(allRecipesCache); // Display all recipes initially
             } else {
                 recipeListContainer.innerHTML = `<p>Ingen opskrifter fundet i din database.</p>`;
             }
@@ -36,6 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayRecipes(recipes) {
         recipeListContainer.innerHTML = '';
+        const currentSearchTerms = searchInput.value.toLowerCase().split(',').map(term => term.trim()).filter(term => term.length > 0);
+
         recipes.forEach(recipe => {
             const recipeCard = document.createElement('div');
             recipeCard.classList.add('recipe-card');
@@ -45,10 +45,24 @@ document.addEventListener('DOMContentLoaded', () => {
             recipeCard.setAttribute('role', 'button'); // Indicate it's interactive
             recipeCard.setAttribute('aria-label', `Vis detaljer for ${recipe.title}`);
 
+            const ingredientsList = recipe.ingredients && recipe.ingredients.length > 0
+                ? `<ul class="card-ingredients">${recipe.ingredients.map(ing => {
+                    let ingName = ing.name;
+                    if (ingName && currentSearchTerms.length > 0) {
+                        currentSearchTerms.forEach(term => {
+                            const regex = new RegExp(`(${term})`, 'gi');
+                            ingName = ingName.replace(regex, '<span class="highlight">$1</span>');
+                        });
+                    }
+                    return `<li>${ingName}</li>`;
+                }).join('')}</ul>`
+                : '<p class="card-ingredients-empty">Ingen ingredienser angivet.</p>';
 
             recipeCard.innerHTML = `
                 <img src="${recipe.imageUrl}" alt="${recipe.title}">
                 <h3>${recipe.title}</h3>
+                <h4>Ingredienser:</h4>
+                ${ingredientsList}
             `;
             
             const openRecipeDetails = () => getRecipeDetails(recipe.id);
@@ -155,15 +169,39 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function handleSearch(event) {
+        event.preventDefault();
+        const searchTerms = searchInput.value.toLowerCase().split(',').map(term => term.trim()).filter(term => term.length > 0);
+
+        if (searchTerms.length === 0) {
+            displayRecipes(allRecipesCache); // If search is empty, show all recipes
+            return;
+        }
+
+        const filteredAndSortedRecipes = allRecipesCache.map(recipe => {
+            let matchCount = 0;
+            if (recipe.ingredients && recipe.ingredients.length > 0) {
+                searchTerms.forEach(searchTerm => {
+                    if (recipe.ingredients.some(ing => ing.name && ing.name.toLowerCase().includes(searchTerm))) {
+                        matchCount++;
+                    }
+                });
+            }
+            return { ...recipe, matchCount };
+        })
+        .filter(recipe => recipe.matchCount > 0)
+        .sort((a, b) => b.matchCount - a.matchCount);
+
+        if (filteredAndSortedRecipes.length > 0) {
+            displayRecipes(filteredAndSortedRecipes);
+        } else {
+            recipeListContainer.innerHTML = '<p>Ingen opskrifter matcher din søgning.</p>';
+        }
+    }
+
     // --- Event Listeners and Initial Load ---
-    if (popularBtn) popularBtn.addEventListener('click', getRecipes);
-    if (topBtn) topBtn.addEventListener('click', getRecipes);
-    if (newBtn) newBtn.addEventListener('click', getRecipes);
-    if (searchForm) {
-        searchForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            alert("Søgefunktion er ikke bygget i vores nye API endnu. Kommer snart!");
-        });
+    if (searchInput) { // Changed from searchForm to searchInput
+        searchInput.addEventListener('input', handleSearch); // Changed from 'submit' to 'input'
     }
 
     if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);

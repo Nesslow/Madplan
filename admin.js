@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const tableBody = document.getElementById('recipe-table-body');
     const addNewRecipeBtn = document.getElementById('add-new-recipe-btn');
     const modal = document.getElementById('recipe-modal');
-    const modalTitle = document.getElementById('modal-title');
     const modalBody = document.getElementById('modal-body');
     const modalCloseBtn = document.getElementById('modal-close-btn');
 
@@ -150,7 +149,6 @@ document.addEventListener('DOMContentLoaded', async () => {
      */
     function showRecipeFormModal(recipe = null) {
         const isEditing = recipe !== null;
-        modalTitle.textContent = isEditing ? 'Rediger Opskrift' : 'Tilføj Ny Opskrift';
         
         const ingredientsHTML = (recipe?.ingredients || [{ name: '', amount: '', unit: '' }])
             .map(createIngredientInputHTML).join('');

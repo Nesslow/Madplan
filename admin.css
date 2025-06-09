@@ -242,7 +242,7 @@ tbody tr:hover {
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
     padding: 2rem;
     width: 100%;
-    max-width: 600px; /* Max width for modal content */
+    max-width: 800px; /* Max width for modal content */
     max-height: 90vh;
     overflow-y: auto;
     display: flex;
@@ -253,14 +253,6 @@ tbody tr:hover {
     display: flex;
     flex-direction: column;
     gap: 1.5rem; /* Spacing between form groups */
-}
-
-#modal-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem; /* Space below title */
-    color: var(--text-color);
-    padding-right: 2.5rem; /* Space for close button */
 }
 
 #modal-close-btn {
@@ -528,9 +520,6 @@ tbody tr:hover {
         padding: 1.5rem;
         max-width: calc(100% - 2rem); /* Ensure some margin on small screens */
     }
-    #modal-title {
-        font-size: 1.25rem;
-    }
     #modal-body .form-row {
         flex-direction: column;
         gap: 0; /* Remove gap if children have margins */
@@ -610,9 +599,6 @@ tbody tr:hover {
     #modal-body {
         padding: 1rem;
         max-width: calc(100% - 1rem);
-    }
-    #modal-title {
-        font-size: 1.15rem;
     }
     #modal-body label {
         font-size: 0.85rem;
