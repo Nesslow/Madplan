@@ -50,7 +50,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         tableBody.innerHTML = '<tr><td colspan="3"><span id="loading-spinner">Henter opskrifter...</span></td></tr>';
         try {
             const response = await fetch(`${API_BASE_URL}/recipes`);
-            if (!response.ok) throw new Error('Could not fetch recipes.');
+            if (!response.ok) {
+                let errorMessage = `Kunne ikke hente opskrifter. Status: ${response.status}`;
+                try {
+                    const errorData = await response.json();
+                    errorMessage = errorData.message || errorMessage;
+                } catch (e) {
+                    // Response was not JSON or error parsing it, use default status error
+                }
+                throw new Error(errorMessage);
+            }
             recipesCache = await response.json();
             recipesCache.sort((a, b) => a.title.localeCompare(b.title));
             renderTable();
@@ -141,7 +150,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const isEditing = recipe !== null;
         modalTitle.textContent = isEditing ? 'Rediger Opskrift' : 'Tilføj Ny Opskrift';
         
-        // Build the form's HTML dynamically
         const ingredientsHTML = (recipe?.ingredients || [{ name: '', amount: '', unit: '' }])
             .map(createIngredientInputHTML).join('');
         const instructionsHTML = (recipe?.instructions || [''])
@@ -164,22 +172,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <button type="button" id="add-instruction-btn" class="btn btn-light">＋ Trin</button>
                 <div class="modal-actions">
                     <button type="button" id="modal-cancel-btn" class="btn btn-secondary">Annuller</button>
-                    <button type="submit" class="btn btn-primary">Save Recipe</button>
+                    <button type="submit" class="btn btn-primary" id="modal-save-btn">Save Recipe</button>
                 </div>
             </form>
         `;
 
         trapModalFocus(modal);
         
-        // Initialize Tom Select on all ingredient fields inside the modal
         modalBody.querySelectorAll('.ingredient-name-select').forEach(initializeTomSelect);
 
         openModal();
     }
     
-    /**
-     * Helper to generate HTML for one ingredient row.
-     */
     function createIngredientInputHTML(ingredient = {}) {
         const units = ['g', 'kg', 'dl', 'l', 'tsk', 'spsk', 'stk', 'knsp', 'fed', 'bundt'];
         const unitOptions = units.map(u => `<option value="${u}" ${u === ingredient.unit ? 'selected' : ''}>${u}</option>`).join('');
@@ -193,29 +197,20 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
     }
 
-    /**
-     * Helper to generate HTML for one instruction row.
-     */
     function createInstructionInputHTML(step = '') {
         return `<div class="instruction-row"><textarea class="instruction-step" rows="2" required>${step}</textarea><button type="button" class="remove-btn">－</button></div>`;
     }
 
-    /**
-     * Initializes a Tom Select instance on an element.
-     */
     function initializeTomSelect(element) {
         new TomSelect(element, { options: masterIngredientList, create: true, maxItems: 1 });
     }
     
-    /**
-     * Handles the form submission for both creating and updating.
-     */
     async function handleFormSubmit() {
         const form = modalBody.querySelector('#modal-form');
         const recipeId = form.querySelector('#recipeId').value;
         const isUpdating = !!recipeId;
+        const saveButton = form.querySelector('#modal-save-btn');
 
-        // Validate ingredients
         const ingredients = Array.from(form.querySelectorAll('.ingredient-row')).map(row => ({
             amount: parseFloat(row.querySelector('.ingredient-amount').value) || null,
             unit: row.querySelector('.ingredient-unit').value.trim(),
@@ -226,7 +221,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        // Validate instructions
         const instructions = Array.from(form.querySelectorAll('.instruction-step')).map(textarea => textarea.value.trim()).filter(step => step);
         if (instructions.length === 0) {
             alert('Mindst ét trin i fremgangsmåden er påkrævet.');
@@ -242,18 +236,37 @@ document.addEventListener('DOMContentLoaded', async () => {
             instructions
         };
 
-        if (!recipeData.title) return alert('Titel er påkrævet.');
+        if (!recipeData.title) {
+             alert('Titel er påkrævet.');
+             return;
+        }
+
+        const originalButtonText = saveButton.textContent;
+        saveButton.disabled = true;
+        saveButton.textContent = 'Gemmer...';
 
         const url = isUpdating ? `${API_BASE_URL}/recipes/${recipeId}` : `${API_BASE_URL}/recipes`;
         const method = isUpdating ? 'PUT' : 'POST';
 
         try {
             const response = await fetch(url, { method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(recipeData) });
-            if (!response.ok) throw new Error('Lagring fejlede.');
+            if (!response.ok) {
+                let errorMessage = `Lagring fejlede. Status: ${response.status}`;
+                try {
+                    const errorData = await response.json();
+                    errorMessage = errorData.message || errorMessage;
+                } catch (e) {
+                    // Response was not JSON or error parsing it, use default status error
+                }
+                throw new Error(errorMessage);
+            }
             closeModal();
             await loadRecipes();
         } catch (error) {
             alert(`Fejl: ${error.message}`);
+        } finally {
+            saveButton.disabled = false;
+            saveButton.textContent = originalButtonText;
         }
     }
 
@@ -262,10 +275,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     //  EVENT LISTENERS
     // =================================================================
 
-    // Listener for "+ Add New Recipe" button
     addNewRecipeBtn.addEventListener('click', () => showRecipeFormModal());
 
-    // Listener for main table (for Edit/Delete buttons)
     tableBody.addEventListener('click', (event) => {
         const target = event.target;
         const row = target.closest('tr');
@@ -282,17 +293,29 @@ document.addEventListener('DOMContentLoaded', async () => {
             const recipeTitle = row.cells[0].textContent;
             if (window.confirm(`Er du sikker på, at du vil slette "${recipeTitle}"?`)) {
                 fetch(`${API_BASE_URL}/recipes/${recipeId}`, { method: 'DELETE' })
-                    .then(response => {
-                        if (!response.ok) throw new Error('Sletning fejlede.');
-                        row.remove(); // Optimistic UI update
+                    .then(async response => { // Made this callback async
+                        if (!response.ok) {
+                            let errorMessage = `Sletning fejlede. Status: ${response.status}`;
+                            try {
+                                const errorData = await response.json();
+                                errorMessage = errorData.message || errorMessage;
+                            } catch (e) {
+                                // Response was not JSON or error parsing it, use default status error
+                            }
+                            throw new Error(errorMessage);
+                        }
+                        // If successful:
+                        row.remove(); 
                         recipesCache = recipesCache.filter(r => r.id !== recipeId);
+                        // Optionally, call loadRecipes() if a full refresh is preferred over optimistic UI update
                     })
-                    .catch(error => alert(`Fejl: ${error.message}`));
+                    .catch(error => {
+                        alert(`Fejl: ${error.message}`);
+                    });
             }
         }
     });
 
-    // Listener for all clicks within the modal
     modal.addEventListener('click', (event) => {
         const target = event.target;
         if (target === modal || target === modalCloseBtn || target.id === 'modal-cancel-btn') {
@@ -311,7 +334,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // Listener for form submission inside the modal
     modal.addEventListener('submit', (event) => {
         if (event.target.id === 'modal-form') {
             event.preventDefault();
