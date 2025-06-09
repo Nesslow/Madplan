@@ -38,7 +38,7 @@ Madplan is a web application designed for managing and browsing recipes. It feat
 
 ## Live Application
 
-*   [Link to your live application (if deployed)](YOUR_LIVE_APPLICATION_URL_HERE)
+*   [nesslow.github.io/Madplan](https://nesslow.github.io/Madplan/)
 
 ## File Structure Overview
 
