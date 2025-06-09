@@ -35,6 +35,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             masterIngredientList = ingredientsData.map(ing => ({ value: ing.FødevareNavn, text: ing.FødevareNavn }));
         } catch (error) {
             console.error("Could not load ingredients.json:", error);
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.style.color = 'red';
+            errorDiv.textContent = 'Kunne ikke indlæse ingredienslisten. Prøv at genindlæse siden.';
+            document.body.prepend(errorDiv);
         }
     }
 
@@ -42,7 +47,7 @@ document.addEventListener('DOMContentLoaded', async () => {
      * Fetches all recipes from the API and renders the table.
      */
     async function loadRecipes() {
-        tableBody.innerHTML = '<tr><td colspan="3">Henter opskrifter...</td></tr>';
+        tableBody.innerHTML = '<tr><td colspan="3"><span id="loading-spinner">Henter opskrifter...</span></td></tr>';
         try {
             const response = await fetch(`${API_BASE_URL}/recipes`);
             if (!response.ok) throw new Error('Could not fetch recipes.');
@@ -67,8 +72,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const row = document.createElement('tr');
             row.dataset.id = recipe.id;
             row.innerHTML = `
-                <td><span class="math-inline">\{recipe\.title\}</td\>
-                <td>{recipe.category || 'N/A'}</td>
+                <td>${recipe.title}</td>
+                <td>${recipe.category || 'N/A'}</td>
                 <td class="actions-cell">
                     <button class="btn btn-secondary edit-btn">Edit</button>
                     <button class="btn btn-danger delete-btn">Delete</button>
@@ -82,19 +87,50 @@ document.addEventListener('DOMContentLoaded', async () => {
     //  MODAL AND FORM HANDLING
     // =================================================================
     
-    /**
-     * Opens the modal.
-     */
-    function openModal() {
-        modal.classList.remove('hidden');
+    function trapModalFocus(modalEl) {
+        const focusableEls = modalEl.querySelectorAll('a[href], button:not([disabled]), textarea, input, select');
+        const firstEl = focusableEls[0];
+        const lastEl = focusableEls[focusableEls.length - 1];
+        modalEl.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab') {
+                if (e.shiftKey) {
+                    if (document.activeElement === firstEl) {
+                        e.preventDefault();
+                        lastEl.focus();
+                    }
+                } else {
+                    if (document.activeElement === lastEl) {
+                        e.preventDefault();
+                        firstEl.focus();
+                    }
+                }
+            }
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
     }
 
-    /**
-     * Closes the modal and clears its content.
-     */
+    function openModal() {
+        modal.classList.remove('hidden');
+        modal.setAttribute('aria-modal', 'true');
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('tabindex', '-1');
+        setTimeout(() => {
+            const firstInput = modal.querySelector('input, textarea, select, button');
+            if (firstInput) firstInput.focus();
+        }, 50);
+        document.body.style.overflow = 'hidden';
+    }
+
     function closeModal() {
         modal.classList.add('hidden');
         modalBody.innerHTML = '';
+        modal.removeAttribute('aria-modal');
+        modal.removeAttribute('role');
+        modal.removeAttribute('tabindex');
+        document.body.style.overflow = '';
+        addNewRecipeBtn.focus();
     }
 
     /**
@@ -132,6 +168,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             </form>
         `;
+
+        trapModalFocus(modal);
         
         // Initialize Tom Select on all ingredient fields inside the modal
         modalBody.querySelectorAll('.ingredient-name-select').forEach(initializeTomSelect);
@@ -177,13 +215,23 @@ document.addEventListener('DOMContentLoaded', async () => {
         const recipeId = form.querySelector('#recipeId').value;
         const isUpdating = !!recipeId;
 
+        // Validate ingredients
         const ingredients = Array.from(form.querySelectorAll('.ingredient-row')).map(row => ({
             amount: parseFloat(row.querySelector('.ingredient-amount').value) || null,
             unit: row.querySelector('.ingredient-unit').value.trim(),
             name: row.querySelector('.ingredient-name-select').value.trim()
-        })).filter(ing => ing.name);
+        })).filter(ing => ing.name && ing.amount && ing.unit);
+        if (ingredients.length === 0) {
+            alert('Mindst én ingrediens med navn, mængde og enhed er påkrævet.');
+            return;
+        }
 
+        // Validate instructions
         const instructions = Array.from(form.querySelectorAll('.instruction-step')).map(textarea => textarea.value.trim()).filter(step => step);
+        if (instructions.length === 0) {
+            alert('Mindst ét trin i fremgangsmåden er påkrævet.');
+            return;
+        }
 
         const recipeData = {
             title: form.querySelector('#title').value.trim(),
@@ -203,7 +251,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const response = await fetch(url, { method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(recipeData) });
             if (!response.ok) throw new Error('Lagring fejlede.');
             closeModal();
-            await loadRecipes(); // Reload all data to show changes
+            await loadRecipes();
         } catch (error) {
             alert(`Fejl: ${error.message}`);
         }
