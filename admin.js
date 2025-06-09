@@ -121,7 +121,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function openModal() {
-        modal.classList.remove('hidden');
+        modal.classList.remove('hidden'); // Remove .hidden if present
+        modal.classList.add('visible');   // Add .visible to show
         modal.setAttribute('aria-modal', 'true');
         modal.setAttribute('role', 'dialog');
         modal.setAttribute('tabindex', '-1');
@@ -133,7 +134,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function closeModal() {
-        modal.classList.add('hidden');
+        modal.classList.remove('visible'); // Remove .visible to hide
+        modal.classList.add('hidden');     // Add .hidden back
         modalBody.innerHTML = '';
         modal.removeAttribute('aria-modal');
         modal.removeAttribute('role');
