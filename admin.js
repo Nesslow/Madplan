@@ -1,19 +1,29 @@
-// admin.js - v4 with full inline editing form
-document.addEventListener('DOMContentLoaded', () => {
-    // --- CONFIGURATION ---
+// admin.js - v4 with Modal-based CRUD
+document.addEventListener('DOMContentLoaded', async () => {
+    // --- CONFIGURATION & STATE ---
     const API_BASE_URL = 'https://smart-recipe-api.onrender.com';
+    let recipesCache = [];
+    let masterIngredientList = [];
 
     // --- ELEMENT REFERENCES ---
     const tableBody = document.getElementById('recipe-table-body');
     const addNewRecipeBtn = document.getElementById('add-new-recipe-btn');
-
-    // --- STATE ---
-    let recipesCache = [];
-    let masterIngredientList = []; // To hold ingredients for Tom Select
+    const modal = document.getElementById('recipe-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalBody = document.getElementById('modal-body');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
 
     // =================================================================
-    //  FUNCTION DECLARATIONS
+    //  CORE FUNCTIONS
     // =================================================================
+
+    /**
+     * Fetches all data on page load
+     */
+    async function initializeAdminPage() {
+        await loadIngredientMasterList();
+        await loadRecipes();
+    }
 
     /**
      * Fetches the master ingredient list from the local JSON file.
@@ -22,18 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch('./ingredients.json');
             const ingredientsData = await response.json();
-            masterIngredientList = ingredientsData.map(ingredient => ({
-                value: ingredient.FødevareNavn,
-                text: ingredient.FødevareNavn
-            }));
-            console.log(`Loaded ${masterIngredientList.length} master ingredients.`);
+            masterIngredientList = ingredientsData.map(ing => ({ value: ing.FødevareNavn, text: ing.FødevareNavn }));
         } catch (error) {
-            console.error("Could not load local ingredients.json file:", error);
+            console.error("Could not load ingredients.json:", error);
         }
     }
 
     /**
-     * Fetches all recipes from the API and kicks off the table rendering.
+     * Fetches all recipes from the API and renders the table.
      */
     async function loadRecipes() {
         tableBody.innerHTML = '<tr><td colspan="3">Henter opskrifter...</td></tr>';
@@ -41,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch(`${API_BASE_URL}/recipes`);
             if (!response.ok) throw new Error('Could not fetch recipes.');
             recipesCache = await response.json();
-            recipesCache.sort((a, b) => a.title.localeCompare(b.title)); // Sort alphabetically
+            recipesCache.sort((a, b) => a.title.localeCompare(b.title));
             renderTable();
         } catch (error) {
             tableBody.innerHTML = `<tr><td colspan="3" style="color: red;">Fejl: ${error.message}</td></tr>`;
@@ -49,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Renders the entire table from the cached data.
+     * Renders the entire table from the cached recipe data.
      */
     function renderTable() {
         tableBody.innerHTML = '';
@@ -58,98 +64,83 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         recipesCache.forEach(recipe => {
-            const row = createDisplayRow(recipe);
+            const row = document.createElement('tr');
+            row.dataset.id = recipe.id;
+            row.innerHTML = `
+                <td>${recipe.title}</td>
+                <td>${recipe.category || 'N/A'}</td>
+                <td class="actions-cell">
+                    <button class="btn btn-primary edit-btn">✏️ Rediger</button>
+                    <button class="btn btn-danger delete-btn">🗑️ Slet</button>
+                </td>
+            `;
             tableBody.appendChild(row);
         });
     }
 
+    // =================================================================
+    //  MODAL AND FORM HANDLING
+    // =================================================================
+    
     /**
-     * Creates the HTML for a single "display mode" row.
+     * Opens the modal.
      */
-    function createDisplayRow(recipe) {
-        const row = document.createElement('tr');
-        row.dataset.id = recipe.id;
-        row.innerHTML = `
-            <td>${recipe.title}</td>
-            <td>${recipe.category || 'N/A'}</td>
-            <td class="actions-cell">
-                <button class="edit-btn">Rediger</button>
-                <button class="delete-btn">Slet</button>
-            </td>
-        `;
-        return row;
+    function openModal() {
+        modal.classList.remove('hidden');
     }
 
     /**
-     * Creates and displays the full "edit form" for a recipe.
+     * Closes the modal and clears its content.
      */
-    function renderEditRow(recipeToEdit, existingRow) {
-        const editRow = document.createElement('tr');
-        editRow.className = 'edit-mode-row';
-        if (recipeToEdit) {
-            editRow.dataset.id = recipeToEdit.id;
-        }
+    function closeModal() {
+        modal.classList.add('hidden');
+        modalBody.innerHTML = '';
+    }
 
-        // Helper to create the ingredients section HTML
-        const ingredientsHTML = (recipeToEdit?.ingredients || [{ name: '', amount: '', unit: '' }])
-            .map(ing => createIngredientInputHTML(ing)).join('');
+    /**
+     * Populates and opens the modal for adding or editing a recipe.
+     * @param {object | null} recipe - The recipe to edit, or null to add a new one.
+     */
+    function showRecipeFormModal(recipe = null) {
+        const isEditing = recipe !== null;
+        modalTitle.textContent = isEditing ? 'Rediger Opskrift' : 'Tilføj Ny Opskrift';
         
-        // Helper to create the instructions section HTML
-        const instructionsHTML = (recipeToEdit?.instructions || [''])
-            .map(step => createInstructionInputHTML(step)).join('');
+        // Build the form's HTML dynamically
+        const ingredientsHTML = (recipe?.ingredients || [{ name: '', amount: '', unit: '' }])
+            .map(createIngredientInputHTML).join('');
+        const instructionsHTML = (recipe?.instructions || [''])
+            .map(createInstructionInputHTML).join('');
 
-        editRow.innerHTML = `
-            <td colspan="3">
-                <div class="edit-form-container">
-                    <div class="form-row">
-                        <div>
-                            <label>Titel</label>
-                            <input type="text" class="edit-title" value="${recipeToEdit?.title || ''}" required>
-                        </div>
-                        <div>
-                            <label>Kategori</label>
-                            <input type="text" class="edit-category" value="${recipeToEdit?.category || ''}">
-                        </div>
-                    </div>
-                    <div>
-                        <label>Billede URL</label>
-                        <input type="url" class="edit-imageUrl" value="${recipeToEdit?.imageUrl || ''}">
-                    </div>
-                    <div>
-                        <label>Beskrivelse</label>
-                        <textarea class="edit-description" rows="3">${recipeToEdit?.description || ''}</textarea>
-                    </div>
-
-                    <h3>Ingredienser</h3>
-                    <div class="ingredients-container">${ingredientsHTML}</div>
-                    <button type="button" class="add-ingredient-btn add-btn">+ Ingrediens</button>
-
-                    <h3>Fremgangsmåde</h3>
-                    <div class="instructions-container">${instructionsHTML}</div>
-                    <button type="button" class="add-instruction-btn add-btn">+ Trin</button>
-
-                    <div class="edit-form-actions">
-                        <button class="save-btn">Gem</button>
-                        <button class="cancel-btn">Annuller</button>
-                    </div>
+        modalBody.innerHTML = `
+            <form id="modal-form">
+                <input type="hidden" id="recipeId" value="${recipe?.id || ''}">
+                <div class="form-row">
+                    <div><label>Titel</label><input type="text" id="title" value="${recipe?.title || ''}" required></div>
+                    <div><label>Kategori</label><input type="text" id="category" value="${recipe?.category || ''}"></div>
                 </div>
-            </td>
+                <div><label>Billede URL</label><input type="url" id="imageUrl" value="${recipe?.imageUrl || ''}"></div>
+                <div><label>Beskrivelse</label><textarea id="description" rows="3">${recipe?.description || ''}</textarea></div>
+                <h3>Ingredienser</h3>
+                <div id="ingredients-container">${ingredientsHTML}</div>
+                <button type="button" id="add-ingredient-btn" class="btn btn-light">＋ Ingrediens</button>
+                <h3>Fremgangsmåde</h3>
+                <div id="instructions-container">${instructionsHTML}</div>
+                <button type="button" id="add-instruction-btn" class="btn btn-light">＋ Trin</button>
+                <div class="modal-actions">
+                    <button type="button" id="modal-cancel-btn" class="btn btn-secondary">Annuller</button>
+                    <button type="submit" class="btn btn-success">✔️ Gem Opskrift</button>
+                </div>
+            </form>
         `;
+        
+        // Initialize Tom Select on all ingredient fields inside the modal
+        modalBody.querySelectorAll('.ingredient-name-select').forEach(initializeTomSelect);
 
-        if (existingRow) {
-            tableBody.replaceChild(editRow, existingRow);
-        } else {
-            tableBody.prepend(editRow);
-        }
-
-        // After the HTML is in the DOM, initialize Tom Select for all ingredient inputs
-        editRow.querySelectorAll('.ingredient-name-select').forEach(selectInput => {
-            initializeTomSelect(selectInput);
-        });
+        openModal();
     }
-
+    
     /**
-     * Helper functions to generate HTML for dynamic rows.
+     * Helper to generate HTML for one ingredient row.
      */
     function createIngredientInputHTML(ingredient = {}) {
         const units = ['g', 'kg', 'dl', 'l', 'tsk', 'spsk', 'stk', 'knsp', 'fed', 'bundt'];
@@ -164,142 +155,122 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
+    /**
+     * Helper to generate HTML for one instruction row.
+     */
     function createInstructionInputHTML(step = '') {
-        return `
-            <div class="instruction-row">
-                <textarea class="instruction-step" rows="2" required>${step}</textarea>
-                <button type="button" class="remove-btn">－</button>
-            </div>
-        `;
+        return `<div class="instruction-row"><textarea class="instruction-step" rows="2" required>${step}</textarea><button type="button" class="remove-btn">－</button></div>`;
     }
 
     /**
-     * Initializes a Tom Select instance on a given input element.
+     * Initializes a Tom Select instance on an element.
      */
     function initializeTomSelect(element) {
-        new TomSelect(element, {
-            options: masterIngredientList,
-            create: true,
-            maxItems: 1,
-            sortField: { field: "text", direction: "asc" }
-        });
+        new TomSelect(element, { options: masterIngredientList, create: true, maxItems: 1 });
     }
-
+    
     /**
-     * Gathers all data from an edit form row.
+     * Handles the form submission for both creating and updating.
      */
-    function collectDataFromEditRow(editRow) {
-        const ingredients = Array.from(editRow.querySelectorAll('.ingredient-row')).map(row => ({
+    async function handleFormSubmit() {
+        const form = modalBody.querySelector('#modal-form');
+        const recipeId = form.querySelector('#recipeId').value;
+        const isUpdating = !!recipeId;
+
+        const ingredients = Array.from(form.querySelectorAll('.ingredient-row')).map(row => ({
             amount: parseFloat(row.querySelector('.ingredient-amount').value) || null,
             unit: row.querySelector('.ingredient-unit').value.trim(),
             name: row.querySelector('.ingredient-name-select').value.trim()
         })).filter(ing => ing.name);
 
-        const instructions = Array.from(editRow.querySelectorAll('.instruction-step'))
-            .map(textarea => textarea.value.trim())
-            .filter(step => step);
+        const instructions = Array.from(form.querySelectorAll('.instruction-step')).map(textarea => textarea.value.trim()).filter(step => step);
 
-        return {
-            title: editRow.querySelector('.edit-title').value.trim(),
-            category: editRow.querySelector('.edit-category').value.trim(),
-            imageUrl: editRow.querySelector('.edit-imageUrl').value.trim(),
-            description: editRow.querySelector('.edit-description').value.trim(),
+        const recipeData = {
+            title: form.querySelector('#title').value.trim(),
+            category: form.querySelector('#category').value.trim(),
+            imageUrl: form.querySelector('#imageUrl').value.trim(),
+            description: form.querySelector('#description').value.trim(),
             ingredients,
             instructions
         };
+
+        if (!recipeData.title) return alert('Titel er påkrævet.');
+
+        const url = isUpdating ? `${API_BASE_URL}/recipes/${recipeId}` : `${API_BASE_URL}/recipes`;
+        const method = isUpdating ? 'PUT' : 'POST';
+
+        try {
+            const response = await fetch(url, { method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(recipeData) });
+            if (!response.ok) throw new Error('Lagring fejlede.');
+            closeModal();
+            await loadRecipes(); // Reload all data to show changes
+        } catch (error) {
+            alert(`Fejl: ${error.message}`);
+        }
     }
+
 
     // =================================================================
     //  EVENT LISTENERS
     // =================================================================
 
-    addNewRecipeBtn.addEventListener('click', () => {
-        renderEditRow(null, null);
-    });
+    // Listener for "+ Add New Recipe" button
+    addNewRecipeBtn.addEventListener('click', () => showRecipeFormModal());
 
-    tableBody.addEventListener('click', async (event) => {
+    // Listener for main table (for Edit/Delete buttons)
+    tableBody.addEventListener('click', (event) => {
         const target = event.target;
-        const displayRow = target.closest('tr:not(.edit-mode-row)');
-        const editRow = target.closest('.edit-mode-row');
+        const row = target.closest('tr');
+        if (!row) return;
 
-        // --- Handle clicks on a DISPLAY ROW ---
-        if (displayRow) {
-            if (target.classList.contains('edit-btn')) {
-                const id = displayRow.dataset.id;
-                const recipeToEdit = recipesCache.find(r => r.id === id);
-                renderEditRow(recipeToEdit, displayRow);
-            }
-            if (target.classList.contains('delete-btn')) {
-                const id = displayRow.dataset.id;
-                const title = displayRow.cells[0].textContent;
-                if (window.confirm(`Er du sikker på, at du vil slette "${title}"?`)) {
-                    try {
-                        const response = await fetch(`${API_BASE_URL}/recipes/${id}`, { method: 'DELETE' });
-                        if (!response.ok) throw new Error('Sletning fejlede.');
-                        displayRow.remove();
-                        recipesCache = recipesCache.filter(r => r.id !== id);
-                    } catch (error) {
-                        alert(`Fejl: ${error.message}`);
-                    }
-                }
-            }
+        const recipeId = row.dataset.id;
+        
+        if (target.classList.contains('edit-btn')) {
+            const recipeToEdit = recipesCache.find(r => r.id === recipeId);
+            showRecipeFormModal(recipeToEdit);
         }
 
-        // --- Handle clicks inside an EDIT FORM ---
-        if (editRow) {
-            if (target.classList.contains('save-btn')) {
-                const data = collectDataFromEditRow(editRow);
-                if (!data.title) return alert('Titel er påkrævet.');
-                
-                const id = editRow.dataset.id;
-                const isUpdating = !!id;
-                const url = isUpdating ? `${API_BASE_URL}/recipes/${id}` : `${API_BASE_URL}/recipes`;
-                const method = isUpdating ? 'PUT' : 'POST';
+        if (target.classList.contains('delete-btn')) {
+            const recipeTitle = row.cells[0].textContent;
+            if (window.confirm(`Er du sikker på, at du vil slette "${recipeTitle}"?`)) {
+                fetch(`${API_BASE_URL}/recipes/${recipeId}`, { method: 'DELETE' })
+                    .then(response => {
+                        if (!response.ok) throw new Error('Sletning fejlede.');
+                        row.remove(); // Optimistic UI update
+                        recipesCache = recipesCache.filter(r => r.id !== recipeId);
+                    })
+                    .catch(error => alert(`Fejl: ${error.message}`));
+            }
+        }
+    });
 
-                try {
-                    const response = await fetch(url, {
-                        method,
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(data)
-                    });
-                    if (!response.ok) throw new Error('Lagring fejlede.');
-                    await loadRecipes(); // Reload all data to ensure UI is in sync
-                } catch (error) {
-                    alert(`Fejl: ${error.message}`);
-                }
-            }
-            if (target.classList.contains('cancel-btn')) {
-                const id = editRow.dataset.id;
-                const originalRecipe = recipesCache.find(r => r.id === id);
-                if (originalRecipe) {
-                    tableBody.replaceChild(createDisplayRow(originalRecipe), editRow);
-                } else {
-                    editRow.remove();
-                }
-            }
-            if (target.classList.contains('add-ingredient-btn')) {
-                const container = editRow.querySelector('.ingredients-container');
-                const newFieldHTML = createIngredientInputHTML();
-                container.insertAdjacentHTML('beforeend', newFieldHTML);
-                const newSelect = container.lastElementChild.querySelector('.ingredient-name-select');
-                initializeTomSelect(newSelect);
-            }
-            if (target.classList.contains('add-instruction-btn')) {
-                const container = editRow.querySelector('.instructions-container');
-                const newFieldHTML = createInstructionInputHTML();
-                container.insertAdjacentHTML('beforeend', newFieldHTML);
-            }
-            if (target.classList.contains('remove-btn')) {
-                target.closest('.ingredient-row, .instruction-row').remove();
-            }
+    // Listener for all clicks within the modal
+    modal.addEventListener('click', (event) => {
+        const target = event.target;
+        if (target === modal || target === modalCloseBtn || target.id === 'modal-cancel-btn') {
+            closeModal();
+        }
+        if (target.id === 'add-ingredient-btn') {
+            const container = modalBody.querySelector('#ingredients-container');
+            container.insertAdjacentHTML('beforeend', createIngredientInputHTML());
+            initializeTomSelect(container.lastElementChild.querySelector('.ingredient-name-select'));
+        }
+        if (target.id === 'add-instruction-btn') {
+            modalBody.querySelector('#instructions-container').insertAdjacentHTML('beforeend', createInstructionInputHTML());
+        }
+        if (target.classList.contains('remove-btn')) {
+            target.closest('.ingredient-row, .instruction-row').remove();
+        }
+    });
+
+    // Listener for form submission inside the modal
+    modal.addEventListener('submit', (event) => {
+        if (event.target.id === 'modal-form') {
+            event.preventDefault();
+            handleFormSubmit();
         }
     });
 
     // --- INITIALIZE APP ---
-    async function init() {
-        await loadIngredientMasterList();
-        await loadRecipes();
-    }
-
-    init();
+    initializeAdminPage();
 });

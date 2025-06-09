@@ -1,43 +1,57 @@
-/* admin.css - v2 with inline editing styles */
+/* admin.css - v3 with Modal and Clean UI */
+
+/* 1. Variables */
+:root {
+    --primary-color: #007bff;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --secondary-color: #6c757d;
+    --light-gray-color: #f8f9fa;
+    --border-color: #dee2e6;
+    --text-color: #212529;
+    --base-spacing: 1rem;
+    --border-radius: 6px;
+}
+
+/* 2. Page Layout */
 .admin-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.add-new-btn {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-.add-new-btn:hover {
-    background-color: #218838;
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--primary-color);
 }
 
+/* 3. Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 th, td {
     padding: 12px 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     text-align: left;
     vertical-align: middle;
 }
 
 th {
-    background-color: #f8f9fa;
+    background-color: var(--light-gray-color);
     font-weight: 600;
+}
+
+tr:last-child td {
+    border-bottom: none;
 }
 
 tr:hover {
@@ -45,64 +59,121 @@ tr:hover {
 }
 
 .actions-col {
-    width: 160px; /* Give more space for buttons */
+    width: 130px;
+    text-align: right;
 }
 
 .actions-cell {
     display: flex;
+    justify-content: flex-end;
     gap: 10px;
 }
 
-.edit-btn, .delete-btn, .save-btn, .cancel-btn {
-    padding: 6px 12px;
-    color: white;
-    border: none;
-    border-radius: 5px;
+/* 4. Unified Button Styles */
+.btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
     cursor: pointer;
     text-decoration: none;
-    font-size: 14px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
 }
-.edit-btn { background-color: #007bff; }
-.delete-btn { background-color: #dc3545; }
-.save-btn { background-color: #28a745; }
-.cancel-btn { background-color: #6c757d; }
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.btn-primary { background-color: var(--primary-color); color: white; }
+.btn-danger { background-color: var(--danger-color); color: white; }
+.btn-secondary { background-color: var(--secondary-color); color: white; }
+.btn-success { background-color: var(--success-color); color: white; }
+.btn-light { background-color: #f8f9fa; border-color: #dee2e6; color: #212529; }
 
 
-/* --- NEW Styles for Inline Editing --- */
-.edit-form-container {
-    padding: 20px;
-    background-color: #fdfdfd;
-}
-.edit-form-container label {
-    font-weight: bold;
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-.edit-form-container input,
-.edit-form-container textarea,
-.edit-form-container select {
+/* 5. Modal Styling */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.modal-backdrop.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.modal-body {
+    overflow-y: auto; /* Make form scrollable if it's too long */
+    padding-right: 1rem; /* Space for scrollbar */
+}
+
+/* 6. Form Styling (Inside Modal) */
+.modal-body label { font-weight: bold; display: block; margin-top: 1rem; margin-bottom: 0.5rem; }
+.modal-body input, .modal-body textarea, .modal-body select, .modal-body .ts-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
     box-sizing: border-box;
 }
-.edit-form-container .ingredient-row,
-.edit-form-container .instruction-row {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.edit-form-container .remove-btn {
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-}
-.edit-form-actions {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-}
+
+.modal-body .form-row { display: flex; gap: 1rem; }
+.modal-body .form-row > div { flex: 1; }
+
+.modal-body h3 { margin-top: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
+.modal-body .ingredient-row, .modal-body .instruction-row { display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem; }
+.modal-body .ingredient-row > *:nth-child(1) { flex: 0 1 80px; }
+.modal-body .ingredient-row > *:nth-child(2) { flex: 0 1 100px; }
+.modal-body .ingredient-row > *:nth-child(3) { flex: 1 1 auto; }
+.modal-body .instruction-row > *:nth-child(1) { flex-grow: 1; }
+
+.modal-body .modal-actions { margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 1rem; }

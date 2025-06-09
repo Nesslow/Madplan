@@ -17,7 +17,7 @@
 
     <main>
         <div class="admin-container">
-            <button id="add-new-recipe-btn" class="add-new-btn">＋ Tilføj Ny Opskrift</button>
+            <button id="add-new-recipe-btn" class="btn btn-primary">＋ Tilføj Ny Opskrift</button>
 
             <table>
                 <thead>
@@ -32,6 +32,17 @@
             </table>
         </div>
     </main>
+
+    <div id="recipe-modal" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Modal Title</h2>
+                <button id="modal-close-btn" class="close-btn">×</button>
+            </div>
+            <div id="modal-body" class="modal-body">
+                </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
     <script src="admin.js"></script>
